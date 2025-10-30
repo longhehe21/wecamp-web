@@ -1,0 +1,51 @@
+/* base styles */
+.logo-img {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 32px;
+  }
+  .sitename {
+    font-size: 1.3rem;
+  }
+}
+
+/* booking submit */
+.booking-form-custom .form-control,
+.booking-form-custom .form-select {
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.booking-form-custom .btn-primary {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.booking-form-custom .btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Ẩn mũi tên trên Firefox */
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Ẩn mũi tên trên Chrome */
+  margin: 0;
+}
+
+.form-control[type="number"] {
+  padding-right: 12px;
+}

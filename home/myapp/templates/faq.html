@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Faq - Tour Bootstrap Template{% endblock %}
+
+{% block content %}
+
+  <!-- Page Title -->
+  <div class="page-title dark-background" data-aos="fade">
+    <style>
+        .page-title {
+          background-image: url('{% static "assets/img/travel/showcase-8.webp" %}');
+        }
+    </style>
+    <div class="container position-relative">
+      <h1>Frequently Asked Questions</h1>
+      <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="current">Frequently Asked Questions</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Faq Section -->
+  <section id="faq" class="faq section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row align-items-start gy-4">
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-sidebar">
+            <div class="faq-image">
+              <img src="{% static 'assets/img/illustration/illustration-5.webp' %}" alt="FAQ Image" class="img-fluid" loading="lazy">
+            </div>
+            <div class="contact-box">
+              <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
+              <p>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+              <a href="{% url 'contact' %}" class="btn-contact">Connect with Support</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="faq-tabs">
+            <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Account Services</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Billing &amp; Payments</button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="faqTabsContent-faq">
+              <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
+                <div class="accordion" id="generalAccordion-faq">
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3>How do I create a new account?</h3>
+                    <div class="faq-content">
+                      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>What are the system requirements?</h3>
+                    <div class="faq-content">
+                      <p>Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <h3>Can I access my data offline?</h3>
+                    <div class="faq-content">
+                      <p>Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3>How do I report a bug or issue?</h3>
+                    <div class="faq-content">
+                      <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <h3>What is your data privacy policy?</h3>
+                    <div class="faq-content">
+                      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum. Sed porttitor lectus nibh.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
+                <div class="accordion" id="accountAccordion-faq">
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3>How do I reset my password?</h3>
+                    <div class="faq-content">
+                      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>How to update account information?</h3>
+                    <div class="faq-content">
+                      <p>Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
+                <div class="accordion" id="paymentAccordion-faq">
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3>What payment methods are accepted?</h3>
+                    <div class="faq-content">
+                      <p>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>When will my payment be processed?</h3>
+                    <div class="faq-content">
+                      <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <h3>Can I get a refund for my purchase?</h3>
+                    <div class="faq-content">
+                      <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada.</p>
+                    </div>
+                    <i class="bi bi-chevron-down faq-toggle"></i>
+                  </div><!-- End FAQ Item-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </section><!-- /Faq Section -->
+
+{% endblock %}

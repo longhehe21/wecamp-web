@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - Tour Bootstrap Template{% endblock %}
+
+{% block content %}
+
+
+  <!-- Page Title -->
+  <div class="page-title dark-background" data-aos="fade">
+    <style>
+        .page-title {
+          background-image: url('{% static "assets/img/travel/showcase-8.webp" %}');
+        }
+    </style>
+    <div class="container position-relative">
+      <h1>Giới Thiệu</h1>
+      <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="current">About</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Travel About Section -->
+  <section id="travel-about" class="travel-about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <div class="intro-content" data-aos="fade-up" data-aos-delay="200">
+            <h2>Redefining Travel,<br>One Adventure at a Time</h2>
+            <p class="lead">Born from a love of exploration and discovery, we've spent the last decade turning wanderlust into life-changing experiences for adventurous souls around the globe.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
+          <div class="hero-image">
+            <img src="{% static 'assets/img/about/about_wecamp.jpg' %}" class="img-fluid" alt="Travel Adventure">
+            <div class="floating-stats">
+              <div class="stat-item">
+                <span class="number">15K</span>
+                <span class="label">Khách Du Lịch Hạnh Phúc</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1" data-aos="slide-left" data-aos-delay="400">
+          <div class="story-content">
+            <div class="story-badge">
+              <i class="bi bi-compass"></i>
+              <span>Câu Chuyện Của Chúng Tôi</span>
+            </div>
+            <h3>Về Wecamp Cafe Retreat</h3>
+            <p> <b>Wecamp Cafe Retreat</b> thuộc vị trí đắc địa trong bản Tả Van, thị trấn Sapa, nơi sau lưng là rừng trước mặt là suối. Bạn sẽ được tận hưởng trọn vẹn tiếng chim hót vào sáng sớm, tiếng suối rì rào cả ngày, không gian xanh trải rộng liền mạnh từ bầu trời đến mặt đất.</p>
+            <p>Với tất cả mong muốn từ tận đáy lòng, <b>Wecamp Cafe Retreat</b> hy vọng bạn có một kì nghỉ trọn vẹn, thảnh thơi khi đến với chúng mình. Một kì nghỉ thật “chill”! </p>
+
+            <div class="mission-box">
+              <div class="mission-icon">
+                <i class="bi bi-globe-americas"></i>
+              </div>
+              <div class="mission-text">
+                <h4>Tầm nhìn của chúng tôi</h4>
+                <p>"To make the world more connected and compassionate, one meaningful journey at a time."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 offset-lg-1" data-aos="slide-right" data-aos-delay="400">
+          <div class="story-content">
+            <div class="story-badge">
+              <i class="bi bi-compass"></i>
+              <span>Vị Trí Địa Lý</span>
+            </div>
+            <h3>Vị Trí Địa Lý Của Wecamp Cafe Retreat</h3>
+            <p> <b>Địa chỉ:</b> Thôn Tả Van Dáy 1, xã Tả Van, thị xã Sapa Tỉnh Lào Cai, Lào Cai Province, Vietnam 31000</p>
+            <p>Cách trung tâm thị trấn Sapa khoảng 10km, <b>Wecamp Cafe Retreat</b> nằm ở cuối bản <b>Tả Van</b>, là một vị trí đắc địa để <b>Wecamp Cafe Retreat</b> ra đời. Thiên nhiên ở bản có suối Mường Hoa chảy quanh, thung lũng view pandora, hoàn toàn tách biệt với tiếng xe cộ của thị trấn, có tiếng suối là âm thanh trắng giúp thư giãn, tạo cảm giác gần gũi với thiên nhiên.</p>
+
+            <div class="mission-box">
+              <div class="mission-icon">
+                <i class="bi bi-globe-americas"></i>
+              </div>
+              <div class="mission-text">
+                <h4>Tầm nhìn của chúng tôi</h4>
+                <p>"To make the world more connected and compassionate, one meaningful journey at a time."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
+          <div class="hero-image">
+            <img src="{% static 'assets/img/travel/showcase-7.webp' %}" class="img-fluid" alt="Travel Adventure">
+            <div class="floating-stats">
+              <div class="stat-item">
+                <span class="number">50+</span>
+                <span class="label">Countries</span>
+              </div>
+              <div class="stat-item">
+                <span class="number">15K</span>
+                <span class="label">Happy Travelers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="features-grid" data-aos="fade-up" data-aos-delay="200">
+            <div class="section-header text-center mb-5">
+              <h3>Điều Gì Làm Cho Chúng Tôi Khác Biệt</h3>
+              <p>Six pillars that define every adventure we create</p>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                  <div class="feature-front">
+                    <div class="feature-icon">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Local Partnerships</h4>
+                    <p>Direct collaboration with indigenous communities</p>
+                  </div>
+                  <div class="feature-back">
+                    <p>We work exclusively with local guides who are passionate storytellers and cultural ambassadors, ensuring authentic experiences while supporting local economies.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                  <div class="feature-front">
+                    <div class="feature-icon">
+                      <i class="bi bi-heart-pulse"></i>
+                    </div>
+                    <h4>Safety First</h4>
+                    <p>Comprehensive safety protocols and emergency support</p>
+                  </div>
+                  <div class="feature-back">
+                    <p>From pre-trip safety briefings to 24/7 emergency response teams, your wellbeing is our top priority on every single adventure.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                  <div class="feature-front">
+                    <div class="feature-icon">
+                      <i class="bi bi-recycle"></i>
+                    </div>
+                    <h4>Carbon Conscious</h4>
+                    <p>Offsetting 150% of travel emissions</p>
+                  </div>
+                  <div class="feature-back">
+                    <p>Through reforestation projects and renewable energy investments, we ensure every trip contributes positively to environmental restoration.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                  <div class="feature-front">
+                    <div class="feature-icon">
+                      <i class="bi bi-sliders"></i>
+                    </div>
+                    <h4>Tailored Itineraries</h4>
+                    <p>Adventures designed around your interests</p>
+                  </div>
+                  <div class="feature-back">
+                    <p>No cookie-cutter tours here. Every itinerary is customized based on your travel style, fitness level, and personal interests.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                  <div class="feature-front">
+                    <div class="feature-icon">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Flexible Policies</h4>
+                    <p>Life happens, we understand</p>
+                  </div>
+                  <div class="feature-back">
+                    <p>Free cancellation up to 30 days before departure, easy date changes, and comprehensive travel insurance options give you peace of mind.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                  <div class="feature-front">
+                    <div class="feature-icon">
+                      <i class="bi bi-star"></i>
+                    </div>
+                    <h4>Lifetime Memories</h4>
+                    <p>Experiences that transform perspectives</p>
+                  </div>
+                  <div class="feature-back">
+                    <p>Our travelers often say their journey with us changed their outlook on life. We create moments that become treasured memories for years to come.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="journey-timeline" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-header text-center mb-5">
+              <h3>Lịch Sử Hình Thành</h3>
+              <p>Key moments that shaped who we are today</p>
+            </div>
+
+            <div class="timeline-container">
+              <div class="timeline-track"></div>
+
+              <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
+                <div class="milestone-marker">
+                  <span class="year">2020</span>
+                </div>
+                <div class="milestone-content">
+                  <h4>Nhận Thức Tiềm Năng Sản Phẩm</h4>
+                  <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                </div>
+              </div>
+
+              <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="400">
+                <div class="milestone-marker">
+                  <span class="year">2021</span>
+                </div>
+                <div class="milestone-content">
+                  <h4>Global Expansion</h4>
+                  <p>Established partnerships with local guides in Southeast Asia and South America, bringing our authentic travel philosophy to new continents.</p>
+                </div>
+              </div>
+              <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
+                <div class="milestone-marker">
+                  <span class="year">2022</span>
+                </div>
+                <div class="milestone-content">
+                  <h4>The Beginning</h4>
+                  <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                </div>
+              </div>
+               
+
+              <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="600">
+                <div class="milestone-marker">
+                  <span class="year">2023</span>
+                </div>
+                <div class="milestone-content">
+                  <h4>Future Forward</h4>
+                  <p>Achieved B-Corp certification and committed to becoming the first fully regenerative travel company by 2030.</p>
+                </div>
+              </div>
+              <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
+                <div class="milestone-marker">
+                  <span class="year">2024</span>
+                </div>
+                <div class="milestone-content">
+                  <h4>The Beginning</h4>
+                  <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                </div>
+              </div>
+              <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="600">
+                <div class="milestone-marker">
+                  <span class="year">2025</span>
+                </div>
+                <div class="milestone-content">
+                  <h4>Future Forward</h4>
+                  <p>Achieved B-Corp certification and committed to becoming the first fully regenerative travel company by 2030.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="cta-banner" data-aos="zoom-in" data-aos-delay="300">
+            <div class="cta-overlay">
+              <div class="cta-content">
+                <h3>Your Next Adventure Awaits</h3>
+                <p>Join thousands of travelers who've discovered the difference authentic, responsible travel makes.</p>
+                <div class="cta-buttons">
+                  <a href="{% url 'destinations' %}" class="btn btn-primary me-3">Khám Phá Dịch Vụ</a>
+                  <a href="{% url 'contact' %}" class="btn btn-outline">Liên Hệ Hỗ Trợ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /Travel About Section -->
+
+{% endblock %}
