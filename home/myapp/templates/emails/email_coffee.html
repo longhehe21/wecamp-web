@@ -1,0 +1,17 @@
+{% extends 'emails/base_email.html' %}
+{% block title %}Đặt chỗ uống cafe!{% endblock %}
+{% block header %}Đặt chỗ uống cafe!{% endblock %}
+{% block content %}
+<p>Xin chào <strong>{{ name }}</strong>,</p>
+<p>Hẹn gặp bạn bên suối với ly cafe thơm!</p>
+<div class="service-icon">Coffee</div>
+<div class="highlight">
+  <p>Thông tin:</p>
+  <ul>
+    <li>Ngày: <strong>{{ date|date:"d/m/Y" }}</strong></li>
+    <li>Số người: <strong>{{ people }}</strong></li>
+  </ul>
+</div>
+<p>Check-in từ <strong>7h30 - 19h30</strong>.</p>
+<a href="https://wecamp.com/cafe" class="btn">Khám phá không gian</a>
+{% endblock %}

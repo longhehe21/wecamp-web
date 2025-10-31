@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',  # BẮT BUỘC
+    'cloudinary',
     'myapp',
 ]
 
@@ -106,3 +108,41 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Tùy chọn cho collectstatic
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Gmail
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'wecampofficial@gmail.com'  # Email của bạn
+EMAIL_HOST_PASSWORD = 'qtzu yxtf evcz mjjm'  # App Password (xem bên dưới)
+DEFAULT_FROM_EMAIL = 'Wecamp Cafe Retreat <wecampofficial@gmail.com>'
+
+# thư viện
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+## Cloudinary Configuration
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
+cloudinary.config(
+    cloud_name='dfqcrzpqr',  # Thay bằng cloud name của bạn
+    api_key='864987181229665',     # Thay bằng API Key
+    api_secret='oF29rJY-AksBR3AMURb-TGXVFAs',  # Thay bằng API Secret
+)
+
+# Media storage cho Cloudinary
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+# Cấu hình Cloudinary Storage
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dfqcrzpqr',
+    'API_KEY': '864987181229665',
+    'API_SECRET': 'oF29rJY-AksBR3AMURb-TGXVFAs',
+}

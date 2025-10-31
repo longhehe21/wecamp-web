@@ -48,13 +48,18 @@
           <li><a href="{% url 'blog' %}">Blogs</a></li>
           <li class="dropdown"><a href="#"><span>Dịch Vụ</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="{% url 'booking' %}">Booking</a></li>
-              <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
-              <li><a href="{% url 'faq' %}">Frequently Asked Questions</a></li>
-              <li><a href="{% url 'blog_details' %}">Blog Details</a></li>
-              <li><a href="{% url 'terms' %}">Terms</a></li>
-              <li><a href="{% url 'privacy' %}">Privacy</a></li>
-              <li><a href="{% url '404' %}">404</a></li>
+              <li><a href="{% url 'booking' %}">Dùng Bữa</a></li>
+              <li><a href="{% url 'testimonials' %}">Uống Cafe</a></li>
+              <!-- Sub-menu cho Thuê Lều -->
+              <li class="dropdown">
+                <a href="#"><span>Thuê Lều</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="{% url 'tent_day' %}">Thuê lều trong ngày</a></li>
+                  <li><a href="{% url 'tent_night' %}">Thuê lều nghỉ đêm</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'blog_details' %}">Ngâm Chân Thảo Mộc</a></li>
+              <li><a href="{% url 'terms' %}">Tô Tượng & Vẽ Tranh</a></li>
             </ul>
           </li>
           <li><a href="{% url 'contact' %}">Liên Hệ</a></li>
@@ -154,13 +159,17 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
+  
+
   <!-- Vendor JS Files -->
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
   <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
   <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-
+  <!-- Isotope + imagesLoaded -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <!-- Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
 

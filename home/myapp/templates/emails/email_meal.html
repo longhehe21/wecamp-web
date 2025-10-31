@@ -1,0 +1,17 @@
+{% extends 'emails/base_email.html' %}
+{% block title %}Đặt bàn thành công!{% endblock %}
+{% block header %}Đặt bàn thành công!{% endblock %}
+{% block content %}
+<p>Xin chào <strong>{{ name }}</strong>,</p>
+<p>Cảm ơn bạn đã chọn <strong>Wecamp</strong> cho bữa ăn!</p>
+<div class="service-icon">Meal</div>
+<div class="highlight">
+  <p>Thông tin đặt bàn:</p>
+  <ul>
+    <li>Ngày: <strong>{{ date|date:"d/m/Y" }}</strong></li>
+    <li>Số người: <strong>{{ people }}</strong></li>
+  </ul>
+</div>
+<p>Chúng tôi sẽ gọi xác nhận trong <strong>2 giờ</strong>.</p>
+<a href="https://wecamp.com/menu" class="btn">Xem thực đơn</a>
+{% endblock %}

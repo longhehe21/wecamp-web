@@ -1,0 +1,18 @@
+{% extends 'emails/base_email.html' %}
+{% block title %}Đặt lều thành công!{% endblock %}
+{% block header %}Đặt lều thành công!{% endblock %}
+{% block content %}
+<p>Xin chào <strong>{{ name }}</strong>,</p>
+<p>Trải nghiệm ngủ lều giữa rừng thông đã sẵn sàng!</p>
+<div class="service-icon">Tent</div>
+<div class="highlight">
+  <p>Chi tiết đặt lều:</p>
+  <ul>
+    <li>Ngày: <strong>{{ date|date:"d/m/Y" }}</strong></li>
+    <li>Số người: <strong>{{ people }}</strong></li>
+    <li>Check-in: 14h | Check-out: 12h hôm sau</li>
+  </ul>
+</div>
+<p>Giá: <strong>800.000 VNĐ/lều/đêm</strong></p>
+<a href="https://wecamp.com/tent" class="btn">Xem ảnh lều thực tế</a>
+{% endblock %}
