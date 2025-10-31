@@ -1,313 +1,136 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Blog - Tour Bootstrap Template{% endblock %}
+{% block title %}Blog - Wecamp{% endblock %}
 
 {% block content %}
 
   <!-- Page Title -->
-  <div class="page-title dark-background" data-aos="fade" >
+  <div class="page-title dark-background" data-aos="fade">
     <style>
-        .page-title {
-          background-image: url('{% static "assets/img/travel/showcase-8.webp" %}');
-        }
+        .page-title { background-image: url('{% static "assets/img/travel/showcase-8.webp" %}'); }
     </style>
     <div class="container position-relative">
       <h1>Blog</h1>
-      <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <p>Khám phá những câu chuyện, kinh nghiệm và tin tức mới nhất từ Wecamp.</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'index' %}">Trang Chủ</a></li>
           <li class="current">Blog</li>
         </ol>
       </nav>
     </div>
-  </div><!-- End Page Title -->
+  </div>
 
   <!-- Blog Hero Section -->
+  {% if featured or headlines.exists %}
   <section id="blog-hero" class="blog-hero section">
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
       <div class="blog-grid">
 
-        <!-- Main Featured Post -->
+        <!-- Bài viết nổi bật -->
+        {% if featured %}
         <article class="blog-item main-feature" data-aos="fade-up">
-          <img src="{% static 'assets/img/blog/blog-post-9.webp' %}" alt="Blog Image" class="img-fluid">
+          <img src="{{ featured.image.url }}" alt="{{ featured.title }}" class="img-fluid">
           <div class="blog-content">
             <div class="post-meta">
-              <span class="date">Apr. 14th, 2022</span>
-              <span class="category">Technology</span>
+              <span class="date">{{ featured.published_at|date:"M. d, Y" }}</span>
+              <span class="category">{{ featured.get_category_display }}</span>
             </div>
             <h2 class="post-title">
-              <a href="{% url 'blog_details' %}" title="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a>
+              <a href="{% url 'blog_details' featured.id %}" class="clamp-3-lines">{{ featured.title }}</a>
             </h2>
-            <p class="post-excerpt">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="post-excerpt">{{ featured.subtitle|default:"" }}</p>
           </div>
-        </article><!-- End Main Featured Post -->
+        </article>
+        {% endif %}
 
-        <!-- Secondary Featured Posts -->
+        <!-- Bài viết tiêu đề -->
+        {% if headlines.exists %}
         <div class="secondary-features">
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static 'assets/img/blog/blog-post-portrait-1.webp' %}" alt="Blog Image" class="img-fluid">
+          {% for post in headlines %}
+          <article class="blog-item" data-aos="fade-up" data-aos-delay="{% if forloop.counter == 1 %}100{% else %}200{% endif %}">
+            <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
-                <span class="date">Apr. 13th, 2022</span>
-                <span class="category">Business</span>
+                <span class="date">{{ post.published_at|date:"M. d, Y" }}</span>
+                <span class="category">{{ post.get_category_display }}</span>
               </div>
               <h3 class="post-title">
-                <a href="{% url 'blog_details' %}" title="Ut enim ad minim veniam quis nostrud exercitation">Ut enim ad minim veniam quis nostrud exercitation</a>
+                <a href="{% url 'blog_details' post.id %}" class="clamp-3-lines">{{ post.title }}</a>
               </h3>
             </div>
           </article>
-
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="200">
-            <img src="{% static 'assets/img/blog/blog-post-portrait-2.webp' %}" alt="Blog Image" class="img-fluid">
-            <div class="blog-content">
-              <div class="post-meta">
-                <span class="date">Apr. 12th, 2022</span>
-                <span class="category">Lifestyle</span>
-              </div>
-              <h3 class="post-title">
-                <a href="{% url 'blog_details' %}" title="Duis aute irure dolor in reprehenderit in voluptate">Duis aute irure dolor in reprehenderit in voluptate</a>
-              </h3>
-            </div>
-          </article>
-        </div><!-- End Secondary Features -->
-
-        <!-- Regular Posts Grid -->
-        <div class="regular-posts">
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="300">
-            <img src="{% static 'assets/img/blog/blog-post-9.webp' %}" alt="Blog Image" class="img-fluid">
-            <div class="blog-content">
-              <div class="post-meta">
-                <span class="date">Apr. 11th, 2022</span>
-                <span class="category">Tech</span>
-              </div>
-              <h3 class="post-title">
-                <a href="{% url 'blog_details' %}" title="Excepteur sint occaecat cupidatat non proident">Excepteur sint occaecat cupidatat non proident</a>
-              </h3>
-            </div>
-          </article>
-
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="400">
-            <img src="{% static 'assets/img/blog/blog-post-3.webp' %}" alt="Blog Image" class="img-fluid">
-            <div class="blog-content">
-              <div class="post-meta">
-                <span class="date">Apr. 10th, 2022</span>
-                <span class="category">Sports</span>
-              </div>
-              <h3 class="post-title">
-                <a href="{% url 'blog_details' %}" title="Sunt in culpa qui officia deserunt mollit anim">Sunt in culpa qui officia deserunt mollit anim</a>
-              </h3>
-            </div>
-          </article>
-
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="500">
-            <img src="{% static 'assets/img/blog/blog-post-6.webp' %}" alt="Blog Image" class="img-fluid">
-            <div class="blog-content">
-              <div class="post-meta">
-                <span class="date">Apr. 9th, 2022</span>
-                <span class="category">Culture</span>
-              </div>
-              <h3 class="post-title">
-                <a href="{% url 'blog_details' %}" title="Id est laborum et dolorum fuga et harum quidem">Id est laborum et dolorum fuga et harum quidem</a>
-              </h3>
-            </div>
-          </article>
-        </div><!-- End Regular Posts -->
+          {% endfor %}
+        </div>
+        {% endif %}
 
       </div>
-
     </div>
+  </section>
+  {% endif %}
 
-  </section><!-- /Blog Hero Section -->
-
-  <!-- Blog Posts Section -->
+  <!-- Bài viết thường -->
   <section id="blog-posts" class="blog-posts section">
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4">
-
+        {% for post in regular_posts %}
         <div class="col-lg-4">
           <article>
-
             <div class="post-img">
-              <img src="{% static 'assets/img/blog/blog-post-1.webp' %}" alt="" class="img-fluid">
+              <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
             </div>
-
-            <p class="post-category">Politics</p>
-
+            <p class="post-category">{{ post.get_category_display }}</p>
             <h2 class="title">
-              <a href="{% url 'blog_details' %}">Dolorum optio tempore voluptas dignissimos</a>
+              <a href="{% url 'blog_details' post.id %}" class="clamp-3-lines">{{ post.title }}</a>
             </h2>
-
             <div class="d-flex align-items-center">
-              <img src="{% static 'assets/img/person/person-f-12.webp' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
+              {% if post.author_image %}
+              <img src="{{ post.author_image.url }}" alt="{{ post.author_name }}" class="img-fluid post-author-img flex-shrink-0">
+              {% else %}
+              <img src="{% static 'assets/img/person/default-avatar.webp' %}" alt="Avatar" class="img-fluid post-author-img flex-shrink-0">
+              {% endif %}
               <div class="post-meta">
-                <p class="post-author">Maria Doe</p>
+                <p class="post-author">{{ post.author_name }}</p>
                 <p class="post-date">
-                  <time datetime="2022-01-01">Jan 1, 2022</time>
+                  <time datetime="{{ post.published_at|date:'Y-m-d' }}">{{ post.published_at|date:"M d, Y" }}</time>
                 </p>
               </div>
             </div>
-
           </article>
-        </div><!-- End post list item -->
-
-        <div class="col-lg-4">
-          <article>
-
-            <div class="post-img">
-              <img src="{% static 'assets/img/blog/blog-post-2.webp' %}" alt="" class="img-fluid">
-            </div>
-
-            <p class="post-category">Sports</p>
-
-            <h2 class="title">
-              <a href="{% url 'blog_details' %}">Nisi magni odit consequatur autem nulla dolorem</a>
-            </h2>
-
-            <div class="d-flex align-items-center">
-              <img src="{% static 'assets/img/person/person-f-13.webp' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-              <div class="post-meta">
-                <p class="post-author">Allisa Mayer</p>
-                <p class="post-date">
-                  <time datetime="2022-01-01">Jun 5, 2022</time>
-                </p>
-              </div>
-            </div>
-
-          </article>
-        </div><!-- End post list item -->
-
-        <div class="col-lg-4">
-          <article>
-
-            <div class="post-img">
-              <img src="{% static 'assets/img/blog/blog-post-3.webp' %}" alt="" class="img-fluid">
-            </div>
-
-            <p class="post-category">Entertainment</p>
-
-            <h2 class="title">
-              <a href="{% url 'blog_details' %}">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-            </h2>
-
-            <div class="d-flex align-items-center">
-              <img src="{% static 'assets/img/person/person-m-10.webp' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-              <div class="post-meta">
-                <p class="post-author">Mark Dower</p>
-                <p class="post-date">
-                  <time datetime="2022-01-01">Jun 22, 2022</time>
-                </p>
-              </div>
-            </div>
-
-          </article>
-        </div><!-- End post list item -->
-
-        <div class="col-lg-4">
-          <article>
-
-            <div class="post-img">
-              <img src="{% static 'assets/img/blog/blog-post-4.webp' %}" alt="" class="img-fluid">
-            </div>
-
-            <p class="post-category">Sports</p>
-
-            <h2 class="title">
-              <a href="{% url 'blog_details' %}">Non rem rerum nam cum quo minus olor distincti</a>
-            </h2>
-
-            <div class="d-flex align-items-center">
-              <img src="{% static 'assets/img/person/person-f-14.webp' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-              <div class="post-meta">
-                <p class="post-author">Lisa Neymar</p>
-                <p class="post-date">
-                  <time datetime="2022-01-01">Jun 30, 2022</time>
-                </p>
-              </div>
-            </div>
-
-          </article>
-        </div><!-- End post list item -->
-
-        <div class="col-lg-4">
-          <article>
-
-            <div class="post-img">
-              <img src="{% static 'assets/img/blog/blog-post-5.webp' %}" alt="" class="img-fluid">
-            </div>
-
-            <p class="post-category">Politics</p>
-
-            <h2 class="title">
-              <a href="{% url 'blog_details' %}">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
-            </h2>
-
-            <div class="d-flex align-items-center">
-              <img src="{% static 'assets/img/person/person-m-11.webp' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-              <div class="post-meta">
-                <p class="post-author">Denis Peterson</p>
-                <p class="post-date">
-                  <time datetime="2022-01-01">Jan 30, 2022</time>
-                </p>
-              </div>
-            </div>
-
-          </article>
-        </div><!-- End post list item -->
-
-        <div class="col-lg-4">
-          <article>
-
-            <div class="post-img">
-              <img src="{% static 'assets/img/blog/blog-post-6.webp' %}" alt="" class="img-fluid">
-            </div>
-
-            <p class="post-category">Entertainment</p>
-
-            <h2 class="title">
-              <a href="{% url 'blog_details' %}">Distinctio provident quibusdam numquam aperiam aut</a>
-            </h2>
-
-            <div class="d-flex align-items-center">
-              <img src="{% static 'assets/img/person/person-f-15.webp' %}" alt="" class="img-fluid post-author-img flex-shrink-0">
-              <div class="post-meta">
-                <p class="post-author">Mika Lendon</p>
-                <p class="post-date">
-                  <time datetime="2022-01-01">Feb 14, 2022</time>
-                </p>
-              </div>
-            </div>
-
-          </article>
-        </div><!-- End post list item -->
-
+        </div>
+        {% empty %}
+        <div class="col-12 text-center">
+          <p class="text-muted">Chưa có bài viết nào.</p>
+        </div>
+        {% endfor %}
       </div>
     </div>
+  </section>
 
-  </section><!-- /Blog Posts Section -->
-
-  <!-- Pagination 2 Section -->
+  <!-- Pagination -->
+  {% if regular_posts.has_other_pages %}
   <section id="pagination-2" class="pagination-2 section">
-
     <div class="container">
       <div class="d-flex justify-content-center">
         <ul>
-          <li><a href="{% url 'blog' %}?page=1"><i class="bi bi-chevron-left"></i></a></li>
-          <li><a href="{% url 'blog' %}?page=1">1</a></li>
-          <li><a href="{% url 'blog' %}?page=2" class="active">2</a></li>
-          <li><a href="{% url 'blog' %}?page=3">3</a></li>
-          <li><a href="{% url 'blog' %}?page=4">4</a></li>
-          <li>...</li>
-          <li><a href="{% url 'blog' %}?page=10">10</a></li>
-          <li><a href="{% url 'blog' %}?page=3"><i class="bi bi-chevron-right"></i></a></li>
+          {% if regular_posts.has_previous %}
+          <li><a href="?page={{ regular_posts.previous_page_number }}"><i class="bi bi-chevron-left"></i></a></li>
+          {% endif %}
+          {% for num in regular_posts.paginator.page_range %}
+          {% if regular_posts.number == num %}
+          <li><a href="#" class="active">{{ num }}</a></li>
+          {% else %}
+          <li><a href="?page={{ num }}">{{ num }}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% if regular_posts.has_next %}
+          <li><a href="?page={{ regular_posts.next_page_number }}"><i class="bi bi-chevron-right"></i></a></li>
+          {% endif %}
         </ul>
       </div>
     </div>
-
-  </section><!-- /Pagination 2 Section -->
+  </section>
+  {% endif %}
 
 {% endblock %}

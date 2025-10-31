@@ -35,9 +35,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapp',
     'cloudinary_storage',  # BẮT BUỘC
     'cloudinary',
-    'myapp',
+    'mathfilters',  # THÊM DÒNG NÀY
+    'ckeditor',           # THÊM DÒNG NÀY
+    'ckeditor_uploader',  # THÊM DÒNG NÀY (để upload ảnh)
 ]
 
 MIDDLEWARE = [
@@ -145,4 +148,16 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dfqcrzpqr',
     'API_KEY': '864987181229665',
     'API_SECRET': 'oF29rJY-AksBR3AMURb-TGXVFAs',
+}
+
+# Thư mục upload ảnh
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+# Cấu hình CKEditor
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 400,
+        'width': '100%',
+    },
 }

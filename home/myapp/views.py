@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib import messages
 from django.core.mail import send_mail
@@ -9,6 +9,7 @@ import string
 import requests
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
+from .models import BlogPost
 
 # Thêm vào đầu file (cấu hình Zalo OA)
 # ZALO_ACCESS_TOKEN = 'YOUR_ZALO_OA_ACCESS_TOKEN'  
@@ -38,7 +39,20 @@ def gallery_details(request):
     return render(request, 'gallery-details.html')  # Tạo file gallery-details.html nếu cần
 
 def blog(request):
-    return render(request, 'blogs/blog.html')
+    featured = BlogPost.objects.filter(post_type='featured', is_published=True).first()
+    headlines = BlogPost.objects.filter(post_type='headline', is_published=True)[:2]
+    regular_posts = BlogPost.objects.filter(post_type='regular', is_published=True)
+
+    context = {
+        'featured': featured,
+        'headlines': headlines,
+        'regular_posts': regular_posts,
+    }
+    return render(request, 'blogs/blog.html', context)
+
+def blog_details(request, pk):
+    post = get_object_or_404(BlogPost, pk=pk, is_published=True)
+    return render(request, 'blogs/blog_details.html', {'post': post})
 
 def destination_details(request):
     return render(request, 'destination-details.html')
@@ -54,9 +68,6 @@ def testimonials(request):
 
 def faq(request):
     return render(request, 'faq.html')
-
-def blog_details(request):
-    return render(request, 'blogs/blog-details.html')
 
 def terms(request):
     return render(request, 'terms.html')
