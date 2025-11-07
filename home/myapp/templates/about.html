@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}About - Tour Bootstrap Template{% endblock %}
+{% block title %}{% trans "Giới Thiệu" %} - Wecamp Cafe Retreat{% endblock %}
 
 {% block content %}
-
 
   <!-- Page Title -->
   <div class="page-title dark-background" data-aos="fade">
@@ -14,12 +13,12 @@
         }
     </style>
     <div class="container position-relative">
-      <h1>Giới Thiệu</h1>
-      <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <h1>{% trans "Giới Thiệu" %}</h1>
+      <p>{% trans "Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." %}</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'index' %}">Home</a></li>
-          <li class="current">About</li>
+          <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+          <li class="current">{% trans "Giới Thiệu" %}</li>
         </ol>
       </nav>
     </div>
@@ -33,8 +32,8 @@
       <div class="row">
         <div class="col-lg-8 mx-auto text-center mb-5">
           <div class="intro-content" data-aos="fade-up" data-aos-delay="200">
-            <h2>Redefining Travel,<br>One Adventure at a Time</h2>
-            <p class="lead">Born from a love of exploration and discovery, we've spent the last decade turning wanderlust into life-changing experiences for adventurous souls around the globe.</p>
+            <h2>{% trans "Định Nghĩa Lại Du Lịch,<br>Một Hành Trình Một Lần" %}</h2>
+            <p class="lead">{% trans "Ra đời từ niềm đam mê khám phá và trải nghiệm, chúng tôi đã dành thập kỷ qua biến khát khao du lịch thành những hành trình thay đổi cuộc đời cho những tâm hồn phiêu lưu trên toàn cầu." %}</p>
           </div>
         </div>
       </div>
@@ -42,11 +41,11 @@
       <div class="row align-items-center mb-5">
         <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
           <div class="hero-image">
-            <img src="{% static 'assets/img/about/about_wecamp.jpg' %}" class="img-fluid" alt="Travel Adventure">
+            <img src="{% static 'assets/img/about/about_wecamp.jpg' %}" class="img-fluid" alt="{% trans 'Hành trình du lịch' %}">
             <div class="floating-stats">
               <div class="stat-item">
                 <span class="number">15K</span>
-                <span class="label">Khách Du Lịch Hạnh Phúc</span>
+                <span class="label">{% trans "Khách Du Lịch Hạnh Phúc" %}</span>
               </div>
             </div>
           </div>
@@ -56,70 +55,70 @@
           <div class="story-content">
             <div class="story-badge">
               <i class="bi bi-compass"></i>
-              <span>Câu Chuyện Của Chúng Tôi</span>
+              <span>{% trans "Câu Chuyện Của Chúng Tôi" %}</span>
             </div>
-            <h3>Về Wecamp Cafe Retreat</h3>
-            <p> <b>Wecamp Cafe Retreat</b> thuộc vị trí đắc địa trong bản Tả Van, thị trấn Sapa, nơi sau lưng là rừng trước mặt là suối. Bạn sẽ được tận hưởng trọn vẹn tiếng chim hót vào sáng sớm, tiếng suối rì rào cả ngày, không gian xanh trải rộng liền mạnh từ bầu trời đến mặt đất.</p>
-            <p>Với tất cả mong muốn từ tận đáy lòng, <b>Wecamp Cafe Retreat</b> hy vọng bạn có một kì nghỉ trọn vẹn, thảnh thơi khi đến với chúng mình. Một kì nghỉ thật “chill”! </p>
+            <h3>{% trans "Về Wecamp Cafe Retreat" %}</h3>
+            <p><b>Wecamp Cafe Retreat</b> {% trans "thuộc vị trí đắc địa trong bản Tả Van, thị trấn Sapa, nơi sau lưng là rừng trước mặt là suối. Bạn sẽ được tận hưởng trọn vẹn tiếng chim hót vào sáng sớm, tiếng suối rì rào cả ngày, không gian xanh trải rộng liền mạnh từ bầu trời đến mặt đất." %}</p>
+            <p>{% trans "Với tất cả mong muốn từ tận đáy lòng, " %}<b>Wecamp Cafe Retreat</b>{% trans " hy vọng bạn có một kì nghỉ trọn vẹn, thảnh thơi khi đến với chúng mình. Một kì nghỉ thật “chill”!" %}</p>
 
             <div class="mission-box">
               <div class="mission-icon">
                 <i class="bi bi-globe-americas"></i>
               </div>
               <div class="mission-text">
-                <h4>Tầm nhìn của chúng tôi</h4>
-                <p>"To make the world more connected and compassionate, one meaningful journey at a time."</p>
+                <h4>{% trans "Tầm nhìn của chúng tôi" %}</h4>
+                <p>{% trans "\"To make the world more connected and compassionate, one meaningful journey at a time.\"" %}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="row align-items-center mb-5">
         <div class="col-lg-6 offset-lg-1" data-aos="slide-right" data-aos-delay="400">
           <div class="story-content">
             <div class="story-badge">
               <i class="bi bi-compass"></i>
-              <span>Vị Trí Địa Lý</span>
+              <span>{% trans "Vị Trí Địa Lý" %}</span>
             </div>
-            <h3>Vị Trí Địa Lý Của Wecamp Cafe Retreat</h3>
-            <p> <b>Địa chỉ:</b> Thôn Tả Van Dáy 1, xã Tả Van, thị xã Sapa Tỉnh Lào Cai, Lào Cai Province, Vietnam 31000</p>
-            <p>Cách trung tâm thị trấn Sapa khoảng 10km, <b>Wecamp Cafe Retreat</b> nằm ở cuối bản <b>Tả Van</b>, là một vị trí đắc địa để <b>Wecamp Cafe Retreat</b> ra đời. Thiên nhiên ở bản có suối Mường Hoa chảy quanh, thung lũng view pandora, hoàn toàn tách biệt với tiếng xe cộ của thị trấn, có tiếng suối là âm thanh trắng giúp thư giãn, tạo cảm giác gần gũi với thiên nhiên.</p>
+            <h3>{% trans "Vị Trí Địa Lý Của Wecamp Cafe Retreat" %}</h3>
+            <p><b>{% trans "Địa chỉ:" %}</b> {% trans "Thôn Tả Van Dáy 1, xã Tả Van, thị xã Sapa Tỉnh Lào Cai, Lào Cai Province, Vietnam 31000" %}</p>
+            <p>{% trans "Cách trung tâm thị trấn Sapa khoảng 10km, " %}<b>Wecamp Cafe Retreat</b>{% trans " nằm ở cuối bản " %}<b>{% trans "Tả Van" %}</b>{% trans ", là một vị trí đắc địa để " %}<b>Wecamp Cafe Retreat</b>{% trans " ra đời. Thiên nhiên ở bản có suối Mường Hoa chảy quanh, thung lũng view pandora, hoàn toàn tách biệt với tiếng xe cộ của thị trấn, có tiếng suối là âm thanh trắng giúp thư giãn, tạo cảm giác gần gũi với thiên nhiên." %}</p>
 
             <div class="mission-box">
               <div class="mission-icon">
                 <i class="bi bi-globe-americas"></i>
               </div>
               <div class="mission-text">
-                <h4>Tầm nhìn của chúng tôi</h4>
-                <p>"To make the world more connected and compassionate, one meaningful journey at a time."</p>
+                <h4>{% trans "Tầm nhìn của chúng tôi" %}</h4>
+                <p>{% trans "\"To make the world more connected and compassionate, one meaningful journey at a time.\"" %}</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
           <div class="hero-image">
-            <img src="{% static 'assets/img/travel/showcase-7.webp' %}" class="img-fluid" alt="Travel Adventure">
+            <img src="{% static 'assets/img/travel/showcase-7.webp' %}" class="img-fluid" alt="{% trans 'Hành trình du lịch' %}">
             <div class="floating-stats">
               <div class="stat-item">
                 <span class="number">50+</span>
-                <span class="label">Countries</span>
+                <span class="label">{% trans "Quốc Gia" %}</span>
               </div>
               <div class="stat-item">
                 <span class="number">15K</span>
-                <span class="label">Happy Travelers</span>
+                <span class="label">{% trans "Du Khách Hạnh Phúc" %}</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-
       <div class="row">
         <div class="col-lg-12">
           <div class="features-grid" data-aos="fade-up" data-aos-delay="200">
             <div class="section-header text-center mb-5">
-              <h3>Điều Gì Làm Cho Chúng Tôi Khác Biệt</h3>
-              <p>Six pillars that define every adventure we create</p>
+              <h3>{% trans "Điều Gì Làm Cho Chúng Tôi Khác Biệt" %}</h3>
+              <p>{% trans "Sáu trụ cột định hình mọi hành trình chúng tôi tạo ra" %}</p>
             </div>
 
             <div class="row g-4">
@@ -129,11 +128,11 @@
                     <div class="feature-icon">
                       <i class="bi bi-people"></i>
                     </div>
-                    <h4>Local Partnerships</h4>
-                    <p>Direct collaboration with indigenous communities</p>
+                    <h4>{% trans "Hợp Tác Địa Phương" %}</h4>
+                    <p>{% trans "Hợp tác trực tiếp với cộng đồng bản địa" %}</p>
                   </div>
                   <div class="feature-back">
-                    <p>We work exclusively with local guides who are passionate storytellers and cultural ambassadors, ensuring authentic experiences while supporting local economies.</p>
+                    <p>{% trans "Chúng tôi làm việc độc quyền với hướng dẫn viên địa phương – những người kể chuyện đam mê và đại sứ văn hóa, đảm bảo trải nghiệm chân thực và hỗ trợ kinh tế địa phương." %}</p>
                   </div>
                 </div>
               </div>
@@ -144,11 +143,11 @@
                     <div class="feature-icon">
                       <i class="bi bi-heart-pulse"></i>
                     </div>
-                    <h4>Safety First</h4>
-                    <p>Comprehensive safety protocols and emergency support</p>
+                    <h4>{% trans "An Toàn Là Ưu Tiên" %}</h4>
+                    <p>{% trans "Giao thức an toàn toàn diện và hỗ trợ khẩn cấp" %}</p>
                   </div>
                   <div class="feature-back">
-                    <p>From pre-trip safety briefings to 24/7 emergency response teams, your wellbeing is our top priority on every single adventure.</p>
+                    <p>{% trans "Từ buổi hướng dẫn an toàn trước chuyến đến đội phản ứng khẩn cấp 24/7, sự an toàn của bạn là ưu tiên hàng đầu trong mọi hành trình." %}</p>
                   </div>
                 </div>
               </div>
@@ -159,11 +158,11 @@
                     <div class="feature-icon">
                       <i class="bi bi-recycle"></i>
                     </div>
-                    <h4>Carbon Conscious</h4>
-                    <p>Offsetting 150% of travel emissions</p>
+                    <h4>{% trans "Ý Thức Về Carbon" %}</h4>
+                    <p>{% trans "Bù đắp 150% lượng khí thải du lịch" %}</p>
                   </div>
                   <div class="feature-back">
-                    <p>Through reforestation projects and renewable energy investments, we ensure every trip contributes positively to environmental restoration.</p>
+                    <p>{% trans "Thông qua các dự án trồng rừng và đầu tư năng lượng tái tạo, chúng tôi đảm bảo mỗi chuyến đi đóng góp tích cực vào việc phục hồi môi trường." %}</p>
                   </div>
                 </div>
               </div>
@@ -174,11 +173,11 @@
                     <div class="feature-icon">
                       <i class="bi bi-sliders"></i>
                     </div>
-                    <h4>Tailored Itineraries</h4>
-                    <p>Adventures designed around your interests</p>
+                    <h4>{% trans "Hành Trình Cá Nhân Hóa" %}</h4>
+                    <p>{% trans "Thiết kế theo sở thích của bạn" %}</p>
                   </div>
                   <div class="feature-back">
-                    <p>No cookie-cutter tours here. Every itinerary is customized based on your travel style, fitness level, and personal interests.</p>
+                    <p>{% trans "Không có tour đóng gói. Mỗi hành trình được tùy chỉnh theo phong cách du lịch, mức độ thể lực và sở thích cá nhân của bạn." %}</p>
                   </div>
                 </div>
               </div>
@@ -189,11 +188,11 @@
                     <div class="feature-icon">
                       <i class="bi bi-shield-check"></i>
                     </div>
-                    <h4>Flexible Policies</h4>
-                    <p>Life happens, we understand</p>
+                    <h4>{% trans "Chính Sách Linh Hoạt" %}</h4>
+                    <p>{% trans "Cuộc sống có nhiều biến cố, chúng tôi hiểu" %}</p>
                   </div>
                   <div class="feature-back">
-                    <p>Free cancellation up to 30 days before departure, easy date changes, and comprehensive travel insurance options give you peace of mind.</p>
+                    <p>{% trans "Hủy miễn phí đến 30 ngày trước khởi hành, thay đổi ngày dễ dàng, và các lựa chọn bảo hiểm du lịch toàn diện mang lại sự yên tâm cho bạn." %}</p>
                   </div>
                 </div>
               </div>
@@ -204,11 +203,11 @@
                     <div class="feature-icon">
                       <i class="bi bi-star"></i>
                     </div>
-                    <h4>Lifetime Memories</h4>
-                    <p>Experiences that transform perspectives</p>
+                    <h4>{% trans "Ký Ức Trọn Đời" %}</h4>
+                    <p>{% trans "Trải nghiệm thay đổi góc nhìn" %}</p>
                   </div>
                   <div class="feature-back">
-                    <p>Our travelers often say their journey with us changed their outlook on life. We create moments that become treasured memories for years to come.</p>
+                    <p>{% trans "Du khách thường nói hành trình cùng chúng tôi đã thay đổi cách nhìn cuộc sống. Chúng tôi tạo ra những khoảnh khắc trở thành kỷ niệm quý giá qua nhiều năm." %}</p>
                   </div>
                 </div>
               </div>
@@ -221,8 +220,8 @@
         <div class="col-lg-12">
           <div class="journey-timeline" data-aos="fade-up" data-aos-delay="200">
             <div class="timeline-header text-center mb-5">
-              <h3>Lịch Sử Hình Thành</h3>
-              <p>Key moments that shaped who we are today</p>
+              <h3>{% trans "Lịch Sử Hình Thành" %}</h3>
+              <p>{% trans "Những cột mốc quan trọng định hình chúng tôi hôm nay" %}</p>
             </div>
 
             <div class="timeline-container">
@@ -233,8 +232,8 @@
                   <span class="year">2020</span>
                 </div>
                 <div class="milestone-content">
-                  <h4>Nhận Thức Tiềm Năng Sản Phẩm</h4>
-                  <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                  <h4>{% trans "Nhận Thức Tiềm Năng Sản Phẩm" %}</h4>
+                  <p>{% trans "Ba người bạn đại học biến niềm đam mê khám phá thành sứ mệnh chia sẻ những kỳ quan ẩn giấu với các nhà thám hiểm trên khắp lục địa." %}</p>
                 </div>
               </div>
 
@@ -243,46 +242,48 @@
                   <span class="year">2021</span>
                 </div>
                 <div class="milestone-content">
-                  <h4>Global Expansion</h4>
-                  <p>Established partnerships with local guides in Southeast Asia and South America, bringing our authentic travel philosophy to new continents.</p>
+                  <h4>{% trans "Mở Rộng Toàn Cầu" %}</h4>
+                  <p>{% trans "Thiết lập quan hệ đối tác với hướng dẫn viên địa phương tại Đông Nam Á và Nam Mỹ, mang triết lý du lịch chân thực đến các lục địa mới." %}</p>
                 </div>
               </div>
+
               <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
                 <div class="milestone-marker">
                   <span class="year">2022</span>
                 </div>
                 <div class="milestone-content">
-                  <h4>The Beginning</h4>
-                  <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                  <h4>{% trans "Bắt Đầu Hành Trình" %}</h4>
+                  <p>{% trans "Ba người bạn đại học biến niềm đam mê khám phá thành sứ mệnh chia sẻ những kỳ quan ẩn giấu với các nhà thám hiểm trên khắp lục địa." %}</p>
                 </div>
               </div>
-               
 
               <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="600">
                 <div class="milestone-marker">
                   <span class="year">2023</span>
                 </div>
                 <div class="milestone-content">
-                  <h4>Future Forward</h4>
-                  <p>Achieved B-Corp certification and committed to becoming the first fully regenerative travel company by 2030.</p>
+                  <h4>{% trans "Hướng Tới Tương Lai" %}</h4>
+                  <p>{% trans "Đạt chứng nhận B-Corp và cam kết trở thành công ty du lịch tái tạo hoàn toàn đầu tiên vào năm 2030." %}</p>
                 </div>
               </div>
+
               <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
                 <div class="milestone-marker">
                   <span class="year">2024</span>
                 </div>
                 <div class="milestone-content">
-                  <h4>The Beginning</h4>
-                  <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                  <h4>{% trans "Phát Triển Bền Vững" %}</h4>
+                  <p>{% trans "Ra mắt chương trình bù đắp carbon 150% và hợp tác với 100 cộng đồng bản địa trên toàn cầu." %}</p>
                 </div>
               </div>
+
               <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="600">
                 <div class="milestone-marker">
                   <span class="year">2025</span>
                 </div>
                 <div class="milestone-content">
-                  <h4>Future Forward</h4>
-                  <p>Achieved B-Corp certification and committed to becoming the first fully regenerative travel company by 2030.</p>
+                  <h4>{% trans "Tái Tạo Tương Lai" %}</h4>
+                  <p>{% trans "Hoàn thành mục tiêu trở thành công ty du lịch tái tạo hoàn toàn, với hơn 1 triệu cây được trồng lại." %}</p>
                 </div>
               </div>
             </div>
@@ -295,11 +296,11 @@
           <div class="cta-banner" data-aos="zoom-in" data-aos-delay="300">
             <div class="cta-overlay">
               <div class="cta-content">
-                <h3>Your Next Adventure Awaits</h3>
-                <p>Join thousands of travelers who've discovered the difference authentic, responsible travel makes.</p>
+                <h3>{% trans "Hành Trình Tiếp Theo Đang Chờ Bạn" %}</h3>
+                <p>{% trans "Hãy tham gia cùng hàng ngàn du khách đã khám phá sự khác biệt mà du lịch chân thực, có trách nhiệm mang lại." %}</p>
                 <div class="cta-buttons">
-                  <a href="{% url 'destinations' %}" class="btn btn-primary me-3">Khám Phá Dịch Vụ</a>
-                  <a href="{% url 'contact' %}" class="btn btn-outline">Liên Hệ Hỗ Trợ</a>
+                  <a href="#" class="btn btn-primary me-3">{% trans "Khám Phá Dịch Vụ" %}</a>
+                  <a href="{% url 'contact' %}" class="btn btn-outline">{% trans "Liên Hệ Hỗ Trợ" %}</a>
                 </div>
               </div>
             </div>

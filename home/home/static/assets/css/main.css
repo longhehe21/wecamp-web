@@ -822,13 +822,13 @@ section,
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   z-index: 0;
 }
 
 .travel-hero .hero-background video {
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   object-fit: cover;
 }
 
@@ -1428,6 +1428,7 @@ section,
   margin-bottom: 12px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -5753,6 +5754,7 @@ section,
 }
 
 .blog-posts .title {
+  min-height: 60px;
   font-size: 20px;
   font-weight: 700;
   padding: 0;
@@ -5769,7 +5771,8 @@ section,
 }
 
 .blog-posts .post-author-img {
-  width: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin-right: 15px;
 }

@@ -1,22 +1,44 @@
+from datetime import timezone
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.contrib import messages
+from django.views.i18n import set_language as django_set_language
 from django.core.mail import send_mail
 from django.conf import settings
-from .models import BookingInquiry, GalleryImage
+from django.db.models import Sum
+from .models import BookingInquiry, ContactMessage, Drink, GalleryImage, Review, Tent
 import random
 import string
 import requests
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
-from .models import BlogPost
+from django.utils.http import url_has_allowed_host_and_scheme
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from .models import BlogPost, Combo, MenuItem, Booking
 
 # Thêm vào đầu file (cấu hình Zalo OA)
 # ZALO_ACCESS_TOKEN = 'YOUR_ZALO_OA_ACCESS_TOKEN'  
 # ZALO_API_URL = 'https://openapi.zalo.me/v2.0/oa/message'
 
 def index(request):
-    return render(request, 'index.html')
+    # Lấy 3 bài viết thường mới nhất
+    latest_posts = BlogPost.objects.filter(
+        post_type='regular',
+        is_published=True
+    ).order_by('-published_at')[:3]
+
+    # Lấy 5 đánh giá nổi bật
+    featured_reviews = Review.objects.filter(is_featured=True).order_by('-created_at')[:5]
+
+    # LẤY COMBO ĐỂ HIỂN THỊ TRÊN TRANG CHỦ
+    combos = Combo.objects.filter(is_active=True)
+
+    context = {
+        'latest_posts': latest_posts,
+        'featured_reviews': featured_reviews,
+        'combos': combos,  # TRUYỀN VÀO TEMPLATE
+    }
+    return render(request, 'index.html', context)
 
 def about(request):
     return render(request, 'about.html')
@@ -41,13 +63,27 @@ def gallery_details(request):
 def blog(request):
     featured = BlogPost.objects.filter(post_type='featured', is_published=True).first()
     headlines = BlogPost.objects.filter(post_type='headline', is_published=True)[:2]
-    regular_posts = BlogPost.objects.filter(post_type='regular', is_published=True)
+    regular_posts = BlogPost.objects.filter(post_type='regular', is_published=True).order_by('-published_at')
+
+    paginator = Paginator(regular_posts, 9)
+    page = request.GET.get('page')
+    try:
+        regular_posts_page = paginator.page(page)
+    except PageNotAnInteger:
+        regular_posts_page = paginator.page(1)
+    except EmptyPage:
+        regular_posts_page = paginator.page(paginator.num_pages)
 
     context = {
         'featured': featured,
         'headlines': headlines,
-        'regular_posts': regular_posts,
+        'regular_posts': regular_posts_page,
     }
+
+    # AJAX → chỉ trả về phần bài thường + pagination
+    if request.headers.get('HX-Request'):
+        return render(request, 'blogs/_regular_posts.html', context)
+
     return render(request, 'blogs/blog.html', context)
 
 def blog_details(request, pk):
@@ -76,6 +112,28 @@ def privacy(request):
     return render(request, 'privacy.html')
 
 def contact(request):
+    if request.method == 'POST':
+        try:
+            # LẤY DỮ LIỆU TỪ FORM CŨ
+            name = request.POST.get('name')
+            email = request.POST.get('email')
+            subject = request.POST.get('subject')
+            message = request.POST.get('message')
+
+            # LƯU VÀO DB
+            ContactMessage.objects.create(
+                name=name,
+                email=email,
+                subject=subject,
+                message=message
+            )
+
+            messages.success(request, "Tin nhắn đã được gửi thành công!")
+        except Exception as e:
+            messages.error(request, "Có lỗi xảy ra, vui lòng thử lại.")
+
+        return redirect('contact')
+
     return render(request, 'contact.html')
 
 def page_not_found(request):
@@ -196,9 +254,143 @@ def contact(request):
     return render(request, 'contact.html')
 
 
-# thuê lều 
-def tent_day(request):
-    return render(request, 'tent_services/tent_day.html')  # Tạo file này sau
+MEAL_TYPE = [
+    ('nuong', 'Set Nướng'),
+    ('lau', 'Set Lẩu'),
+    ('mon_le', 'Món Lẻ'),
+    ('combo', 'Combo'),
+]
 
-def tent_night(request):
-    return render(request, 'tent_services/tent_night.html')  # Tạo file này sau
+def meal(request):
+    combos = Combo.objects.filter(is_active=True)
+    menu_items = MenuItem.objects.filter(is_available=True)
+
+    if request.method == 'POST':
+        Booking.objects.create(
+            name=request.POST['name'],
+            phone=request.POST['phone'],
+            date=request.POST['date'],
+            time=request.POST['time'],
+            note=request.POST.get('note', ''),
+            service='Nhà Hàng'
+        )
+        messages.success(request, "Gửi yêu cầu đặt bàn thành công!")
+        return redirect('meal')
+
+    return render(request, 'service/meal.html', {
+        'combos': combos,
+        'menu_items': menu_items,
+        'MEAL_TYPE': MEAL_TYPE,  # BẮT BUỘC
+    })
+
+DRINK_TYPE = [
+    ('tra_sua', 'Trà Sữa'),
+    ('ca_phe', 'Cà Phê'),
+    ('nuoc_ep', 'Nước Ép'),
+    ('tra_hoa_qua', 'Trà Hoa Quả'),
+    ('nuoc_giai_khat', 'Nước Giải Khát'),
+]
+def coffee(request):
+    combos = Combo.objects.filter(is_active=True)
+    drinks = Drink.objects.filter(is_available=True)
+
+    if request.method == 'POST':
+        Booking.objects.create(
+            name=request.POST['name'],
+            phone=request.POST['phone'],
+            date=request.POST['date'],
+            time=request.POST['time'],
+            note=request.POST.get('note', ''),
+            service='Uống Nước'
+        )
+        messages.success(request, "Đặt bàn thành công!")
+        return redirect('coffee')
+
+    return render(request, 'service/coffee.html', {
+        'drinks': drinks,
+        'DRINK_TYPE': DRINK_TYPE,
+        'combos': combos,
+    })
+
+TENT_TYPE = [
+    ('overnight', 'Nghỉ Đêm'),
+    ('day_use', 'Trong Ngày'),
+]
+
+def tent(request):
+    tents = Tent.objects.filter(is_available=True)
+    combos = Combo.objects.filter(meal_type='combo')  # Nếu có combo lều
+
+    if request.method == 'POST':
+        Booking.objects.create(
+            name=request.POST['name'],
+            phone=request.POST['phone'],
+            date=request.POST['date'],
+            time=request.POST['time'],
+            note=request.POST.get('note', ''),
+            service='Lều'
+        )
+        messages.success(request, "Đặt lều thành công!")
+        return redirect('tent')
+
+    return render(request, 'service/tent.html', {
+        'tents': tents,
+        'combos': combos,
+        'TENT_TYPE': TENT_TYPE,
+    })
+
+
+def herbal_foot_soak(request):
+    combos = Combo.objects.filter(meal_type='combo')  # Nếu có combo riêng
+
+    if request.method == 'POST':
+        Booking.objects.create(
+            name=request.POST['name'],
+            phone=request.POST['phone'],
+            date=request.POST['date'],
+            time=request.POST['time'],
+            note=request.POST.get('note', ''),
+            service='Ngâm Chân Thảo Mộc',
+        )
+        messages.success(request, "Đặt lịch ngâm chân thành công!")
+        return redirect('herbal_foot_soak')
+
+    return render(request, 'service/herbal_foot_soak.html', {
+        'combos': combos,
+    })
+
+
+def art_activity(request):
+    combos = Combo.objects.filter(meal_type='combo')  # Nếu có combo nghệ thuật
+
+    if request.method == 'POST':
+        Booking.objects.create(
+            name=request.POST['name'],
+            phone=request.POST['phone'],
+            date=request.POST['date'],
+            time=request.POST['time'],
+            note=request.POST.get('note', ''),
+            service='Vẽ Tranh & Tô Tượng',
+        )
+        messages.success(request, "Đặt lịch hoạt động nghệ thuật thành công!")
+        return redirect('art_activity')
+
+    return render(request, 'service/art_activity.html', {
+        'combos': combos,
+    })
+
+
+def set_language(request):
+    from django.views.i18n import set_language as django_set_language
+    
+    response = django_set_language(request)
+    
+    # LẤY NEXT TỪ POST HOẶC GET
+    next_url = request.POST.get('next') or request.GET.get('next')
+    
+    if next_url and url_has_allowed_host_and_scheme(next_url, allowed_hosts={request.get_host()}):
+        response = redirect(next_url)
+    else:
+        response = redirect('/')
+    
+    return response

@@ -1,0 +1,73 @@
+{% load static %}
+{% load i18n %}
+{% load price_filters %}
+<!-- templates/components/_combo_slider.html -->
+<div class="combo-slider-wrapper" data-aos="fade-up">
+  <div class="swiper init-swiper comboSwiper">
+    
+    <!-- CẤU HÌNH SWIPER -->
+    <script type="application/json" class="swiper-config">
+      {
+        "loop": true,
+        "speed": 800,
+        "autoplay": { "delay": 4000, "disableOnInteraction": false },
+        "slidesPerView": 1,
+        "spaceBetween": 30,
+        "centeredSlides": true,
+        "pagination": {
+          "el": ".combo-pagination",
+          "type": "bullets",
+          "clickable": true
+        }
+      }
+    </script>
+
+    <!-- SLIDES -->
+    <div class="swiper-wrapper">
+      {% for combo in combos %}
+      <div class="swiper-slide">
+        <div class="combo-promo bg-white rounded-4 p-4 p-md-5 shadow-lg h-100 d-flex flex-column">
+          <div class="row align-items-center flex-grow-1">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              {% if combo.image %}
+                <img src="{{ combo.image.url }}" alt="{{ combo.title }}" 
+                     class="img-fluid rounded-3 shadow-sm" 
+                     style="height: 220px; object-fit: cover; border: 4px solid #fff;">
+              {% else %}
+                <img src="{% static 'assets/img/service/combo-default.webp' %}" 
+                     alt="{% trans 'Combo' %}" class="img-fluid rounded-3 shadow-sm" 
+                     style="height: 220px; object-fit: cover; border: 4px solid #fff;">
+              {% endif %}
+            </div>
+            <div class="col-md-5">
+              <span class="badge bg-success mb-2 fs-6">{{ combo.get_meal_type_display }}</span>
+              <h3 class="text-primary mb-2 fw-bold">{{ combo.title }}</h3>
+              <p class="mb-2"><strong>{{ combo.description }}</strong></p>
+              {% if combo.details %}
+                <ul class="list-unstyled small text-muted mb-0">
+                  {{ combo.details|linebreaks }}
+                </ul>
+              {% endif %}
+            </div>
+            <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+              <p class="text-decoration-line-through text-muted small mb-0">{{ combo.original_price|format_price }}</p>
+              <h4 class="text-primary fw-bold mb-3">{{ combo.discount_price|format_price }}</h4>
+              <a href="#booking" class="btn btn-explore w-100 d-flex align-items-center justify-content-center">
+                <i class="bi bi-calendar-check"></i> {% trans "Đặt Ngay" %}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% empty %}
+      <div class="swiper-slide text-center p-5">
+        <p class="text-muted">{% trans "Chưa có combo nào." %}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- CHỈ GIỮ LẠI CHẤM PAGINATION -->
+    <div class="swiper-pagination combo-pagination mt-4"></div>
+
+  </div>
+</div>

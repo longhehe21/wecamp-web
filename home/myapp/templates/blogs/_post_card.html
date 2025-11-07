@@ -1,0 +1,25 @@
+{% load static %}
+{% load i18n %}
+<!-- templates/blogs/_post_card.html -->
+<article>
+  <div class="post-img">
+    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
+  </div>
+  <p class="post-category">{{ post.get_category_display }}</p>
+  <h2 class="title">
+    <a href="{% url 'blog_details' post.id %}" class="clamp-3-lines">{{ post.title }}</a>
+  </h2>
+  <div class="d-flex align-items-center">
+    {% if post.author_image %}
+    <img src="{{ post.author_image.url }}" alt="{{ post.author_name }}" class="img-fluid post-author-img flex-shrink-0">
+    {% else %}
+    <img src="{% static 'assets/img/person/default-avatar.webp' %}" alt="{% trans 'Avatar' %}" class="img-fluid post-author-img flex-shrink-0">
+    {% endif %}
+    <div class="post-meta">
+      <p class="post-author">{{ post.author_name }}</p>
+      <p class="post-date">
+        <time datetime="{{ post.published_at|date:'Y-m-d' }}">{{ post.published_at|date:"M d, Y" }}</time>
+      </p>
+    </div>
+  </div>
+</article>

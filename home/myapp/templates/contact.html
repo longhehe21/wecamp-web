@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Contact - Tour Bootstrap Template{% endblock %}
+{% block title %}{% trans "Liên hệ - Wecamp Cafe Retreat" %}{% endblock %}
 
 {% block content %}
 
@@ -10,15 +10,17 @@
     <style>
         .page-title {
           background-image: url('{% static "assets/img/travel/showcase-8.webp" %}');
+          background-size: cover;
+          background-position: center;
         }
     </style>
     <div class="container position-relative">
-      <h1>Contact</h1>
-      <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <h1>{% trans "Liên Hệ" %}</h1>
+      <p>{% trans "Liên hệ ngay với Wecamp để được tư vấn đặt bàn, thuê lều hoặc trải nghiệm dịch vụ." %}</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'index' %}">Home</a></li>
-          <li class="current">Contact</li>
+          <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+          <li class="current">{% trans "Liên Hệ" %}</li>
         </ol>
       </nav>
     </div>
@@ -26,7 +28,6 @@
 
   <!-- Contact Section -->
   <section id="contact" class="contact section">
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <!-- Contact Info Boxes -->
@@ -37,8 +38,8 @@
               <i class="bi bi-geo-alt"></i>
             </div>
             <div class="info-content">
-              <h4>Our Address</h4>
-              <p>1842 Maple Avenue, Portland, Oregon 97204</p>
+              <h4>{% trans "Địa Chỉ" %}</h4>
+              <p>{% trans "Thôn Tả Van Dáy 1, xã Tả Van" %}<br>{% trans "Thị xã Sapa, Tỉnh Lào Cai" %}</p>
             </div>
           </div>
         </div>
@@ -46,12 +47,12 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
           <div class="contact-info-box">
             <div class="icon-box">
-              <i class="bi bi-envelope"></i>
+              <i class="bi bi-telephone"></i>
             </div>
             <div class="info-content">
-              <h4>Email Address</h4>
-              <p>info@example.com</p>
-              <p>contact@example.com</p>
+              <h4>{% trans "Điện Thoại" %}</h4>
+              <p><a href="tel:0966078081" class="text-decoration-none">096 607 80 81</a></p>
+              <p><a href="https://zalo.me/0966078081" target="_blank" class="text-decoration-none">{% trans "Zalo" %}: 096 607 80 81</a></p>
             </div>
           </div>
         </div>
@@ -59,87 +60,112 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
           <div class="contact-info-box">
             <div class="icon-box">
-              <i class="bi bi-headset"></i>
+              <i class="bi bi-clock"></i>
             </div>
             <div class="info-content">
-              <h4>Hours of Operation</h4>
-              <p>Sunday-Fri: 9 AM - 6 PM</p>
-              <p>Saturday: 9 AM - 4 PM</p>
+              <h4>{% trans "Giờ Mở Cửa" %}</h4>
+              <p>{% trans "T2 - CN: 7:00 - 22:00" %}</p>
+              <p>{% trans "Check-in lều: 14:00 | Check-out: 12:00" %}</p>
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
-    <!-- Google Maps (Full Width) -->
+    <!-- Google Maps -->
     <div class="map-section" data-aos="fade-up" data-aos-delay="200">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4032.602982862842!2d103.89253211111985!3d22.302755642721202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36cd4177b03be133%3A0xf024ca9aaebc7599!2sWecamp%20Cafe%20Retreat!5e1!3m2!1svi!2s!4v1762093744277!5m2!1svi!2s"
+        width="100%" 
+        height="500" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
 
-    <!-- Contact Form Section (Overlapping) -->
+    <!-- Contact Form -->
     <div class="container form-container-overlap">
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
         <div class="col-lg-10">
-          <div class="contact-form-wrapper">
-            <h2 class="text-center mb-4">Get in Touch</h2>
+          <div class="contact-form-wrapper p-4 p-md-5">
+            <h2 class="text-center mb-4">{% trans "Gửi Tin Nhắn Cho Wecamp Cafe Retreat" %}</h2>
 
             <form action="{% url 'contact' %}" method="post" class="php-email-form" role="form">
               {% csrf_token %}
-
               <div class="row g-3">
+
+                <!-- Họ và tên -->
                 <div class="col-md-6">
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-person"></i>
-                      <input type="text" class="form-control" name="name" placeholder="First Name" required="">
+                      <input type="text" class="form-control" name="name" placeholder="{% trans 'Họ và tên' %}" required>
                     </div>
                   </div>
                 </div>
 
+                <!-- Số điện thoại -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="input-with-icon">
+                      <i class="bi bi-telephone"></i>
+                      <input type="tel" class="form-control" name="phone" placeholder="{% trans 'Số điện thoại' %}" required>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email -->
                 <div class="col-md-6">
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-envelope"></i>
-                      <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
+                      <input type="email" class="form-control" name="email" placeholder="{% trans 'Email' %}" required>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-12">
+                <!-- Chủ đề -->
+                <div class="col-md-6">
                   <div class="form-group">
                     <div class="input-with-icon">
-                      <i class="bi bi-text-left"></i>
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                      <i class="bi bi-tag"></i>
+                      <input type="text" class="form-control" name="subject" placeholder="{% trans 'Chủ đề (VD: Đặt bàn, Thuê lều)' %}" required>
                     </div>
                   </div>
                 </div>
 
+                <!-- Nội dung -->
                 <div class="col-12">
                   <div class="form-group">
                     <div class="input-with-icon">
                       <i class="bi bi-chat-dots message-icon"></i>
-                      <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
+                      <textarea class="form-control" name="message" rows="6" placeholder="{% trans 'Nội dung tin nhắn... (VD: Tôi muốn đặt bàn cho 4 người vào 19h tối nay)' %}" required></textarea>
                     </div>
                   </div>
                 </div>
 
+                <!-- Thông báo -->
                 <div class="col-12">
-                  <div class="loading">Loading</div>
+                  <div class="loading">{% trans "Đang gửi..." %}</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">{% trans "Tin nhắn đã được gửi thành công. Cảm ơn bạn!" %}</div>
                 </div>
 
+                <!-- Nút gửi -->
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
+                  <button type="submit" class="btn btn-explore w-100 d-flex justify-content-center align-items-center" style="height: 56px; font-weight: 600; font-size: 1.1rem;">
+                    {% trans "GỬI TIN NHẮN" %}
+                  </button>
                 </div>
+
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-
-  </section><!-- /Contact Section -->
+  </section>
 
 {% endblock %}

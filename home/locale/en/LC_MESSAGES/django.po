@@ -1,0 +1,3109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-03 15:32+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\myapp\templates\about.html:4 .\myapp\templates\about.html:16
+#: .\myapp\templates\about.html:21 .\myapp\templates\base.html:49
+msgid "Giới Thiệu"
+msgstr "Introduce"
+
+#: .\myapp\templates\about.html:17 .\myapp\templates\gallery.html:18
+msgid ""
+"Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat "
+"quibusdam quia assumenda numquam molestias."
+msgstr ""
+"Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat "
+"quibusdam quia assumenda numquam molestias."
+
+#: .\myapp\templates\about.html:20 .\myapp\templates\base.html:8
+#: .\myapp\templates\base.html:48 .\myapp\templates\blogs\blog.html:23
+#: .\myapp\templates\blogs\blog_details.html:25
+#: .\myapp\templates\contact.html:22 .\myapp\templates\gallery.html:21
+#: .\myapp\templates\index.html:4
+#: .\myapp\templates\service\art_activity.html:18
+#: .\myapp\templates\service\coffee.html:20
+#: .\myapp\templates\service\herbal_foot_soak.html:19
+#: .\myapp\templates\service\meal.html:19
+#: .\myapp\templates\service\tent.html:19
+msgid "Trang Chủ"
+msgstr "Home page"
+
+#: .\myapp\templates\about.html:35
+msgid "Định Nghĩa Lại Du Lịch,<br>Một Hành Trình Một Lần"
+msgstr "Redefining Travel,<br>One Journey at a Time"
+
+#: .\myapp\templates\about.html:36
+msgid ""
+"Ra đời từ niềm đam mê khám phá và trải nghiệm, chúng tôi đã dành thập kỷ qua"
+" biến khát khao du lịch thành những hành trình thay đổi cuộc đời cho những "
+"tâm hồn phiêu lưu trên toàn cầu."
+msgstr ""
+"Born from a passion for exploration and experience, we've spent the last "
+"decade turning our thirst for travel into life-changing journeys for "
+"adventurous souls across the globe."
+
+#: .\myapp\templates\about.html:44 .\myapp\templates\about.html:101
+msgid "Hành trình du lịch"
+msgstr "Travel itinerary"
+
+#: .\myapp\templates\about.html:48
+msgid "Khách Du Lịch Hạnh Phúc"
+msgstr "Happy Traveler"
+
+#: .\myapp\templates\about.html:58
+msgid "Câu Chuyện Của Chúng Tôi"
+msgstr "Our Story"
+
+#: .\myapp\templates\about.html:60
+msgid "Về Wecamp Cafe Retreat"
+msgstr "About Wecamp Cafe Retreat"
+
+#: .\myapp\templates\about.html:61
+msgid ""
+"thuộc vị trí đắc địa trong bản Tả Van, thị trấn Sapa, nơi sau lưng là rừng "
+"trước mặt là suối. Bạn sẽ được tận hưởng trọn vẹn tiếng chim hót vào sáng "
+"sớm, tiếng suối rì rào cả ngày, không gian xanh trải rộng liền mạnh từ bầu "
+"trời đến mặt đất."
+msgstr ""
+"Located in a prime location in Ta Van village, Sapa town, where behind is "
+"the forest and in front is the stream. You will fully enjoy the sounds of "
+"birds singing in the early morning, the sound of murmuring streams all day, "
+"and the green space spreading seamlessly from the sky to the ground."
+
+#: .\myapp\templates\about.html:62
+msgid "Với tất cả mong muốn từ tận đáy lòng, "
+msgstr "With all the wishes from the bottom of my heart,"
+
+#: .\myapp\templates\about.html:62
+msgid ""
+" hy vọng bạn có một kì nghỉ trọn vẹn, thảnh thơi khi đến với chúng mình. Một"
+" kì nghỉ thật “chill”!"
+msgstr ""
+"Hope you have a complete and relaxing vacation when you come to us. A truly "
+"\"chill\" vacation!"
+
+#: .\myapp\templates\about.html:69 .\myapp\templates\about.html:93
+msgid "Tầm nhìn của chúng tôi"
+msgstr "Our vision"
+
+#: .\myapp\templates\about.html:70 .\myapp\templates\about.html:94
+msgid "\\"
+msgstr "\\"
+
+#: .\myapp\templates\about.html:82
+msgid "Vị Trí Địa Lý"
+msgstr "Geographic Location"
+
+#: .\myapp\templates\about.html:84
+msgid "Vị Trí Địa Lý Của Wecamp Cafe Retreat"
+msgstr "Geographic Location of Wecamp Cafe Retreat"
+
+#: .\myapp\templates\about.html:85
+msgid "Địa chỉ:"
+msgstr "Address:"
+
+#: .\myapp\templates\about.html:85
+msgid ""
+"Thôn Tả Van Dáy 1, xã Tả Van, thị xã Sapa Tỉnh Lào Cai, Lào Cai Province, "
+"Vietnam 31000"
+msgstr ""
+"Ta Van Day 1 Village, Ta Van Commune, Sapa Town Lao Cai Province, Lao Cai "
+"Province, Vietnam 31000"
+
+#: .\myapp\templates\about.html:86
+msgid "Cách trung tâm thị trấn Sapa khoảng 10km, "
+msgstr "About 10km from Sapa town center,"
+
+#: .\myapp\templates\about.html:86
+msgid " nằm ở cuối bản "
+msgstr "located at the end of the version"
+
+#: .\myapp\templates\about.html:86
+msgid "Tả Van"
+msgstr "Ta Van"
+
+#: .\myapp\templates\about.html:86
+msgid ", là một vị trí đắc địa để "
+msgstr ", is a prime location to"
+
+#: .\myapp\templates\about.html:86
+msgid ""
+" ra đời. Thiên nhiên ở bản có suối Mường Hoa chảy quanh, thung lũng view "
+"pandora, hoàn toàn tách biệt với tiếng xe cộ của thị trấn, có tiếng suối là "
+"âm thanh trắng giúp thư giãn, tạo cảm giác gần gũi với thiên nhiên."
+msgstr ""
+"was born. Nature in the village has Muong Hoa stream flowing around, pandora"
+" view valley, completely separate from the sound of town vehicles, the sound"
+" of the stream is white sound that helps relax, creating a feeling of "
+"closeness to nature."
+
+#: .\myapp\templates\about.html:105
+msgid "Quốc Gia"
+msgstr "Nation"
+
+#: .\myapp\templates\about.html:109
+msgid "Du Khách Hạnh Phúc"
+msgstr "Happy Traveler"
+
+#: .\myapp\templates\about.html:120
+msgid "Điều Gì Làm Cho Chúng Tôi Khác Biệt"
+msgstr "What Makes Us Different"
+
+#: .\myapp\templates\about.html:121
+msgid "Sáu trụ cột định hình mọi hành trình chúng tôi tạo ra"
+msgstr "Six pillars shape every journey we create"
+
+#: .\myapp\templates\about.html:131
+msgid "Hợp Tác Địa Phương"
+msgstr "Local Cooperation"
+
+#: .\myapp\templates\about.html:132
+msgid "Hợp tác trực tiếp với cộng đồng bản địa"
+msgstr "Collaborate directly with indigenous communities"
+
+#: .\myapp\templates\about.html:135
+msgid ""
+"Chúng tôi làm việc độc quyền với hướng dẫn viên địa phương – những người kể "
+"chuyện đam mê và đại sứ văn hóa, đảm bảo trải nghiệm chân thực và hỗ trợ "
+"kinh tế địa phương."
+msgstr ""
+"We work exclusively with local guides – passionate storytellers and cultural"
+" ambassadors, ensuring authentic experiences and supporting the local "
+"economy."
+
+#: .\myapp\templates\about.html:146
+msgid "An Toàn Là Ưu Tiên"
+msgstr "Safety Is Priority"
+
+#: .\myapp\templates\about.html:147
+msgid "Giao thức an toàn toàn diện và hỗ trợ khẩn cấp"
+msgstr "Comprehensive safety protocols and emergency assistance"
+
+#: .\myapp\templates\about.html:150
+msgid ""
+"Từ buổi hướng dẫn an toàn trước chuyến đến đội phản ứng khẩn cấp 24/7, sự an"
+" toàn của bạn là ưu tiên hàng đầu trong mọi hành trình."
+msgstr ""
+"From pre-trip safety briefings to 24/7 emergency response teams, your safety"
+" is a top priority on every journey."
+
+#: .\myapp\templates\about.html:161
+msgid "Ý Thức Về Carbon"
+msgstr "Carbon Consciousness"
+
+#: .\myapp\templates\about.html:162
+#, python-format
+msgid "Bù đắp 150%% lượng khí thải du lịch"
+msgstr "Offset 150%% of tourism emissions"
+
+#: .\myapp\templates\about.html:165
+msgid ""
+"Thông qua các dự án trồng rừng và đầu tư năng lượng tái tạo, chúng tôi đảm "
+"bảo mỗi chuyến đi đóng góp tích cực vào việc phục hồi môi trường."
+msgstr ""
+"Through reforestation projects and renewable energy investments, we ensure "
+"each trip makes a positive contribution to environmental recovery."
+
+#: .\myapp\templates\about.html:176
+msgid "Hành Trình Cá Nhân Hóa"
+msgstr "Personalized Journey"
+
+#: .\myapp\templates\about.html:177
+msgid "Thiết kế theo sở thích của bạn"
+msgstr "Design according to your preferences"
+
+#: .\myapp\templates\about.html:180
+msgid ""
+"Không có tour đóng gói. Mỗi hành trình được tùy chỉnh theo phong cách du "
+"lịch, mức độ thể lực và sở thích cá nhân của bạn."
+msgstr ""
+"There are no packaged tours. Each itinerary is customized to your travel "
+"style, fitness level and personal preferences."
+
+#: .\myapp\templates\about.html:191
+msgid "Chính Sách Linh Hoạt"
+msgstr "Flexible Policy"
+
+#: .\myapp\templates\about.html:192
+msgid "Cuộc sống có nhiều biến cố, chúng tôi hiểu"
+msgstr "Life has many events, we understand"
+
+#: .\myapp\templates\about.html:195
+msgid ""
+"Hủy miễn phí đến 30 ngày trước khởi hành, thay đổi ngày dễ dàng, và các lựa "
+"chọn bảo hiểm du lịch toàn diện mang lại sự yên tâm cho bạn."
+msgstr ""
+"Free cancellation up to 30 days before departure, easy date changes, and "
+"comprehensive travel insurance options give you peace of mind."
+
+#: .\myapp\templates\about.html:206
+msgid "Ký Ức Trọn Đời"
+msgstr "Lifetime Memories"
+
+#: .\myapp\templates\about.html:207
+msgid "Trải nghiệm thay đổi góc nhìn"
+msgstr "Experience a change of perspective"
+
+#: .\myapp\templates\about.html:210
+msgid ""
+"Du khách thường nói hành trình cùng chúng tôi đã thay đổi cách nhìn cuộc "
+"sống. Chúng tôi tạo ra những khoảnh khắc trở thành kỷ niệm quý giá qua nhiều"
+" năm."
+msgstr ""
+"Travelers often say traveling with us has changed their outlook on life. We "
+"create moments that become precious memories over the years."
+
+#: .\myapp\templates\about.html:223
+msgid "Lịch Sử Hình Thành"
+msgstr "History of Formation"
+
+#: .\myapp\templates\about.html:224
+msgid "Những cột mốc quan trọng định hình chúng tôi hôm nay"
+msgstr "Important milestones shape who we are today"
+
+#: .\myapp\templates\about.html:235
+msgid "Nhận Thức Tiềm Năng Sản Phẩm"
+msgstr "Realizing Product Potential"
+
+#: .\myapp\templates\about.html:236 .\myapp\templates\about.html:256
+msgid ""
+"Ba người bạn đại học biến niềm đam mê khám phá thành sứ mệnh chia sẻ những "
+"kỳ quan ẩn giấu với các nhà thám hiểm trên khắp lục địa."
+msgstr ""
+"Three college friends turn their passion for exploration into a mission to "
+"share hidden wonders with explorers across the continent."
+
+#: .\myapp\templates\about.html:245
+msgid "Mở Rộng Toàn Cầu"
+msgstr "Global Expansion"
+
+#: .\myapp\templates\about.html:246
+msgid ""
+"Thiết lập quan hệ đối tác với hướng dẫn viên địa phương tại Đông Nam Á và "
+"Nam Mỹ, mang triết lý du lịch chân thực đến các lục địa mới."
+msgstr ""
+"Establish partnerships with local guides in Southeast Asia and South "
+"America, bringing the philosophy of authentic travel to new continents."
+
+#: .\myapp\templates\about.html:255
+msgid "Bắt Đầu Hành Trình"
+msgstr "Start Your Journey"
+
+#: .\myapp\templates\about.html:265
+msgid "Hướng Tới Tương Lai"
+msgstr "Towards the Future"
+
+#: .\myapp\templates\about.html:266
+msgid ""
+"Đạt chứng nhận B-Corp và cam kết trở thành công ty du lịch tái tạo hoàn toàn"
+" đầu tiên vào năm 2030."
+msgstr ""
+"Achieve B-Corp certification and commit to becoming the first fully "
+"renewable travel company by 2030."
+
+#: .\myapp\templates\about.html:275
+msgid "Phát Triển Bền Vững"
+msgstr "Sustainable Development"
+
+#: .\myapp\templates\about.html:276
+#, python-format
+msgid ""
+"Ra mắt chương trình bù đắp carbon 150%% và hợp tác với 100 cộng đồng bản địa"
+" trên toàn cầu."
+msgstr ""
+"Launched a 150%% carbon offset program and partnered with 100 indigenous "
+"communities globally."
+
+#: .\myapp\templates\about.html:285
+msgid "Tái Tạo Tương Lai"
+msgstr "Recreating the Future"
+
+#: .\myapp\templates\about.html:286
+msgid ""
+"Hoàn thành mục tiêu trở thành công ty du lịch tái tạo hoàn toàn, với hơn 1 "
+"triệu cây được trồng lại."
+msgstr ""
+"Accomplished goal of becoming a fully regenerative travel company, with over"
+" 1 million trees replanted."
+
+#: .\myapp\templates\about.html:299
+msgid "Hành Trình Tiếp Theo Đang Chờ Bạn"
+msgstr "Your Next Journey Is Waiting For You"
+
+#: .\myapp\templates\about.html:300
+msgid ""
+"Hãy tham gia cùng hàng ngàn du khách đã khám phá sự khác biệt mà du lịch "
+"chân thực, có trách nhiệm mang lại."
+msgstr ""
+"Join thousands of travelers who have discovered the difference that "
+"authentic, responsible travel can make."
+
+#: .\myapp\templates\about.html:302
+msgid "Khám Phá Dịch Vụ"
+msgstr "Explore Services"
+
+#: .\myapp\templates\about.html:303
+msgid "Liên Hệ Hỗ Trợ"
+msgstr "Contact Support"
+
+#: .\myapp\templates\base.html:9
+msgid "Khu nghỉ dưỡng xanh giữa núi rừng Sapa"
+msgstr "Green resort in the middle of Sapa mountains and forests"
+
+#: .\myapp\templates\base.html:10
+msgid "Wecamp, Sapa, nghỉ dưỡng, cà phê, thảo mộc, nghệ thuật"
+msgstr "Wecamp, Sapa, resort, coffee, herbs, art"
+
+#: .\myapp\templates\base.html:50 .\myapp\templates\base.html:140
+msgid "Cảnh Quan"
+msgstr "Landscape"
+
+#: .\myapp\templates\base.html:51
+msgid "Blogs"
+msgstr "Blogs"
+
+#: .\myapp\templates\base.html:55
+msgid "Dịch Vụ"
+msgstr "Service"
+
+#: .\myapp\templates\base.html:58 .\myapp\templates\base.html:148
+#: .\myapp\templates\index.html:82 .\myapp\templates\service\meal.html:20
+msgid "Nhà Hàng"
+msgstr "Restaurant"
+
+#: .\myapp\templates\base.html:59 .\myapp\templates\base.html:149
+#: .\myapp\templates\index.html:83 .\myapp\templates\index.html:280
+msgid "Đồ Uống"
+msgstr "Beverage"
+
+#: .\myapp\templates\base.html:60 .\myapp\templates\base.html:150
+#: .\myapp\templates\index.html:85 .\myapp\templates\index.html:301
+#: .\myapp\templates\service\tent.html:20
+msgid "Nghỉ Dưỡng"
+msgstr "Vacation"
+
+#: .\myapp\templates\base.html:62
+msgid "Ngâm Chân Thảo Mộc, Đốt Lửa Trại & Nướng Kẹo Dẻo"
+msgstr "Herbal Foot Soak, Campfire & Grilling Marshmallows"
+
+#: .\myapp\templates\base.html:64
+msgid "Tô Tượng & Vẽ Tranh"
+msgstr "Statue Painting & Painting"
+
+#: .\myapp\templates\base.html:68 .\myapp\templates\base.html:141
+#: .\myapp\templates\contact.html:18 .\myapp\templates\contact.html:23
+msgid "Liên Hệ"
+msgstr "Contact"
+
+#: .\myapp\templates\base.html:79
+msgid "Tiếng Việt"
+msgstr "Vietnamese"
+
+#: .\myapp\templates\base.html:110 .\myapp\templates\index.html:245
+msgid "Khám Phá"
+msgstr "Discover"
+
+#: .\myapp\templates\base.html:128 .\myapp\templates\contact.html:42
+msgid "Thôn Tả Van Dáy 1, xã Tả Van"
+msgstr "Ta Van Day 1 village, Ta Van commune"
+
+#: .\myapp\templates\base.html:129
+msgid "Thị xã Sapa, Tỉnh Lào Cai, Vietnam"
+msgstr "Sapa Town, Lao Cai Province, Vietnam"
+
+#: .\myapp\templates\base.html:130
+msgid "Điện thoại:"
+msgstr "Phone:"
+
+#: .\myapp\templates\base.html:131
+msgid "Email:"
+msgstr "E-mail:"
+
+#: .\myapp\templates\base.html:136
+msgid "Liên kết hữu ích"
+msgstr "Useful links"
+
+#: .\myapp\templates\base.html:138
+msgid "Trang chủ"
+msgstr "Home page"
+
+#: .\myapp\templates\base.html:139
+msgid "Giới thiệu"
+msgstr "Introduce"
+
+#: .\myapp\templates\base.html:146
+msgid "Dịch vụ của chúng tôi"
+msgstr "Our Services"
+
+#: .\myapp\templates\base.html:151 .\myapp\templates\index.html:84
+msgid "Ngâm chân thảo mộc"
+msgstr "Herbal foot soak"
+
+#: .\myapp\templates\base.html:152 .\myapp\templates\index.html:86
+msgid "Vẽ tranh & tô tượng"
+msgstr "Painting & painting"
+
+#: .\myapp\templates\base.html:157
+msgid "Theo dõi chúng tôi"
+msgstr "Follow us"
+
+#: .\myapp\templates\base.html:158
+msgid ""
+"Cras fermentum odio eu feugiat lide par naso tierra videa magna derita "
+"valies"
+msgstr ""
+"Cras fermentum odio eu feugiat lide par naso tierra videa magna derita "
+"valies"
+
+#: .\myapp\templates\base.html:170
+msgid "Bản quyền"
+msgstr "Copyright"
+
+#: .\myapp\templates\base.html:170
+msgid "Tất cả quyền được bảo lưu"
+msgstr "All rights reserved"
+
+#: .\myapp\templates\base.html:172
+msgid "Thiết kế bởi"
+msgstr "Designed by"
+
+#: .\myapp\templates\base.html:182
+msgid "Đặt bàn ngay"
+msgstr "Book your table now"
+
+#: .\myapp\templates\base.html:189
+msgid "Chat Messenger"
+msgstr "Chat Messenger"
+
+#: .\myapp\templates\base.html:196
+msgid "Chat Zalo"
+msgstr "Chat Zalo"
+
+#: .\myapp\templates\base.html:202
+msgid "Gọi ngay"
+msgstr "Call now"
+
+#: .\myapp\templates\blogs\_post_card.html:16
+#: .\myapp\templates\blogs\blog_details.html:52
+msgid "Avatar"
+msgstr "Avatar"
+
+#: .\myapp\templates\blogs\_regular_posts.html:14
+#: .\myapp\templates\index.html:381
+msgid "Chưa có bài viết nào."
+msgstr "There are no posts yet."
+
+#: .\myapp\templates\blogs\_regular_posts.html:30
+#: .\myapp\templates\blogs\_regular_posts.html:35
+msgid "Trang trước"
+msgstr "Previous page"
+
+#: .\myapp\templates\blogs\_regular_posts.html:48
+#, python-format
+msgid "Trang %(num)s"
+msgstr "Page %(num)s"
+
+#: .\myapp\templates\blogs\_regular_posts.html:62
+#: .\myapp\templates\blogs\_regular_posts.html:67
+msgid "Trang sau"
+msgstr "Next page"
+
+#: .\myapp\templates\blogs\blog.html:5
+msgid "Blog - Wecamp"
+msgstr "Blog - Wecamp"
+
+#: .\myapp\templates\blogs\blog.html:19 .\myapp\templates\blogs\blog.html:24
+#: .\myapp\templates\blogs\blog_details.html:26
+msgid "Blog"
+msgstr "Blog"
+
+#: .\myapp\templates\blogs\blog.html:20
+msgid "Khám phá những câu chuyện, kinh nghiệm và tin tức mới nhất từ Wecamp."
+msgstr "Discover the latest stories, experiences and news from Wecamp."
+
+#: .\myapp\templates\blogs\blog.html:76
+msgid "Các Bài Viết Mới Nhất"
+msgstr "Latest Articles"
+
+#: .\myapp\templates\blogs\blog.html:77
+msgid "Những câu chuyện mới nhất từ Wecamp"
+msgstr "Latest stories from Wecamp"
+
+#: .\myapp\templates\blogs\blog_details.html:5
+msgid "Wecamp Blog"
+msgstr "Wecamp Blog"
+
+#: .\myapp\templates\blogs\blog_details.html:21
+msgid "Chi Tiết Bài Viết"
+msgstr "Article Details"
+
+#: .\myapp\templates\blogs\blog_details.html:22
+msgid "Khám phá những câu chuyện và trải nghiệm tại Wecamp."
+msgstr "Discover stories and experiences at Wecamp."
+
+#: .\myapp\templates\blogs\blog_details.html:27
+msgid "Chi Tiết"
+msgstr "Detail"
+
+#: .\myapp\templates\blogs\blog_details.html:56
+msgid "Người đăng bài"
+msgstr "Poster"
+
+#: .\myapp\templates\blogs\blog_details.html:64
+msgid "phút đọc"
+msgstr "minutes of reading"
+
+#: .\myapp\templates\blogs\blog_details.html:67
+msgid "Bình luận"
+msgstr "Comment"
+
+#: .\myapp\templates\blogs\blog_details.html:79
+msgid "Mục Lục"
+msgstr "Index"
+
+#: .\myapp\templates\blogs\blog_details.html:91
+msgid "Không có mục lục."
+msgstr "There is no table of contents."
+
+#: .\myapp\templates\blogs\blog_details.html:103
+msgid "Chia sẻ bài viết"
+msgstr "Share the article"
+
+#: .\myapp\templates\blogs\blog_details.html:121
+msgid "Chủ đề liên quan"
+msgstr "Related topics"
+
+#: .\myapp\templates\blogs\blog_details.html:125
+msgid "Du lịch"
+msgstr "Tourism"
+
+#: .\myapp\templates\components\_combo_slider.html:38
+msgid "Combo"
+msgstr "Combos"
+
+#: .\myapp\templates\components\_combo_slider.html:56
+#: .\myapp\templates\index.html:264 .\myapp\templates\index.html:292
+#: .\myapp\templates\index.html:313 .\myapp\templates\index.html:334
+#: .\myapp\templates\index.html:355
+#: .\myapp\templates\service\art_activity.html:103
+msgid "Đặt Ngay"
+msgstr "Book Now"
+
+#: .\myapp\templates\components\_combo_slider.html:64
+msgid "Chưa có combo nào."
+msgstr "There are no combos yet."
+
+#: .\myapp\templates\contact.html:4
+msgid "Liên hệ - Wecamp Cafe Retreat"
+msgstr "Contact - Wecamp Cafe Retreat"
+
+#: .\myapp\templates\contact.html:19
+msgid ""
+"Liên hệ ngay với Wecamp để được tư vấn đặt bàn, thuê lều hoặc trải nghiệm "
+"dịch vụ."
+msgstr ""
+"Contact Wecamp immediately for advice on booking a table, renting a tent or "
+"experiencing the service."
+
+#: .\myapp\templates\contact.html:41
+msgid "Địa Chỉ"
+msgstr "Address"
+
+#: .\myapp\templates\contact.html:42
+msgid "Thị xã Sapa, Tỉnh Lào Cai"
+msgstr "Sapa Town, Lao Cai Province"
+
+#: .\myapp\templates\contact.html:53
+msgid "Điện Thoại"
+msgstr "Phone"
+
+#: .\myapp\templates\contact.html:55
+msgid "Zalo"
+msgstr "Zalo"
+
+#: .\myapp\templates\contact.html:66
+msgid "Giờ Mở Cửa"
+msgstr "Opening Hours"
+
+#: .\myapp\templates\contact.html:67
+msgid "T2 - CN: 7:00 - 22:00"
+msgstr "Monday - Sunday: 7:00 - 22:00"
+
+#: .\myapp\templates\contact.html:68
+msgid "Check-in lều: 14:00 | Check-out: 12:00"
+msgstr "Check-in tent: 14:00 | Check-out: 12:00"
+
+#: .\myapp\templates\contact.html:93
+msgid "Gửi Tin Nhắn Cho Wecamp Cafe Retreat"
+msgstr "Send Wecamp Cafe Retreat a Message"
+
+#: .\myapp\templates\contact.html:104
+msgid "Họ và tên"
+msgstr "Full name"
+
+#: .\myapp\templates\contact.html:114 .\myapp\templates\index.html:473
+#: .\myapp\templates\service\art_activity.html:167
+#: .\myapp\templates\service\coffee.html:135
+#: .\myapp\templates\service\herbal_foot_soak.html:172
+#: .\myapp\templates\service\meal.html:134
+#: .\myapp\templates\service\tent.html:135
+msgid "Số điện thoại"
+msgstr "Phone number"
+
+#: .\myapp\templates\contact.html:124
+msgid "Email"
+msgstr "E-mail"
+
+#: .\myapp\templates\contact.html:134
+msgid "Chủ đề (VD: Đặt bàn, Thuê lều)"
+msgstr "Topic (eg: Book a table, Rent a tent)"
+
+#: .\myapp\templates\contact.html:144
+msgid ""
+"Nội dung tin nhắn... (VD: Tôi muốn đặt bàn cho 4 người vào 19h tối nay)"
+msgstr ""
+"Message content... (Example: I want to book a table for 4 people at 7pm "
+"tonight)"
+
+#: .\myapp\templates\contact.html:151
+msgid "Đang gửi..."
+msgstr "Sending..."
+
+#: .\myapp\templates\contact.html:153
+msgid "Tin nhắn đã được gửi thành công. Cảm ơn bạn!"
+msgstr "The message has been sent successfully. Thank you!"
+
+#: .\myapp\templates\contact.html:159
+msgid "GỬI TIN NHẮN"
+msgstr "SEND MESSAGE"
+
+#: .\myapp\templates\emails\base_email.html:25
+msgid "Xác nhận đặt chỗ"
+msgstr "Booking confirmation"
+
+#: .\myapp\templates\emails\base_email.html:36
+msgid "Thôn Tả Van Dáy 1, SaPa"
+msgstr "Ta Van Day 1 Village, SaPa"
+
+#: .\myapp\templates\emails\base_email.html:39
+msgid "Cảm ơn bạn đã đồng hành cùng Wecamp!"
+msgstr "Thank you for accompanying Wecamp!"
+
+#: .\myapp\templates\emails\email_art.html:3
+#: .\myapp\templates\emails\email_art.html:4
+msgid "Đặt hoạt động sáng tạo!"
+msgstr "Book creative activities!"
+
+#: .\myapp\templates\emails\email_art.html:7
+#: .\myapp\templates\emails\email_meal.html:7
+#, python-format
+msgid "Xin chào <strong>%(name)s</strong>,"
+msgstr "Hello <strong>%(name)s</strong>,"
+
+#: .\myapp\templates\emails\email_art.html:9
+msgid "Sáng tạo cùng màu sắc tại Wecamp!"
+msgstr "Get creative with color at Wecamp!"
+
+#: .\myapp\templates\emails\email_art.html:14
+msgid "Thông tin đặt chỗ:"
+msgstr "Reservation information:"
+
+#: .\myapp\templates\emails\email_art.html:16
+#: .\myapp\templates\emails\email_meal.html:16
+msgid "Ngày"
+msgstr "Day"
+
+#: .\myapp\templates\emails\email_art.html:17
+#: .\myapp\templates\emails\email_meal.html:17
+msgid "Số người"
+msgstr "Number"
+
+#: .\myapp\templates\emails\email_art.html:21
+msgid "Giá"
+msgstr "Price"
+
+#: .\myapp\templates\emails\email_art.html:21
+#: .\myapp\templates\service\art_activity.html:42
+#: .\myapp\templates\service\herbal_foot_soak.html:46
+#: .\myapp\templates\service\herbal_foot_soak.html:74
+msgid "người"
+msgstr "People"
+
+#: .\myapp\templates\emails\email_art.html:23
+msgid "Xem mẫu tượng"
+msgstr "See statue samples"
+
+#: .\myapp\templates\emails\email_meal.html:3
+#: .\myapp\templates\emails\email_meal.html:4
+msgid "Đặt bàn thành công!"
+msgstr "Booked table successfully!"
+
+#: .\myapp\templates\emails\email_meal.html:9
+msgid "Cảm ơn bạn đã chọn <strong>Wecamp</strong> cho bữa ăn của mình!"
+msgstr "Thank you for choosing <strong>Wecamp</strong> for your meal!"
+
+#: .\myapp\templates\emails\email_meal.html:14
+msgid "Thông tin đặt bàn:"
+msgstr "Table reservation information:"
+
+#: .\myapp\templates\emails\email_meal.html:21
+msgid "Chúng tôi sẽ gọi để xác nhận trong vòng <strong>2 giờ</strong>."
+msgstr "We will call to confirm within <strong>2 hours</strong>."
+
+#: .\myapp\templates\emails\email_meal.html:23
+msgid "Xem thực đơn"
+msgstr "View menu"
+
+#: .\myapp\templates\gallery.html:5 .\myapp\templates\gallery.html:17
+#: .\myapp\templates\gallery.html:22
+msgid "Thư Viện"
+msgstr "Library"
+
+#: .\myapp\templates\gallery.html:100
+msgid "Wecamp"
+msgstr "Wecamp"
+
+#: .\myapp\templates\gallery.html:121
+msgid "Thư viện ảnh đang được cập nhật..."
+msgstr "Photo gallery is being updated..."
+
+#: .\myapp\templates\gallery.html:134 .\myapp\templates\service\coffee.html:75
+#: .\myapp\templates\service\meal.html:72
+#: .\myapp\templates\service\tent.html:73
+msgid "Tất cả"
+msgstr "All"
+
+#: .\myapp\templates\gallery.html:135
+msgid "Xuân"
+msgstr "Spring"
+
+#: .\myapp\templates\gallery.html:136
+msgid "Hạ"
+msgstr "Ha"
+
+#: .\myapp\templates\gallery.html:137
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr "Collect"
+
+#: .\myapp\templates\gallery.html:138
+msgid "Đông"
+msgstr "Winter"
+
+#: .\myapp\templates\gallery.html:152
+msgid "Xem ảnh"
+msgstr "See photos"
+
+#: .\myapp\templates\gallery.html:153
+msgid "Chi tiết"
+msgstr "Detail"
+
+#: .\myapp\templates\gallery.html:159
+msgid "Chưa có ảnh nào trong thư viện."
+msgstr "There are no photos in the gallery yet."
+
+#: .\myapp\templates\index.html:22
+msgid "KHU CAFE BÊN SUỐI LỚN NHẤT BẢN TẢ VAN SAPA"
+msgstr "THE LARGEST STREAMside CAFE AREA IN TA VAN SAPA"
+
+#: .\myapp\templates\index.html:23
+msgid ""
+"Wecamp Cafe Retreat, tổ hợp cafe và ăn uống lớn nhất Bản Tả Van, Sapa, nằm "
+"bên dòng suối thơ mộng, mang đến trải nghiệm thư giãn giữa thiên nhiên xanh "
+"mát. Ngoài thưởng thức cà phê và các bữa ăn sáng, trưa, tối đậm chất địa "
+"phương, Wecamp còn cung cấp dịch vụ Nghỉ Dưỡng theo giờ, ngâm chân thảo mộc "
+"thư giãn, vẽ tranh tô tượng sáng tạo, và tổ chức các tour trekking. Mở cửa "
+"từ 7h30 đến 19h30, đây là điểm đến lý tưởng cho mọi du khách muốn tận hưởng "
+"không gian độc đáo và đa dạng hoạt động!"
+msgstr ""
+"Wecamp Cafe Retreat, the largest cafe and dining complex in Ta Van Village, "
+"Sapa, is located next to a romantic stream, providing a relaxing experience "
+"amidst cool green nature. In addition to enjoying coffee and local "
+"breakfast, lunch, and dinner, Wecamp also offers hourly Retreat services, "
+"relaxing herbal foot baths, creative sculpting, and organizing trekking "
+"tours. Open from 7:30 a.m. to 7:30 p.m., this is an ideal destination for "
+"all visitors who want to enjoy a unique space and diverse activities!"
+
+#: .\myapp\templates\index.html:25
+msgid "Khám Phá Ngay"
+msgstr "Explore Now"
+
+#: .\myapp\templates\index.html:26
+msgid "Xem Các Dịch Vụ"
+msgstr "View Services"
+
+#: .\myapp\templates\index.html:34 .\myapp\templates\service\coffee.html:55
+#: .\myapp\templates\service\meal.html:52
+msgid "Đặt Bàn Ngay"
+msgstr "Book Your Table Now"
+
+#: .\myapp\templates\index.html:38
+msgid "Họ & Tên *"
+msgstr "Full name *"
+
+#: .\myapp\templates\index.html:39
+msgid "Nguyễn Văn A"
+msgstr "Nguyen Van A"
+
+#: .\myapp\templates\index.html:43
+msgid "Email *"
+msgstr "Email *"
+
+#: .\myapp\templates\index.html:44
+msgid "you@example.com"
+msgstr "you@example.com"
+
+#: .\myapp\templates\index.html:48
+msgid "Số điện thoại *"
+msgstr "Phone number *"
+
+#: .\myapp\templates\index.html:49
+msgid "0901234567"
+msgstr "0901234567"
+
+#: .\myapp\templates\index.html:55
+msgid "Ngày *"
+msgstr "Day *"
+
+#: .\myapp\templates\index.html:61
+msgid "Số lượng người *"
+msgstr "Number of people *"
+
+#: .\myapp\templates\index.html:69
+msgid "Ví dụ: 5"
+msgstr "For example: 5"
+
+#: .\myapp\templates\index.html:73
+msgid "Tối thiểu 1 người"
+msgstr "Minimum 1 person"
+
+#: .\myapp\templates\index.html:79
+msgid "Dịch vụ *"
+msgstr "Service *"
+
+#: .\myapp\templates\index.html:81
+msgid "Chọn dịch vụ"
+msgstr "Select service"
+
+#: .\myapp\templates\index.html:87
+msgid "Khác"
+msgstr "Other"
+
+#: .\myapp\templates\index.html:92
+msgid "Gửi Thông Tin Đặt Bàn"
+msgstr "Submit Table Reservation Information"
+
+#: .\myapp\templates\index.html:112
+msgid "Thư Giãn Giữa Thiên Nhiên"
+msgstr "Relax Amidst Nature"
+
+#: .\myapp\templates\index.html:113
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+" quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat."
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+" quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat."
+
+#: .\myapp\templates\index.html:114
+msgid ""
+"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
+" eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, "
+"sunt in culpa qui officia deserunt mollit anim id est laborum."
+msgstr ""
+"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
+" eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, "
+"sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+#: .\myapp\templates\index.html:118
+msgid "Khách Hàng Hài Lòng"
+msgstr "Satisfied Customers"
+
+#: .\myapp\templates\index.html:125
+msgid "Trải nghiệm du lịch"
+msgstr "Travel experience"
+
+#: .\myapp\templates\index.html:128
+msgid "Năm Hoạt Động"
+msgstr "Year of Operation"
+
+#: .\myapp\templates\index.html:138
+msgid "Bạn sẽ nhận lại gì khi tới Wecamp Cafe Retreat ?"
+msgstr "What will you get back when you come to Wecamp Cafe Retreat?"
+
+#: .\myapp\templates\index.html:139
+msgid ""
+"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim "
+"ad minim veniam, quis nostrud exercitation ullamco laboris."
+msgstr ""
+"Sed due to eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+"enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+
+#: .\myapp\templates\index.html:149
+msgid "Ẩm Thực Đa Dạng"
+msgstr "Diverse Cuisine"
+
+#: .\myapp\templates\index.html:150
+msgid ""
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+"doloremque laudantium totam."
+msgstr ""
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium "
+"doloremque laudantium totam."
+
+#: .\myapp\templates\index.html:159
+msgid "An Toàn & Bảo Mật"
+msgstr "Safety & Security"
+
+#: .\myapp\templates\index.html:160
+msgid ""
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis "
+"praesentium voluptatum."
+msgstr ""
+"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis "
+"praesentium voluptatum."
+
+#: .\myapp\templates\index.html:169
+msgid "Giá Tốt Nhất"
+msgstr "Best Price"
+
+#: .\myapp\templates\index.html:170
+msgid ""
+"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur "
+"adipisci velit."
+msgstr ""
+"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur "
+"adipisci velit."
+
+#: .\myapp\templates\index.html:179
+msgid "Hỗ Trợ 24/7"
+msgstr "24/7 Support"
+
+#: .\myapp\templates\index.html:180
+msgid ""
+"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis "
+"suscipit laboriosam nisi."
+msgstr ""
+"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis "
+"suscipit laboriosam nisi."
+
+#: .\myapp\templates\index.html:189
+msgid "Điểm Đến Toàn Cầu"
+msgstr "Global Destinations"
+
+#: .\myapp\templates\index.html:190
+msgid ""
+"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam "
+"nihil molestiae."
+msgstr ""
+"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam "
+"nihil molestiae."
+
+#: .\myapp\templates\index.html:199
+msgid "Trải Nghiệm Cao Cấp"
+msgstr "Premium Experience"
+
+#: .\myapp\templates\index.html:200
+msgid ""
+"Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia "
+"deserunt mollit anim."
+msgstr ""
+"Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia "
+"deserunt mollit anim."
+
+#: .\myapp\templates\index.html:214
+msgid "SIÊU ƯU ĐÃI"
+msgstr "SUPER OFFER"
+
+#: .\myapp\templates\index.html:215
+msgid "Khám Phá Các Combo Siêu Ưu Đãi Tại"
+msgstr "Discover Super Deal Combos At"
+
+#: .\myapp\templates\index.html:222
+msgid "Chưa có combo nào đang được ưu đãi."
+msgstr "There are no combos currently on offer."
+
+#: .\myapp\templates\index.html:232
+msgid "Các dịch vụ tại"
+msgstr "Services at"
+
+#: .\myapp\templates\index.html:233
+msgid "Khu cafe lớn nhất Tả Van"
+msgstr "The largest cafe area in Ta Van"
+
+#: .\myapp\templates\index.html:243 .\myapp\templates\index.html:246
+msgid "Ẩm Thực Tây Bắc"
+msgstr "Northwest Cuisine"
+
+#: .\myapp\templates\index.html:248
+msgid "Cơm lam, thịt nướng, lẩu thắng cố – đậm chất núi rừng."
+msgstr ""
+"Lam rice, grilled meat, Thang Co hot pot - full of mountain and forest "
+"flavors."
+
+#: .\myapp\templates\index.html:252
+msgid "22 Đánh Giá"
+msgstr "22 Reviews"
+
+#: .\myapp\templates\index.html:260
+msgid "Chỉ Từ"
+msgstr "Just From"
+
+#: .\myapp\templates\index.html:281
+msgid "Mát Lạnh"
+msgstr "Cool"
+
+#: .\myapp\templates\index.html:284
+msgid "Đồ Uống Đa Dạng"
+msgstr "Diverse Drinks"
+
+#: .\myapp\templates\index.html:286
+msgid "Cà phê, trà sữa, nước ép – mát lạnh bên suối."
+msgstr "Coffee, milk tea, juice - cool by the stream."
+
+#: .\myapp\templates\index.html:288
+msgid "16 Đánh Giá"
+msgstr "16 Reviews"
+
+#: .\myapp\templates\index.html:290
+msgid "Từ 25.000đ"
+msgstr "From 25,000 VND"
+
+#: .\myapp\templates\index.html:302
+msgid "View Suối"
+msgstr "View Stream"
+
+#: .\myapp\templates\index.html:305
+msgid "Nghỉ Dưỡng Cắm Trại"
+msgstr "Camping Retreat"
+
+#: .\myapp\templates\index.html:307
+msgid "Lều đôi, lều gia đình – đầy đủ tiện ích."
+msgstr "Double tent, family tent - full amenities."
+
+#: .\myapp\templates\index.html:309
+msgid "9 Đánh Giá"
+msgstr "9 Reviews"
+
+#: .\myapp\templates\index.html:311 .\myapp\templates\index.html:332
+msgid "Từ 150.000đ"
+msgstr "From 150,000 VND"
+
+#: .\myapp\templates\index.html:322 .\myapp\templates\index.html:326
+msgid "Ngâm Chân & Lửa Trại"
+msgstr "Foot Soak & Campfire"
+
+#: .\myapp\templates\index.html:323
+msgid "Thư Giãn"
+msgstr "Relax"
+
+#: .\myapp\templates\index.html:328
+msgid "Thảo mộc thư giãn + lửa trại + nướng kẹo dẻo."
+msgstr "Relaxing herbs + campfire + roasting marshmallows."
+
+#: .\myapp\templates\index.html:330
+msgid "11 Đánh Giá"
+msgstr "11 Reviews"
+
+#: .\myapp\templates\index.html:343 .\myapp\templates\index.html:347
+msgid "Vẽ Tranh & Tô Tượng"
+msgstr "Painting & Statue Painting"
+
+#: .\myapp\templates\index.html:344
+msgid "Sáng Tạo"
+msgstr "Creative"
+
+#: .\myapp\templates\index.html:349
+msgid "Hoạt động nghệ thuật cho trẻ em & gia đình."
+msgstr "Art activities for children & families."
+
+#: .\myapp\templates\index.html:351
+msgid "14 Đánh Giá"
+msgstr "14 Reviews"
+
+#: .\myapp\templates\index.html:353
+msgid "Từ 80.000đ"
+msgstr "From 80,000 VND"
+
+#: .\myapp\templates\index.html:370
+msgid "Bài Viết"
+msgstr "Articles"
+
+#: .\myapp\templates\index.html:371
+msgid "Cập nhật thông tin mới nhất tại "
+msgstr "Update the latest information at"
+
+#: .\myapp\templates\index.html:387
+msgid "Xem Tất Cả Bài Viết"
+msgstr "View All Posts"
+
+#: .\myapp\templates\index.html:395
+msgid "Đánh Giá Của Khách Hàng"
+msgstr "Customer Reviews"
+
+#: .\myapp\templates\index.html:396
+msgid "Khách Hàng Nói Gì Về"
+msgstr "What Customers Say About"
+
+#: .\myapp\templates\index.html:430
+msgid "Khách hàng"
+msgstr "Client"
+
+#: .\myapp\templates\index.html:433
+msgid "Khách hàng tại Wecamp"
+msgstr "Customers at Wecamp"
+
+#: .\myapp\templates\index.html:441
+msgid "Chưa có đánh giá nào được hiển thị."
+msgstr "There are no reviews displayed yet."
+
+#: .\myapp\templates\index.html:457
+msgid "Gửi Thông Tin Đặt Combo"
+msgstr "Send Combo Booking Information"
+
+#: .\myapp\templates\index.html:470
+#: .\myapp\templates\service\art_activity.html:164
+#: .\myapp\templates\service\coffee.html:132
+#: .\myapp\templates\service\herbal_foot_soak.html:169
+#: .\myapp\templates\service\meal.html:131
+#: .\myapp\templates\service\tent.html:132
+msgid "Họ & Tên"
+msgstr "Full Name"
+
+#: .\myapp\templates\index.html:482
+msgid "Ghi chú (số người, combo...)"
+msgstr "Notes (number of people, combo...)"
+
+#: .\myapp\templates\index.html:485
+#: .\myapp\templates\service\art_activity.html:179
+#: .\myapp\templates\service\coffee.html:147
+#: .\myapp\templates\service\herbal_foot_soak.html:184
+#: .\myapp\templates\service\meal.html:146
+#: .\myapp\templates\service\tent.html:147
+msgid "Gửi Yêu Cầu"
+msgstr "Send Request"
+
+#: .\myapp\templates\service\art_activity.html:5
+msgid "Hoạt Động Nghệ Thuật - Wecamp Cafe Retreat"
+msgstr "Art Activities - Wecamp Cafe Retreat"
+
+#: .\myapp\templates\service\art_activity.html:14
+#: .\myapp\templates\service\art_activity.html:19
+msgid "Hoạt Động Nghệ Thuật"
+msgstr "Art Activities"
+
+#: .\myapp\templates\service\art_activity.html:15
+msgid "Vẽ tranh & tô tượng – thư giãn sáng tạo giữa thiên nhiên Tả Van"
+msgstr ""
+"Painting & painting statues - creative relaxation in the nature of Ta Van"
+
+#: .\myapp\templates\service\art_activity.html:34
+msgid "Vẽ tranh tại Wecamp"
+msgstr "Painting at Wecamp"
+
+#: .\myapp\templates\service\art_activity.html:37
+msgid "Vẽ Tranh Cảnh Quan"
+msgstr "Landscape Painting"
+
+#: .\myapp\templates\service\art_activity.html:38
+msgid ""
+"Thả hồn theo nét cọ, ghi lại vẻ đẹp núi rừng, suối reo, ruộng bậc thang."
+msgstr ""
+"Let your soul follow the brush strokes, capturing the beauty of mountains, "
+"forests, streams, and terraced fields."
+
+#: .\myapp\templates\service\art_activity.html:40
+msgid "Dụng cụ:"
+msgstr "Tool:"
+
+#: .\myapp\templates\service\art_activity.html:40
+msgid "Màu nước, bút chì, giấy A4 cao cấp"
+msgstr "Watercolor, pencil, high quality A4 paper"
+
+#: .\myapp\templates\service\art_activity.html:41
+#: .\myapp\templates\service\art_activity.html:64
+#: .\myapp\templates\service\herbal_foot_soak.html:43
+#: .\myapp\templates\service\herbal_foot_soak.html:71
+msgid "Thời gian:"
+msgstr "Time:"
+
+#: .\myapp\templates\service\art_activity.html:41
+msgid "60 phút / buổi"
+msgstr "60 minutes/session"
+
+#: .\myapp\templates\service\art_activity.html:42
+#: .\myapp\templates\service\art_activity.html:65
+#: .\myapp\templates\service\herbal_foot_soak.html:46
+#: .\myapp\templates\service\herbal_foot_soak.html:77
+msgid "Giá:"
+msgstr "Price:"
+
+#: .\myapp\templates\service\art_activity.html:43
+msgid "Phù hợp:"
+msgstr "Fit:"
+
+#: .\myapp\templates\service\art_activity.html:43
+msgid "Trẻ em & người lớn"
+msgstr "Children & adults"
+
+#: .\myapp\templates\service\art_activity.html:47
+msgid "Đặt Lịch Vẽ Tranh"
+msgstr "Schedule a Painting Schedule"
+
+#: .\myapp\templates\service\art_activity.html:57
+msgid "Tô tượng tại Wecamp"
+msgstr "Painting statues at Wecamp"
+
+#: .\myapp\templates\service\art_activity.html:60
+msgid "Tô Tượng Thạch Cao"
+msgstr "Plaster Statue Bowl"
+
+#: .\myapp\templates\service\art_activity.html:61
+msgid "Tự tay tô màu cho các bức tượng dễ thương – quà lưu niệm độc nhất!"
+msgstr "Color the cute statues yourself – a unique souvenir!"
+
+#: .\myapp\templates\service\art_activity.html:63
+msgid "Mẫu tượng:"
+msgstr "Statue model:"
+
+#: .\myapp\templates\service\art_activity.html:63
+msgid "Thỏ, mèo, voi, nhà nhỏ, cốc..."
+msgstr "Rabbits, cats, elephants, small houses, cups..."
+
+#: .\myapp\templates\service\art_activity.html:64
+msgid "45 phút / tượng"
+msgstr "45 minutes/statue"
+
+#: .\myapp\templates\service\art_activity.html:65
+msgid "tượng"
+msgstr "statue"
+
+#: .\myapp\templates\service\art_activity.html:66
+msgid "Mang về:"
+msgstr "Take home:"
+
+#: .\myapp\templates\service\art_activity.html:66
+msgid "Tượng đã tô xong"
+msgstr "The statue has been painted"
+
+#: .\myapp\templates\service\art_activity.html:70
+msgid "Đặt Lịch Tô Tượng"
+msgstr "Set a Statue Schedule"
+
+#: .\myapp\templates\service\art_activity.html:123
+msgid "Kích Thích Sáng Tạo"
+msgstr "Stimulate Creativity"
+
+#: .\myapp\templates\service\art_activity.html:124
+msgid "Phát triển tư duy, tưởng tượng"
+msgstr "Develop thinking and imagination"
+
+#: .\myapp\templates\service\art_activity.html:130
+msgid "Giảm Stress"
+msgstr "Reduce Stress"
+
+#: .\myapp\templates\service\art_activity.html:131
+msgid "Thư giãn tinh thần, vui vẻ"
+msgstr "Relax your mind and have fun"
+
+#: .\myapp\templates\service\art_activity.html:137
+msgid "Quà Lưu Niệm"
+msgstr "Souvenirs"
+
+#: .\myapp\templates\service\art_activity.html:138
+msgid "Mang về tác phẩm tự tay làm"
+msgstr "Bring home a hand-made work"
+
+#: .\myapp\templates\service\art_activity.html:151
+#: .\myapp\templates\service\meal.html:118
+msgid "Đặt Bàn Nhà Hàng"
+msgstr "Book a Restaurant Table"
+
+#: .\myapp\templates\service\art_activity.html:176
+#: .\myapp\templates\service\herbal_foot_soak.html:181
+#: .\myapp\templates\service\meal.html:143
+#: .\myapp\templates\service\tent.html:144
+msgid "Ghi chú (số người, món đặc biệt...)"
+msgstr "Notes (number of people, special dishes...)"
+
+#: .\myapp\templates\service\coffee.html:7
+msgid "Cafe - Wecamp Cafe Retreat"
+msgstr "Cafe - Wecamp Cafe Retreat"
+
+#: .\myapp\templates\service\coffee.html:16
+msgid "Thưởng Thức Đồ Uống Tại Wecamp"
+msgstr "Enjoy Drinks At Wecamp"
+
+#: .\myapp\templates\service\coffee.html:17
+msgid ""
+"Cà phê nguyên chất, trà thảo mộc, sinh tố tươi mát – tất cả từ nguyên liệu "
+"tự nhiên"
+msgstr ""
+"Pure coffee, herbal tea, fresh smoothies - all from natural ingredients"
+
+#: .\myapp\templates\service\coffee.html:21
+msgid "Thưởng Thức Đồ Uống"
+msgstr "Enjoy Drinks"
+
+#: .\myapp\templates\service\coffee.html:34
+msgid "Cafe tại Wecamp"
+msgstr "Cafe at Wecamp"
+
+#: .\myapp\templates\service\coffee.html:37
+msgid "Thư Giãn Với Hương Vị Tự Nhiên"
+msgstr "Relax With Natural Flavors"
+
+#: .\myapp\templates\service\coffee.html:38
+msgid ""
+"Cà phê rang xay tại chỗ, trà thảo mộc từ vườn nhà, sinh tố trái cây tươi mỗi"
+" ngày."
+msgstr ""
+"Locally roasted coffee, herbal tea from home garden, fresh fruit smoothies "
+"every day."
+
+#: .\myapp\templates\service\coffee.html:42
+msgid "Nguyên liệu sạch:"
+msgstr "Clean ingredients:"
+
+#: .\myapp\templates\service\coffee.html:42
+#, python-format
+msgid "100%% tự nhiên"
+msgstr "100%% natural"
+
+#: .\myapp\templates\service\coffee.html:46
+#: .\myapp\templates\service\meal.html:43
+msgid "Không gian mở:"
+msgstr "Open space:"
+
+#: .\myapp\templates\service\coffee.html:46
+msgid "View suối, gió mát"
+msgstr "Stream view, cool breeze"
+
+#: .\myapp\templates\service\coffee.html:50
+msgid "Mở cửa:"
+msgstr "Open:"
+
+#: .\myapp\templates\service\coffee.html:50
+#: .\myapp\templates\service\tent.html:49
+msgid "7:30 - 19:30"
+msgstr "7:30 - 19:30"
+
+#: .\myapp\templates\service\coffee.html:68
+msgid "Menu Đồ Uống"
+msgstr "Drinks Menu"
+
+#: .\myapp\templates\service\coffee.html:69
+msgid "Chọn loại đồ uống yêu thích của bạn"
+msgstr "Choose your favorite drink"
+
+#: .\myapp\templates\service\coffee.html:89
+msgid "Đồ uống"
+msgstr "Beverage"
+
+#: .\myapp\templates\service\coffee.html:97
+#: .\myapp\templates\service\meal.html:96
+#: .\myapp\templates\service\tent.html:97
+msgid "Đặt"
+msgstr "Put"
+
+#: .\myapp\templates\service\coffee.html:105
+msgid "Chưa có đồ uống nào."
+msgstr "No drinks yet."
+
+#: .\myapp\templates\service\coffee.html:119
+msgid "Đặt Bàn Đồ Uống"
+msgstr "Set Drinks Table"
+
+#: .\myapp\templates\service\coffee.html:144
+msgid "Ghi chú (số người, đồ uống yêu thích...)"
+msgstr "Notes (number of people, favorite drinks...)"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:6
+msgid "Ngâm Chân Thảo Mộc - Wecamp Cafe Retreat"
+msgstr "Herbal Foot Soak - Wecamp Cafe Retreat"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:15
+#: .\myapp\templates\service\herbal_foot_soak.html:20
+msgid "Ngâm Chân Thảo Mộc"
+msgstr "Herbal Foot Soak"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:16
+msgid ""
+"Thư giãn cơ thể, giảm đau mỏi, lưu thông khí huyết với thảo mộc núi rừng"
+msgstr ""
+"Relax your body, reduce pain and fatigue, and circulate blood with mountain "
+"herbs"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:33
+msgid "Ngâm chân thảo mộc tại Wecamp"
+msgstr "Herbal foot soak at Wecamp"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:36
+msgid "Thư Giãn Tuyệt Đối Với Thảo Mộc Tây Bắc"
+msgstr "Absolute Relaxation With Northwest Herbs"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:37
+msgid ""
+"Ngâm chân trong nước ấm thảo mộc giúp giảm đau nhức, cải thiện tuần hoàn, "
+"thư giãn tinh thần sau ngày dài khám phá."
+msgstr ""
+"Soaking your feet in warm herbal water helps reduce pain, improve "
+"circulation, and relax the mind after a long day of exploration."
+
+#: .\myapp\templates\service\herbal_foot_soak.html:40
+msgid "Thảo mộc tự nhiên:"
+msgstr "Natural herbs:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:40
+msgid "Lá lốt, gừng, sả, bạc hà, ngải cứu"
+msgstr "Lolot leaves, ginger, lemongrass, mint, mugwort"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:43
+msgid "30 phút / buổi"
+msgstr "30 minutes/session"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:49
+#: .\myapp\templates\service\tent.html:49
+msgid "Phục vụ:"
+msgstr "Serve:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:54
+#: .\myapp\templates\service\herbal_foot_soak.html:156
+msgid "Đặt Lịch Ngâm Chân"
+msgstr "Book a Foot Soak Schedule"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:64
+msgid "Đốt lửa trại tại Wecamp"
+msgstr "Campfire at Wecamp"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:67
+msgid "Đốt Lửa Trại"
+msgstr "Campfire"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:68
+msgid ""
+"Tụ họp bên lửa hồng, hát hò, kể chuyện – không khí gia đình ấm cúng giữa núi"
+" rừng."
+msgstr ""
+"Gathering around the fire, singing, telling stories - a cozy family "
+"atmosphere in the middle of the mountains and forests."
+
+#: .\myapp\templates\service\herbal_foot_soak.html:74
+msgid "Sức chứa:"
+msgstr "Capacity:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:77
+msgid "nhóm"
+msgstr "group"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:80
+msgid "Hoạt động:"
+msgstr "Work:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:80
+msgid "Hát, chơi trò chơi, kể chuyện ma"
+msgstr "Sing, play games, tell ghost stories"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:85
+msgid "Đặt Lửa Trại"
+msgstr "Set a Campfire"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:95
+msgid "Nướng kẹo dẻo tại Wecamp"
+msgstr "Roast marshmallows at Wecamp"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:98
+msgid "Nướng Kẹo Dẻo"
+msgstr "Bake Marshmallows"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:99
+msgid ""
+"Trải nghiệm tuổi thơ: xiên kẹo, nướng trên lửa trại, tan chảy ngọt ngào!"
+msgstr ""
+"Childhood experience: skewer candy, roast on a campfire, melt sweetly!"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:102
+msgid "Miễn phí:"
+msgstr "Free of charge:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:102
+msgid "Khi đặt lửa trại"
+msgstr "When setting a campfire"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:105
+msgid "Combo:"
+msgstr "Combos:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:105
+msgid "Kẹo dẻo + socola + bánh quy"
+msgstr "Marshmallows + chocolate + cookies"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:108
+msgid "Giá lẻ:"
+msgstr "Retail price:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:108
+msgid "phần"
+msgstr "part"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:111
+msgid "Vui vẻ:"
+msgstr "Happy:"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:111
+msgid "Cười nghiêng ngả khi kẹo rơi!"
+msgstr "Laugh out loud when the candy falls!"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:116
+msgid "Đặt Nướng Kẹo"
+msgstr "Set Baked Candy"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:128
+msgid "Lưu Thông Khí Huyết"
+msgstr "Blood Circulation"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:129
+msgid "Giảm đau mỏi, tê chân, cải thiện tuần hoàn"
+msgstr "Reduce pain, fatigue, numb legs, improve circulation"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:135
+msgid "Ngủ Ngon Hơn"
+msgstr "Sleep Better"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:136
+msgid "Thư giãn thần kinh, giảm stress"
+msgstr "Relax your nerves, reduce stress"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:142
+msgid "Tăng Sức Đề Kháng"
+msgstr "Increase Resistance"
+
+#: .\myapp\templates\service\herbal_foot_soak.html:143
+msgid "Thảo mộc tự nhiên, an toàn cho sức khỏe"
+msgstr "Natural herbs, safe for health"
+
+#: .\myapp\templates\service\meal.html:6
+msgid "Nhà Hàng - Wecamp Cafe Retreat"
+msgstr "Restaurant - Wecamp Cafe Retreat"
+
+#: .\myapp\templates\service\meal.html:15
+msgid "Nhà Hàng Tại Wecamp"
+msgstr "Restaurants At Wecamp"
+
+#: .\myapp\templates\service\meal.html:16
+msgid "Thưởng thức ẩm thực Tây Bắc giữa thiên nhiên suối reo"
+msgstr "Enjoy Northwest cuisine amidst the natural stream"
+
+#: .\myapp\templates\service\meal.html:31
+msgid "Nhà Hàng tại Wecamp"
+msgstr "Restaurants at Wecamp"
+
+#: .\myapp\templates\service\meal.html:34
+msgid "Trải Nghiệm Ẩm Thực Đậm Chất Núi Rừng"
+msgstr "Experience the Cuisine of the Mountains and Forests"
+
+#: .\myapp\templates\service\meal.html:35
+msgid ""
+"Từ món nướng truyền thống đến cơm lam, thịt hun khói – tất cả được chế biến "
+"từ nguyên liệu tươi sạch ngay tại Tả Van."
+msgstr ""
+"From traditional grilled dishes to lam rice, smoked meat - all made from "
+"fresh ingredients right in Ta Van."
+
+#: .\myapp\templates\service\meal.html:39
+msgid "Thực đơn đa dạng:"
+msgstr "Diverse menu:"
+
+#: .\myapp\templates\service\meal.html:39
+msgid "Món Việt, món Tây, món chay"
+msgstr "Vietnamese dishes, Western dishes, vegetarian dishes"
+
+#: .\myapp\templates\service\meal.html:43
+msgid "Ngồi bên suối, nghe chim hót"
+msgstr "Sit by the stream, listen to the birds sing"
+
+#: .\myapp\templates\service\meal.html:47
+msgid "Phục vụ từ 7:30 - 19:30"
+msgstr "Served from 7:30 - 19:30"
+
+#: .\myapp\templates\service\meal.html:47
+msgid "hàng ngày"
+msgstr "every day"
+
+#: .\myapp\templates\service\meal.html:65
+msgid "Menu Tại Wecamp"
+msgstr "Menu At Wecamp"
+
+#: .\myapp\templates\service\meal.html:66
+msgid "Chọn món ăn yêu thích theo loại"
+msgstr "Choose your favorite dishes by type"
+
+#: .\myapp\templates\service\meal.html:88
+msgid "Món ăn"
+msgstr "Dish"
+
+#: .\myapp\templates\service\meal.html:104
+msgid "Chưa có món ăn nào."
+msgstr "There are no dishes yet."
+
+#: .\myapp\templates\service\tent.html:6
+msgid "Nghỉ Dưỡng - Wecamp Cafe Retreat"
+msgstr "Retreat - Wecamp Cafe Retreat"
+
+#: .\myapp\templates\service\tent.html:15
+msgid "Nghỉ Dưỡng Tại Wecamp"
+msgstr "Vacation At Wecamp"
+
+#: .\myapp\templates\service\tent.html:16
+msgid "Trải nghiệm cắm trại bên suối – gần gũi thiên nhiên, tiện nghi đầy đủ"
+msgstr "Experience camping by the stream - close to nature, fully equipped"
+
+#: .\myapp\templates\service\tent.html:33
+msgid "Lều tại Wecamp"
+msgstr "Tent at Wecamp"
+
+#: .\myapp\templates\service\tent.html:36
+msgid "Cắm Trại Bên Suối – Đầy Đủ Tiện Nghi"
+msgstr "Camping by the Stream - Fully Amenities"
+
+#: .\myapp\templates\service\tent.html:37
+msgid ""
+"Lều rộng rãi, view suối, điện, nước, wifi – phù hợp nghỉ dưỡng hoặc team "
+"building."
+msgstr ""
+"Spacious tent, stream view, electricity, water, wifi - suitable for "
+"relaxation or team building."
+
+#: .\myapp\templates\service\tent.html:41
+msgid "2 loại lều:"
+msgstr "2 types of tents:"
+
+#: .\myapp\templates\service\tent.html:41
+msgid "Nghỉ đêm & Trong ngày"
+msgstr "Overnight & During the day"
+
+#: .\myapp\templates\service\tent.html:45
+msgid "Tiện ích:"
+msgstr "Utilities:"
+
+#: .\myapp\templates\service\tent.html:45
+msgid "Điện, nước, wifi, BBQ"
+msgstr "Electricity, water, wifi, BBQ"
+
+#: .\myapp\templates\service\tent.html:54
+msgid "Đặt Lều Ngay"
+msgstr "Book Your Tent Now"
+
+#: .\myapp\templates\service\tent.html:67
+msgid "Chọn Loại Lều"
+msgstr "Select Tent Type"
+
+#: .\myapp\templates\service\tent.html:68
+msgid "Phù hợp với nhu cầu nghỉ dưỡng của bạn"
+msgstr "Suitable for your vacation needs"
+
+#: .\myapp\templates\service\tent.html:86
+msgid "Lều"
+msgstr "Tent"
+
+#: .\myapp\templates\service\tent.html:105
+msgid "Chưa có lều nào."
+msgstr "There are no tents yet."
+
+#: .\myapp\templates\service\tent.html:119
+msgid "Gửi Thông Tin Đặt Lều"
+msgstr "Submit Tent Booking Information"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\forms.py:6
+msgid "Search files"
+msgstr "Search files"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:5
+msgid "Select an image to embed"
+msgstr "Select an image to embed"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+"Browse for the image you want, then click 'Embed Image' to continue..."
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+"No images found. Upload images using the 'Image Button' dialog 'Upload' tab."
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:50
+msgid "Images in: "
+msgstr "Images in:"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:62
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:80
+msgid "Embed Image"
+msgstr "Embedded Image"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:146
+msgid "Play Slideshow"
+msgstr "Play Slideshow"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:147
+msgid "Pause Slideshow"
+msgstr "Pause Slideshow"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr "‹ Previous Photo"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr "Next Photo ›"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:150
+msgid "Next &rsaquo;"
+msgstr "Next ›"
+
+#: .\venv\Lib\site-packages\ckeditor_uploader\templates\ckeditor\browse.html:151
+msgid "&lsaquo; Prev"
+msgstr "‹ Prev"
+
+#: .\venv\Lib\site-packages\cloudinary\forms.py:55
+#: .\venv\Lib\site-packages\cloudinary\forms.py:124
+msgid "No file selected!"
+msgstr "No files selected!"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr "Messages"
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "Site Maps"
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "Static Files"
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr "That page number is not an integer"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr "That page number is less than 1"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:54
+msgid "That page contains no results"
+msgstr "That page contains no results"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "Enter a valid value."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:104
+#: .\venv\Lib\site-packages\django\forms\fields.py:752
+msgid "Enter a valid URL."
+msgstr "Enter a valid URL."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid integer."
+msgstr "Enter a valid integer."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:176
+msgid "Enter a valid email address."
+msgstr "Enter a valid email address."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
+msgstr ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:281
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+msgid "Enter a valid IPv4 address."
+msgstr "Enter a valid IPv4 address."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:298
+#: .\venv\Lib\site-packages\django\core\validators.py:319
+msgid "Enter a valid IPv6 address."
+msgstr "Enter a valid IPv6 address."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:310
+#: .\venv\Lib\site-packages\django\core\validators.py:317
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Enter a valid IPv4 or IPv6 address."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:353
+msgid "Enter only digits separated by commas."
+msgstr "Enter only digits separated by commas."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:359
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:394
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Ensure this value is less than or equal to %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:403
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Ensure this value is greater than or equal to %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:412
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Ensure this value is a multiple of step size %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:422
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:440
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:463
+#: .\venv\Lib\site-packages\django\forms\fields.py:347
+#: .\venv\Lib\site-packages\django\forms\fields.py:386
+msgid "Enter a number."
+msgstr "Enter a number."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:465
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:470
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:475
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:546
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:607
+msgid "Null characters are not allowed."
+msgstr "Null characters are not allowed."
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1423
+#: .\venv\Lib\site-packages\django\forms\models.py:893
+msgid "and"
+msgstr "and"
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s with this %(field_labels)s already exists."
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "Constraint “%(name)s” is violated."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Value %(value)r is not a valid choice."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
+msgid "This field cannot be null."
+msgstr "This field cannot be null."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be blank."
+msgstr "This field cannot be blank."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s with this %(field_label)s already exists."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Field of type: %(field_type)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” value must be either True or False."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” value must be either True, False, or None."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (Either True or False)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "String (up to %(max_length)s)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
+msgid "String (unlimited)"
+msgstr "String (unlimited)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
+msgid "Comma-separated integers"
+msgstr "Comma-separated integers"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
+msgid "Date (without time)"
+msgstr "Date (without time)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgstr ""
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
+msgid "Date (with time)"
+msgstr "Date (with time)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” value must be a decimal number."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
+msgid "Decimal number"
+msgstr "Decimal number"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
+msgid "Duration"
+msgstr "Duration"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1845
+msgid "Email address"
+msgstr "Email address"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1870
+msgid "File path"
+msgstr "File path"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” value must be a float."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
+msgid "Floating point number"
+msgstr "Floating point number"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” value must be an integer."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
+msgid "Integer"
+msgstr "Integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr "Big (8 bytes) integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2105
+msgid "Small integer"
+msgstr "Small integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2113
+msgid "IPv4 address"
+msgstr "IPv4 addresses"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2144
+msgid "IP address"
+msgstr "IP address"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2237
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” value must be either None, True or False."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (Either True, False or None)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2291
+msgid "Positive big integer"
+msgstr "Positive big integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2306
+msgid "Positive integer"
+msgstr "Positive integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2321
+msgid "Positive small integer"
+msgstr "Positive small integer"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (up to %(max_length)s)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2373
+msgid "Text"
+msgstr "Text"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2456
+msgid "Time"
+msgstr "Time"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2564
+msgid "URL"
+msgstr "URL"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2588
+msgid "Raw binary data"
+msgstr "Raw binary data"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” is not a valid UUID."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
+msgid "Universally unique identifier"
+msgstr "Universally unique identifier"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
+msgid "File"
+msgstr "File"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
+msgid "Image"
+msgstr "Image"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "A JSON object"
+msgstr "A JSON object"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
+msgid "Value must be valid JSON."
+msgstr "Value must be valid JSON."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr "%(model)s instance with %(field)s %(value)r does not exist."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr "Foreign Key (type determined by related field)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
+msgid "One-to-one relationship"
+msgstr "One-to-one relationship"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s relationship"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s relationships"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
+msgid "Many-to-many relationship"
+msgstr "Many-to-many relationships"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the
+#. label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:184
+msgid ":?.!"
+msgstr ":?.!"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr "This field is required."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr "Enter a whole number."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:467
+#: .\venv\Lib\site-packages\django\forms\fields.py:1241
+msgid "Enter a valid date."
+msgstr "Enter a valid date."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:490
+#: .\venv\Lib\site-packages\django\forms\fields.py:1242
+msgid "Enter a valid time."
+msgstr "Enter a valid time."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr "Enter a valid date/time."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr "Enter a valid duration."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "The number of days must be between {min_days} and {max_days}."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "No files were submitted. Check the encoding type on the form."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:622
+msgid "No file was submitted."
+msgstr "No files were submitted."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:623
+msgid "The submitted file is empty."
+msgstr "The submitted file is empty."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:625
+#, python-format
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:630
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Please either submit a file or check the clear checkbox, not both."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:694
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:857
+#: .\venv\Lib\site-packages\django\forms\fields.py:949
+#: .\venv\Lib\site-packages\django\forms\models.py:1566
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Select a valid choice. %(value)s is not one of the available choices."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:951
+#: .\venv\Lib\site-packages\django\forms\fields.py:1070
+#: .\venv\Lib\site-packages\django\forms\models.py:1564
+msgid "Enter a list of values."
+msgstr "Enter a list of values."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1071
+msgid "Enter a complete value."
+msgstr "Enter a complete value."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1313
+msgid "Enter a valid UUID."
+msgstr "Enter a valid UUID."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1343
+msgid "Enter a valid JSON."
+msgstr "Enter a valid JSON."
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:98
+msgid ":"
+msgstr ":"
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:244
+#: .\venv\Lib\site-packages\django\forms\forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Hidden field %(name)s) %(error)s"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "Order"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr "Delete"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Please correct the duplicate data for %(field)s."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:891
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+"Please correct the duplicate data for %(field)s, which must be unique."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:898
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:907
+msgid "Please correct the duplicate values below."
+msgstr "Please correct the duplicate values ​​below."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr "The inline value did not match the parent instance."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1429
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+"Select a valid choice. That choice is not one of the available choices."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” is not a valid value."
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:463
+msgid "Clear"
+msgstr "Clear"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:464
+msgid "Currently"
+msgstr "Currently"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:465
+msgid "Change"
+msgstr "Change"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:794
+msgid "Unknown"
+msgstr "Unknown"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:795
+msgid "Yes"
+msgstr "Yes"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:796
+msgid "No"
+msgstr "No"
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:874
+msgid "yes,no,maybe"
+msgstr "yes, no, maybe"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:904
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:921
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:923
+#, python-format
+msgid "%s KB"
+msgstr "%sKB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:925
+#, python-format
+msgid "%s MB"
+msgstr "%xsMB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:927
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:929
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:931
+#, python-format
+msgid "%s PB"
+msgstr "%sPB"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:73
+msgid "p.m."
+msgstr "p.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "a.m."
+msgstr "a.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:79
+msgid "PM"
+msgstr "PM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "AM"
+msgstr "AM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:152
+msgid "midnight"
+msgstr "midnight. midnight"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:154
+msgid "noon"
+msgstr "noon"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr "Monday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr "Tuesday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr "Wednesday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr "Thursday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr "Friday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr "Saturday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr "Sunday"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr "Mon"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr "Tue"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr "Wed"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr "Fri"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr "Sat"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr "Sun"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr "January"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr "February"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr "March"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr "April"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr "May"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr "June"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr "July"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr "August"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr "September"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr "October"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr "November"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr "December"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr "Jan"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr "feb"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr "sewing"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr "jun"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr "jul"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr "Aug"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr "dec"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Jan."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Feb."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "March"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "April"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "May"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "June"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "July"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Aug."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sept."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dec."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "January"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "February"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "March"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "April"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "May"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "June"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "July"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "August"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "September"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "October"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "November"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "December"
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "This is not a valid IPv6 address."
+
+#: .\venv\Lib\site-packages\django\utils\text.py:138
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: .\venv\Lib\site-packages\django\utils\text.py:323
+msgid "or"
+msgstr "or"
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:342
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ","
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
+msgid "Forbidden"
+msgstr "Forbidden"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr "CSRF verification failed. Request aborted."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr "More information is available with DEBUG=True."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr "No year specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr "Date out of range"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr "No month specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr "No day specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr "No week specified"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:349
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "No %(verbose_name_plural)s available"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Invalid date string “%(datestr)s” given format “%(format)s”"
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "No %(verbose_name)s found matching the query"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "Page is not “last”, nor can it be converted to an int."
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Invalid page (%(page_number)s): %(message)s"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Empty list and “%(class_name)s.allow_empty” is False."
+
+#: .\venv\Lib\site-packages\django\views\static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr "Directory indexes are not allowed here."
+
+#: .\venv\Lib\site-packages\django\views\static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” does not exist"
+
+#: .\venv\Lib\site-packages\django\views\static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Index of %(directory)s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr "The install worked successfully! Congratulations!"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
+msgstr ""
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
+msgid "Django Documentation"
+msgstr "Django Documentation"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Topics, references, & how-to's"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr "Tutorial: A Polling App"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Get started with Django"
+msgstr "Get started with Django"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:247
+msgid "Django Community"
+msgstr "Django Community"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr "Connect, get help, or contribute"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:14
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:54
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:62
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:72
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:82
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:86
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:118
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:137
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:364
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:369
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:379
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:399
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:416
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:435
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:441
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:458
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:470
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:478
+msgid "title"
+msgstr "title. title"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:18
+msgid "password"
+msgstr "password. password"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:245
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:264
+msgid "title a"
+msgstr "title a"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:249
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:275
+msgid "title b"
+msgstr "title b"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:253
+msgid "title c"
+msgstr "title c"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:257
+msgid "title d"
+msgstr "title d"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:380
+msgid "visits"
+msgstr "visits"
+
+#: .\venv\Lib\site-packages\modeltranslation\tests\translation.py:62
+msgid "Sorry, translation is not available."
+msgstr "Sorry, translation is not available."
+
+#: .\venv\Lib\site-packages\modeltranslation\widgets.py:32
+msgid "None"
+msgstr "None"

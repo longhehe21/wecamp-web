@@ -29,12 +29,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
+    'jazzmin',  # PHẢI ĐẶT TRƯỚC 'django.contrib.admin'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'modeltranslation',
     'myapp',
     'cloudinary_storage',  # BẮT BUỘC
     'cloudinary',
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware', 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -97,11 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Internationalization
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_TZ = True
+
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
@@ -161,3 +160,106 @@ CKEDITOR_CONFIGS = {
         'width': '100%',
     },
 }
+
+
+# settings.py
+JAZZMIN_SETTINGS = {
+    "site_title": "Wecamp Cafe Retreat",
+    "site_header": "WECAMP ADMIN",
+    "site_brand": "Wecamp",
+    "site_logo": "admin/img/logo/logo.svg",  # Đặt logo vào static/admin/img/logo.svg
+    "login_logo": None,
+    "site_logo_classes": "img-circle",
+    "site_icon": "admin/img/favicon.png",
+    "welcome_sign": "Chào mừng đến Wecamp Admin",
+    "copyright": "Wecamp Cafe Retreat",
+    "search_model": ["main.Booking", "main.ContactMessage", "main.BookingInquiry"],
+
+    # MÀU CHỦ ĐẠO WECAMP (XANH LÁ SANG)
+    "topmenu_links": [
+        {"name": "Trang chủ", "url": "/", "new_window": True},
+        {"name": "Website", "url": "/", "new_window": True},
+    ],
+
+    "usermenu_links": [
+        {"name": "Xem website", "url": "/", "new_window": True},
+    ],
+
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "hide_apps": [],
+    "hide_models": [],
+    "order_with_respect_to": ["main", "auth"],
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "main.Booking": "fas fa-calendar-check",
+        "main.ContactMessage": "fas fa-envelope",
+        "main.BookingInquiry": "fas fa-headset",
+    },
+
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+
+    "related_modal_active": False,
+    "custom_css": "admin/css/custom-admin.css",
+    "custom_js": None,
+    "show_ui_builder": True,
+
+    "changeform_format": "horizontal_tabs",
+    "language_chooser": False,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": "navbar-success",
+    "accent": "accent-success",
+    "navbar": "navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": False,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": False,
+    "sidebar": "sidebar-dark-success",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": True,
+    "sidebar_nav_flat_style": False,
+    "theme": "default",  # hoặc "darkly", "lux", "cyborg"
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success",
+    },
+}
+
+from django.utils.translation import gettext_lazy as _
+
+# home/settings.py
+LANGUAGE_CODE = 'vi'  # Mặc định tiếng Việt
+
+LANGUAGES = [
+    ('vi', 'Tiếng Việt'),
+    ('en', 'English'),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+TIME_ZONE = 'UTC'
+# BẬT I18N
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
+

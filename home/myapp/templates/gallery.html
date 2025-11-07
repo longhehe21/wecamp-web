@@ -1,127 +1,128 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 {% load gallery_filters %}
 
-{% block title %}Gallery - Tour Bootstrap Template{% endblock %}
+{% block title %}{% trans "Thư Viện" %} - Wecamp Cafe Retreat{% endblock %}
 
 {% block content %}
 
   <!-- Page Title -->
-  <div class="page-title dark-background" data-aos="fade" >
+  <div class="page-title dark-background" data-aos="fade">
     <style>
         .page-title {
           background-image: url('{% static "assets/img/travel/showcase-8.webp" %}');
         }
     </style>
     <div class="container position-relative">
-      <h1>Thư Viện</h1>
-      <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+      <h1>{% trans "Thư Viện" %}</h1>
+      <p>{% trans "Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias." %}</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'index' %}">Trang Chủ</a></li>
-          <li class="current">Thư Viện</li>
+          <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+          <li class="current">{% trans "Thư Viện" %}</li>
         </ol>
       </nav>
     </div>
   </div><!-- End Page Title -->
 
-<!-- Gallery Slider Section -->
-{% if gallery_images %}
-<section id="gallery-slider" class="gallery-slider section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="gallery-container">
-      <div class="swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-          {
-            "loop": true,
-            "speed": 800,
-            "autoplay": {
-              "delay": 4000,
-              "disableOnInteraction": false
-            },
-            "effect": "coverflow",
-            "grabCursor": true,
-            "centeredSlides": true,
-            "slidesPerView": "auto",
-            "initialSlide": {{ gallery_images|length|add:"-1" }},
-            "coverflowEffect": {
-              "rotate": 50,
-              "stretch": 0,
-              "depth": 100,
-              "modifier": 1,
-              "slideShadows": true
-            },
-            "pagination": {
-              "el": ".swiper-pagination",
-              "type": "bullets",
-              "clickable": true
-            },
-            "navigation": {
-              "nextEl": ".swiper-button-next",
-              "prevEl": ".swiper-button-prev"
-            },
-            "breakpoints": {
-              "320": {
-                "slidesPerView": 1,
-                "spaceBetween": 10
+  <!-- Gallery Slider Section -->
+  {% if gallery_images %}
+  <section id="gallery-slider" class="gallery-slider section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="gallery-container">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 4000,
+                "disableOnInteraction": false
               },
-              "768": {
-                "slidesPerView": 2,
-                "spaceBetween": 20
+              "effect": "coverflow",
+              "grabCursor": true,
+              "centeredSlides": true,
+              "slidesPerView": "auto",
+              "initialSlide": {{ gallery_images|length|add:"-1" }},
+              "coverflowEffect": {
+                "rotate": 50,
+                "stretch": 0,
+                "depth": 100,
+                "modifier": 1,
+                "slideShadows": true
               },
-              "1024": {
-                "slidesPerView": 3,
-                "spaceBetween": 30
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 10
+                },
+                "768": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "1024": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
+                }
               }
             }
-          }
-        </script>
-        <div class="swiper-wrapper">
-          {% for img in gallery_images %}
-          <div class="swiper-slide">
-            <div class="gallery-item">
-              <div class="gallery-img">
-                <a class="glightbox" data-gallery="images-gallery" href="{{ img.image.url }}">
-                  <img src="{{ img.image.url }}" class="img-fluid" alt="{{ img.title }}">
-                  <div class="gallery-overlay">
-                    <i class="bi bi-plus-circle"></i>
-                  </div>
-                </a>
+          </script>
+          <div class="swiper-wrapper">
+            {% for img in gallery_images %}
+            <div class="swiper-slide">
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <a class="glightbox" data-gallery="images-gallery" href="{{ img.image.url }}">
+                    <img src="{{ img.image.url }}" class="img-fluid" alt="{{ img.title }}">
+                    <div class="gallery-overlay">
+                      <i class="bi bi-plus-circle"></i>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          {% empty %}
-          <!-- Nếu KHÔNG có ảnh nào → thêm 3 ảnh mẫu -->
-          {% for i in "123" %}
-          <div class="swiper-slide">
-            <div class="gallery-item">
-              <div class="gallery-img">
-                <a class="glightbox" href="{% static 'assets/img/gallery/gallery-'|add:i|add:'.webp' %}">
-                  <img src="{% static 'assets/img/gallery/gallery-'|add:i|add:'.webp' %}" class="img-fluid" alt="Wecamp">
-                  <div class="gallery-overlay"><i class="bi bi-plus-circle"></i></div>
-                </a>
+            {% empty %}
+            <!-- Nếu KHÔNG có ảnh nào → thêm 3 ảnh mẫu -->
+            {% for i in "123" %}
+            <div class="swiper-slide">
+              <div class="gallery-item">
+                <div class="gallery-img">
+                  <a class="glightbox" href="{% static 'assets/img/gallery/gallery-'|add:i|add:'.webp' %}">
+                    <img src="{% static 'assets/img/gallery/gallery-'|add:i|add:'.webp' %}" class="img-fluid" alt="{% trans 'Wecamp' %}">
+                    <div class="gallery-overlay"><i class="bi bi-plus-circle"></i></div>
+                  </a>
+                </div>
               </div>
             </div>
+            {% endfor %}
+            {% endfor %}
           </div>
-          {% endfor %}
-          {% endfor %}
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
-  </div>
-</section>
-{% endif %}
-{% if not gallery_images %}
-<section class="section py-5">
-  <div class="container text-center">
-    <p class="text-muted">Thư viện ảnh đang được cập nhật...</p>
-  </div>
-</section>
-{% endif %}
-<!-- /Gallery Slider Section -->
+  </section>
+  {% endif %}
+
+  {% if not gallery_images %}
+  <section class="section py-5">
+    <div class="container text-center">
+      <p class="text-muted">{% trans "Thư viện ảnh đang được cập nhật..." %}</p>
+    </div>
+  </section>
+  {% endif %}
+  <!-- /Gallery Slider Section -->
 
   <!-- Gallery Section -->
   <section id="gallery" class="gallery section">
@@ -130,11 +131,11 @@
 
       <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
         <ul class="gallery-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-          <li data-filter="*" class="filter-active">Tất cả</li>
-          <li data-filter=".filter-xuan">Xuân</li>
-          <li data-filter=".filter-ha">Hạ</li>
-          <li data-filter=".filter-thu">Thu</li>
-          <li data-filter=".filter-dong">Đông</li>
+          <li data-filter="*" class="filter-active">{% trans "Tất cả" %}</li>
+          <li data-filter=".filter-xuan">{% trans "Xuân" %}</li>
+          <li data-filter=".filter-ha">{% trans "Hạ" %}</li>
+          <li data-filter=".filter-thu">{% trans "Thu" %}</li>
+          <li data-filter=".filter-dong">{% trans "Đông" %}</li>
         </ul>
 
         <div class="row gallery-grid isotope-container" data-aos="fade-up" data-aos-delay="300">
@@ -148,14 +149,14 @@
                 <h4>{{ img.title }}</h4>
                 <p>{{ img.description|truncatewords:15 }}</p>
                 <div class="gallery-actions">
-                  <a href="{{ img.image.url }}" title="View Image" class="glightbox"><i class="bi bi-eye"></i></a>
-                  <a href="{% url 'gallery_details' %}"><i class="bi bi-info-circle"></i></a>
+                  <a href="{{ img.image.url }}" title="{% trans 'Xem ảnh' %}" class="glightbox"><i class="bi bi-eye"></i></a>
+                  <a href="{% url 'gallery_details' %}" title="{% trans 'Chi tiết' %}"><i class="bi bi-info-circle"></i></a>
                 </div>
               </div>
             </div>
           </div>
           {% empty %}
-          <p class="text-center">Chưa có ảnh nào trong thư viện.</p>
+          <p class="text-center">{% trans "Chưa có ảnh nào trong thư viện." %}</p>
           {% endfor %}
         </div>
       </div>

@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('phone', models.CharField(max_length=15, verbose_name='Số điện thoại')),
                 ('date', models.DateField(verbose_name='Ngày đặt')),
                 ('people', models.PositiveIntegerField(verbose_name='Số lượng người')),
-                ('service', models.CharField(choices=[('meal', 'Dùng bữa'), ('coffee', 'Uống cafe'), ('herbal_foot_soak', 'Ngâm chân thảo mộc'), ('tent_rental', 'Thuê lều'), ('art_activity', 'Vẽ tranh & tô tượng'), ('other', 'Khác')], max_length=50, verbose_name='Dịch vụ')),
+                ('service', models.CharField(choices=[('meal', 'Nhà Hàng'), ('coffee', 'Đồ Uống'), ('herbal_foot_soak', 'Ngâm chân thảo mộc'), ('tent_rental', 'Nghỉ Dưỡng'), ('art_activity', 'Vẽ tranh & tô tượng'), ('other', 'Khác')], max_length=50, verbose_name='Dịch vụ')),
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now, verbose_name='Thời gian gửi')),
                 ('is_processed', models.BooleanField(default=False, verbose_name='Đã xử lý')),
             ],

@@ -1,5 +1,6 @@
+{% load i18n %}
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Wecamp Cafe Retreat{% endblock %}</title>
@@ -17,16 +18,26 @@
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <div class="header">
-      <img src="https://yourdomain.com/static/assets/img/logo/logo.svg" alt="Wecamp">
-      <h1 style="margin:10px 0 0; font-size:1.8em;">{% block header %}Xác nhận đặt chỗ{% endblock %}</h1>
+      <img src="https://yourdomain.com/static/assets/img/logo/logo.svg" alt="Wecamp Logo" onerror="this.style.display='none'">
+      <h1 style="margin:10px 0 0; font-size:1.8em;">
+        {% block header %}{% trans "Xác nhận đặt chỗ" %}{% endblock %}
+      </h1>
     </div>
+
+    <!-- Nội dung động -->
     <div class="content">
       {% block content %}{% endblock %}
     </div>
+
+    <!-- Footer -->
     <div class="footer">
-      <p><strong>Wecamp Cafe Retreat</strong> • Thôn Tả Van Dáy 1, SaPa</p>
+      <p><strong>Wecamp Cafe Retreat</strong> • {% trans "Thôn Tả Van Dáy 1, SaPa" %}</p>
       <p>096 607 80 81 | wecampofficial@gmail.com</p>
+      <p style="margin-top:10px; font-style:italic; color:#888;">
+        {% trans "Cảm ơn bạn đã đồng hành cùng Wecamp!" %}
+      </p>
     </div>
   </div>
 </body>

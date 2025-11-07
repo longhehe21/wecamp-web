@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Blog - Wecamp{% endblock %}
+{% block title %}{% trans "Blog - Wecamp" %}{% endblock %}
+
+{% block extra_head %}
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+{% endblock %}
 
 {% block content %}
 
@@ -11,12 +16,12 @@
         .page-title { background-image: url('{% static "assets/img/travel/showcase-8.webp" %}'); }
     </style>
     <div class="container position-relative">
-      <h1>Blog</h1>
-      <p>Khám phá những câu chuyện, kinh nghiệm và tin tức mới nhất từ Wecamp.</p>
+      <h1>{% trans "Blog" %}</h1>
+      <p>{% trans "Khám phá những câu chuyện, kinh nghiệm và tin tức mới nhất từ Wecamp." %}</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'index' %}">Trang Chủ</a></li>
-          <li class="current">Blog</li>
+          <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+          <li class="current">{% trans "Blog" %}</li>
         </ol>
       </nav>
     </div>
@@ -27,8 +32,7 @@
   <section id="blog-hero" class="blog-hero section">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="blog-grid">
-
-        <!-- Bài viết nổi bật -->
+        <!-- Featured + Headlines -->
         {% if featured %}
         <article class="blog-item main-feature" data-aos="fade-up">
           <img src="{{ featured.image.url }}" alt="{{ featured.title }}" class="img-fluid">
@@ -45,7 +49,6 @@
         </article>
         {% endif %}
 
-        <!-- Bài viết tiêu đề -->
         {% if headlines.exists %}
         <div class="secondary-features">
           {% for post in headlines %}
@@ -64,73 +67,97 @@
           {% endfor %}
         </div>
         {% endif %}
-
       </div>
     </div>
   </section>
   {% endif %}
 
-  <!-- Bài viết thường -->
+  <div class="section-header text-center mb-5" data-aos="fade-up" data-aos-delay="70">
+    <h3>{% trans "Các Bài Viết Mới Nhất" %}</h3>
+    <p>{% trans "Những câu chuyện mới nhất từ Wecamp" %}</p>
+  </div>
+
+  <!-- Bài viết thường + Pagination (AJAX) -->
   <section id="blog-posts" class="blog-posts section">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4">
-        {% for post in regular_posts %}
-        <div class="col-lg-4">
-          <article>
-            <div class="post-img">
-              <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
-            </div>
-            <p class="post-category">{{ post.get_category_display }}</p>
-            <h2 class="title">
-              <a href="{% url 'blog_details' post.id %}" class="clamp-3-lines">{{ post.title }}</a>
-            </h2>
-            <div class="d-flex align-items-center">
-              {% if post.author_image %}
-              <img src="{{ post.author_image.url }}" alt="{{ post.author_name }}" class="img-fluid post-author-img flex-shrink-0">
-              {% else %}
-              <img src="{% static 'assets/img/person/default-avatar.webp' %}" alt="Avatar" class="img-fluid post-author-img flex-shrink-0">
-              {% endif %}
-              <div class="post-meta">
-                <p class="post-author">{{ post.author_name }}</p>
-                <p class="post-date">
-                  <time datetime="{{ post.published_at|date:'Y-m-d' }}">{{ post.published_at|date:"M d, Y" }}</time>
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-        {% empty %}
-        <div class="col-12 text-center">
-          <p class="text-muted">Chưa có bài viết nào.</p>
-        </div>
-        {% endfor %}
-      </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="150">
+      {% include 'blogs/_regular_posts.html' %}
     </div>
   </section>
 
-  <!-- Pagination -->
-  {% if regular_posts.has_other_pages %}
-  <section id="pagination-2" class="pagination-2 section">
-    <div class="container">
-      <div class="d-flex justify-content-center">
-        <ul>
-          {% if regular_posts.has_previous %}
-          <li><a href="?page={{ regular_posts.previous_page_number }}"><i class="bi bi-chevron-left"></i></a></li>
-          {% endif %}
-          {% for num in regular_posts.paginator.page_range %}
-          {% if regular_posts.number == num %}
-          <li><a href="#" class="active">{{ num }}</a></li>
-          {% else %}
-          <li><a href="?page={{ num }}">{{ num }}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% if regular_posts.has_next %}
-          <li><a href="?page={{ regular_posts.next_page_number }}"><i class="bi bi-chevron-right"></i></a></li>
-          {% endif %}
-        </ul>
-      </div>
-    </div>
-  </section>
-  {% endif %}
+  <style>
+.section-header {
+  text-align: center;
+  padding: 40px 30px 0 30px;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.section-header h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 1.3;
+}
+
+.section-header h3::before,
+.section-header h3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 2px;
+  background: var(--accent-color);
+  transform: translateY(-50%);
+}
+
+.section-header h3::before {
+  left: -80px;
+}
+
+.section-header h3::after {
+  right: -80px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-header {
+    padding: 30px 15px 25px;
+  }
+  .section-header h3 {
+    font-size: 1.8rem;
+    padding: 0 15px;
+  }
+  .section-header h3::before,
+  .section-header h3::after {
+    width: 40px;
+  }
+  .section-header h3::before { left: -55px; }
+  .section-header h3::after { right: -55px; }
+  .section-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h3::before,
+  .section-header h3::after {
+    display: none;
+  }
+}
+</style>
 {% endblock %}

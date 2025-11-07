@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Home - Tour Bootstrap Template{% endblock %}
+{% block title %}{% trans "Trang Chủ" %} - Wecamp Cafe Retreat{% endblock %}
 
 {% block content %}
 
   <!-- Travel Hero Section -->
   <section id="travel-hero" class="travel-hero section dark-background">
 
-    <div class="hero-background">
+    <div id="booking-form-wrapper" class="hero-background">
       <video autoplay="" muted="" loop="">
         <source src="{% static 'assets/img/travel/index2.mp4' %}" type="video/mp4">
       </video>
@@ -19,11 +19,11 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
-            <h1 class="hero-title">Khu cafe bên suối lớn nhất bản Tả Van SaPa</h1>
-            <p class="hero-subtitle">Wecamp Cafe Retreat, tổ hợp cafe và ăn uống lớn nhất Bản Tả Van, Sapa, nằm bên dòng suối thơ mộng, mang đến trải nghiệm thư giãn giữa thiên nhiên xanh mát. Ngoài thưởng thức cà phê và các bữa ăn sáng, trưa, tối đậm chất địa phương, Wecamp còn cung cấp dịch vụ thuê lều theo giờ, ngâm chân thảo mộc thư giãn, vẽ tranh tô tượng sáng tạo, và tổ chức các tour trekking. Mở cửa từ 7h30 đến 19h30, đây là điểm đến lý tưởng cho mọi du khách muốn tận hưởng không gian độc đáo và đa dạng hoạt động!</p>
+            <h1 class="hero-title">{% trans "KHU CAFE BÊN SUỐI LỚN NHẤT BẢN TẢ VAN SAPA" %}</h1>
+            <p class="hero-subtitle">{% trans "Wecamp Cafe Retreat, tổ hợp cafe và ăn uống lớn nhất Bản Tả Van, Sapa, nằm bên dòng suối thơ mộng, mang đến trải nghiệm thư giãn giữa thiên nhiên xanh mát. Ngoài thưởng thức cà phê và các bữa ăn sáng, trưa, tối đậm chất địa phương, Wecamp còn cung cấp dịch vụ Nghỉ Dưỡng theo giờ, ngâm chân thảo mộc thư giãn, vẽ tranh tô tượng sáng tạo, và tổ chức các tour trekking. Mở cửa từ 7h30 đến 19h30, đây là điểm đến lý tưởng cho mọi du khách muốn tận hưởng không gian độc đáo và đa dạng hoạt động!" %}</p>
             <div class="hero-buttons">
-              <a href="#" class="btn btn-primary me-3">Khám Phá Ngay</a>
-              <a href="#" class="btn btn-outline">Xem Các Dịch Vụ</a>
+              <a href="#" class="btn btn-explore me-3">{% trans "Khám Phá Ngay" %}</a>
+              <a href="#" class="btn btn-outline">{% trans "Xem Các Dịch Vụ" %}</a>
             </div>
           </div>
         </div>
@@ -31,34 +31,34 @@
         <div class="col-lg-5">
           <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
             <div class="booking-form">
-              <h3 class="form-title">Để lại thông tin của bạn</h3>
+              <h3 class="form-title">{% trans "Đặt Bàn Ngay" %}</h3>
               <form action="{% url 'booking_submit' %}" method="post" class="booking-form-custom">
                 {% csrf_token %}
                 <div class="form-group mb-3">
-                  <label for="name">Họ & Tên *</label>
-                  <input type="text" name="name" id="name" class="form-control" placeholder="Nguyễn Văn A" required>
+                  <label for="name">{% trans "Họ & Tên *" %}</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="{% trans 'Nguyễn Văn A' %}" required>
                 </div>
 
                 <div class="form-group mb-3">
-                  <label for="email">Email *</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="you@example.com" required>
+                  <label for="email">{% trans "Email *" %}</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="{% trans 'you@example.com' %}" required>
                 </div>
 
                 <div class="form-group mb-3">
-                  <label for="phone">Số điện thoại *</label>
-                  <input type="tel" name="phone" id="phone" class="form-control" placeholder="0901234567" required>
+                  <label for="phone">{% trans "Số điện thoại *" %}</label>
+                  <input type="tel" name="phone" id="phone" class="form-control" placeholder="{% trans '0901234567' %}" required>
                 </div>
 
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group mb-3">
-                      <label for="date">Ngày *</label>
+                      <label for="date">{% trans "Ngày *" %}</label>
                       <input type="date" name="date" id="date" class="form-control" required>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group mb-3">
-                      <label for="people">Số lượng người *</label>
+                      <label for="people">{% trans "Số lượng người *" %}</label>
                       <input 
                         type="number" 
                         name="people" 
@@ -66,30 +66,30 @@
                         class="form-control" 
                         min="1" 
                         max="999" 
-                        placeholder="Ví dụ: 5" 
+                        placeholder="{% trans 'Ví dụ: 5' %}" 
                         required 
                         oninput="validity.valid||(value='');"
                       >
-                      <small class="text-muted">Tối thiểu 1 người</small>
+                      <small class="text-muted">{% trans "Tối thiểu 1 người" %}</small>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group mb-4">
-                  <label for="service">Dịch vụ *</label>
+                  <label for="service">{% trans "Dịch vụ *" %}</label>
                   <select name="service" id="service" class="form-select" required>
-                  <option value="">Chọn dịch vụ</option>
-                  <option value="meal">Dùng bữa</option>
-                  <option value="coffee">Uống cafe</option>
-                  <option value="herbal_foot_soak">Ngâm chân thảo mộc</option>
-                  <option value="tent_rental">Thuê lều</option>
-                  <option value="art_activity">Vẽ tranh & tô tượng</option>
-                  <option value="other">Khác</option>
-                </select>
+                    <option value="">{% trans "Chọn dịch vụ" %}</option>
+                    <option value="meal">{% trans "Nhà Hàng" %}</option>
+                    <option value="coffee">{% trans "Đồ Uống" %}</option>
+                    <option value="herbal_foot_soak">{% trans "Ngâm chân thảo mộc" %}</option>
+                    <option value="tent_rental">{% trans "Nghỉ Dưỡng" %}</option>
+                    <option value="art_activity">{% trans "Vẽ tranh & tô tượng" %}</option>
+                    <option value="other">{% trans "Khác" %}</option>
+                  </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100">
-                  Gửi Thông Tin
+                <button type="submit" class="btn btn-explore w-100 d-flex justify-content-center align-items-center">
+                  {% trans "Gửi Thông Tin Đặt Bàn" %}
                 </button>
               </form>
             </div>
@@ -109,27 +109,23 @@
       <div class="row align-items-center mb-5">
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
           <div class="content">
-            <h3>Thư Giãn Giữa Thiên Nhiên</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>{% trans "Thư Giãn Giữa Thiên Nhiên" %}</h3>
+            <p>{% trans "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." %}</p>
+            <p>{% trans "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." %}</p>
             <div class="stats-row">
               <div class="stat-item">
                 <span data-purecounter-start="0" data-purecounter-end="200000" data-purecounter-duration="2" class="purecounter">0</span> <span>+</span>
-                <div class="stat-label">Khách Hàng Hài Lòng</div>
+                <div class="stat-label">{% trans "Khách Hàng Hài Lòng" %}</div>
               </div>
-              <!-- <div class="stat-item">
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter">0</span>
-                <div class="stat-label">Du Khách Từ Các Quốc Gia Khác Nhau</div>
-              </div> -->
             </div>
           </div>
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
           <div class="about-image">
-            <img src="{% static 'assets/img/travel/khu_choi.jpg' %}" alt="Travel Experience" class="img-fluid rounded-4">
+            <img src="{% static 'assets/img/travel/khu_choi.jpg' %}" alt="{% trans 'Trải nghiệm du lịch' %}" class="img-fluid rounded-4">
             <div class="experience-badge">
               <div class="experience-number">> 4</div>
-              <div class="experience-text">Năm Hoạt Động</div>
+              <div class="experience-text">{% trans "Năm Hoạt Động" %}</div>
             </div>
           </div>
         </div>
@@ -139,8 +135,8 @@
       <div class="why-choose-section">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-            <h3>Bạn sẽ nhận lại gì khi tới Wecamp Cafe Retreat ?</h3>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <h3>{% trans "Bạn sẽ nhận lại gì khi tới Wecamp Cafe Retreat ?" %}</h3>
+            <p>{% trans "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." %}</p>
           </div>
         </div>
 
@@ -150,8 +146,8 @@
               <div class="feature-icon">
                 <i class="bi bi-people-fill"></i>
               </div>
-              <h4>Ẩm Thực Đa Dạng</h4>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+              <h4>{% trans "Ẩm Thực Đa Dạng" %}</h4>
+              <p>{% trans "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam." %}</p>
             </div>
           </div>
 
@@ -160,8 +156,8 @@
               <div class="feature-icon">
                 <i class="bi bi-shield-check"></i>
               </div>
-              <h4>Safe &amp; Secure</h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+              <h4>{% trans "An Toàn & Bảo Mật" %}</h4>
+              <p>{% trans "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum." %}</p>
             </div>
           </div>
 
@@ -170,8 +166,8 @@
               <div class="feature-icon">
                 <i class="bi bi-cash"></i>
               </div>
-              <h4>Best Prices</h4>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.</p>
+              <h4>{% trans "Giá Tốt Nhất" %}</h4>
+              <p>{% trans "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit." %}</p>
             </div>
           </div>
 
@@ -180,8 +176,8 @@
               <div class="feature-icon">
                 <i class="bi bi-headset"></i>
               </div>
-              <h4>24/7 Support</h4>
-              <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi.</p>
+              <h4>{% trans "Hỗ Trợ 24/7" %}</h4>
+              <p>{% trans "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi." %}</p>
             </div>
           </div>
 
@@ -190,8 +186,8 @@
               <div class="feature-icon">
                 <i class="bi bi-geo-alt-fill"></i>
               </div>
-              <h4>Global Destinations</h4>
-              <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+              <h4>{% trans "Điểm Đến Toàn Cầu" %}</h4>
+              <p>{% trans "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae." %}</p>
             </div>
           </div>
 
@@ -200,8 +196,8 @@
               <div class="feature-icon">
                 <i class="bi bi-star-fill"></i>
               </div>
-              <h4>Trải Nghiệm Cao Cấp</h4>
-              <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim.</p>
+              <h4>{% trans "Trải Nghiệm Cao Cấp" %}</h4>
+              <p>{% trans "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim." %}</p>
             </div>
           </div>
         </div><!-- End Features Grid -->
@@ -211,44 +207,61 @@
 
   </section><!-- /Why Us Section -->
 
+  <!-- COMBO PROMO SLIDER -->
+  <section class="section py-5 bg-light">
+    <div class="container">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>{% trans "SIÊU ƯU ĐÃI" %}</h2>
+        <div><span>{% trans "Khám Phá Các Combo Siêu Ưu Đãi Tại" %}</span> <span class="description-title">Wecamp Cafe Retreat</span></div>
+      </div>
+
+      {% if combos %}
+        {% include 'components/_combo_slider.html' %}
+      {% else %}
+        <div class="text-center p-5">
+          <p class="text-muted">{% trans "Chưa có combo nào đang được ưu đãi." %}</p>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
   <!-- Featured Destinations Section -->
   <section id="featured-destinations" class="featured-destinations section">
 
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Các dịch vụ tại</h2>
-      <div><span>Khu cafe lớn nhất Tả Van</span> <span class="description-title">Wecamp Cafe Retreat</span></div>
-    </div><!-- End Section Title -->
+      <h2>{% trans "Các dịch vụ tại" %}</h2>
+      <div><span>{% trans "Khu cafe lớn nhất Tả Van" %}</span> <span class="description-title">Wecamp Cafe Retreat</span></div>
+    </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row g-4">
 
-      <div class="row">
-
-        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-          <div class="featured-destination">
+        <!-- ẨM THỰC TÂY BẮC -->
+        <div class="col-lg-6">
+          <div class="featured-destination h-100" data-aos="zoom-in" data-aos-delay="200">
             <div class="destination-overlay">
-              <img src="{% static 'assets/img/travel/destination-3.webp' %}" alt="Tropical Paradise" class="img-fluid">
+              <img src="{% static 'assets/img/travel/destination-3.webp' %}" alt="{% trans 'Ẩm Thực Tây Bắc' %}" class="img-fluid">
               <div class="destination-info">
-                <span class="destination-tag">Khám Phá</span>
-                <h3>Ẩm Thực Tây Bắc</h3>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i>Wecamp Cafe Retreat - Tả Van - SaPa</p>
-                <p class="description">Pristine beaches, crystal-clear waters, and luxury overwater villas await in this tropical paradise destination.</p>
+                <span class="destination-tag">{% trans "Khám Phá" %}</span>
+                <h3>{% trans "Ẩm Thực Tây Bắc" %}</h3>
+                <p class="location"><i class="bi bi-geo-alt-fill"></i> Wecamp Cafe Retreat</p>
+                <p class="description">{% trans "Cơm lam, thịt nướng, lẩu thắng cố – đậm chất núi rừng." %}</p>
                 <div class="destination-meta">
                   <div class="tours-count">
-                    <i class="bi bi-collection"></i>
-                    <span>22 Packages</span>
+                    <i class="bi bi-fire text-danger"></i>
+                    <span>{% trans "22 Đánh Giá" %}</span>
                   </div>
                   <div class="rating">
-                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
                     <span>4.9 (412)</span>
                   </div>
                 </div>
                 <div class="price-info">
-                  <span class="starting-from">Starting from</span>
-                  <span class="amount">$2,150</span>
+                  <span class="starting-from">{% trans "Chỉ Từ" %}</span>
+                  <span class="amount">100.000đ</span>
                 </div>
-                <a href="{% url 'destination_details' %}" class="explore-btn">
-                  <span>Đặt Ngay</span>
+                <a href="{% url 'meal' %}" class="explore-btn">
+                  <span>{% trans "Đặt Ngay" %}</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -256,64 +269,90 @@
           </div>
         </div>
 
+        <!-- 4 DỊCH VỤ NHỎ -->
         <div class="col-lg-6">
           <div class="row g-3">
 
+            <!-- ĐỒ UỐNG -->
             <div class="col-12" data-aos="fade-left" data-aos-delay="300">
               <div class="compact-destination">
                 <div class="destination-image">
-                  <img src="{% static 'assets/img/travel/destination-7.webp' %}" alt="Mountain Adventure" class="img-fluid">
-                  <div class="badge-offer">Best Value</div>
+                  <img src="{% static 'assets/img/travel/destination-7.webp' %}" alt="{% trans 'Đồ Uống' %}" class="img-fluid">
+                  <div class="badge-offer bg-success text-white">{% trans "Mát Lạnh" %}</div>
                 </div>
                 <div class="destination-details">
-                  <h4>Mountain Adventure</h4>
-                  <p class="location"><i class="bi bi-geo-alt"></i> Nepal</p>
-                  <p class="brief">Breathtaking Himalayan peaks and ancient Buddhist temples create an unforgettable spiritual journey.</p>
+                  <h4>{% trans "Đồ Uống Đa Dạng" %}</h4>
+                  <p class="location"><i class="bi bi-cup-hot-fill"></i> Wecamp Cafe Retreat</p>
+                  <p class="brief">{% trans "Cà phê, trà sữa, nước ép – mát lạnh bên suối." %}</p>
                   <div class="stats-row">
-                    <span class="tour-count"><i class="bi bi-calendar-check"></i> 16 Tours</span>
-                    <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
-                    <span class="price">from $1,420</span>
+                    <span class="tour-count"><i class="bi bi-droplet-half text-primary"></i> {% trans "16 Đánh Giá" %}</span>
+                    <span class="rating"><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                    <span class="price">{% trans "Từ 25.000đ" %}</span>
                   </div>
-                  <a href="{% url 'destination_details' %}" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                  <a href="{% url 'coffee' %}" class="quick-link">{% trans "Đặt Ngay" %} <i class="bi bi-chevron-right"></i></a>
                 </div>
               </div>
             </div>
 
+            <!-- NGHỈ DƯỠNG -->
             <div class="col-12" data-aos="fade-left" data-aos-delay="400">
               <div class="compact-destination">
                 <div class="destination-image">
-                  <img src="{% static 'assets/img/travel/destination-11.webp' %}" alt="Cultural Heritage" class="img-fluid">
+                  <img src="{% static 'assets/img/travel/destination-11.webp' %}" alt="{% trans 'Nghỉ Dưỡng' %}" class="img-fluid">
+                  <div class="badge-offer bg-info text-white">{% trans "View Suối" %}</div>
                 </div>
                 <div class="destination-details">
-                  <h4>Cultural Heritage</h4>
-                  <p class="location"><i class="bi bi-geo-alt"></i> Peru</p>
-                  <p class="brief">Discover ancient civilizations, colorful markets, and archaeological wonders in the heart of South America.</p>
+                  <h4>{% trans "Nghỉ Dưỡng Cắm Trại" %}</h4>
+                  <p class="location"><i class="bi bi-geo-alt-fill"></i> Wecamp Cafe Retreat</p>
+                  <p class="brief">{% trans "Lều đôi, lều gia đình – đầy đủ tiện ích." %}</p>
                   <div class="stats-row">
-                    <span class="tour-count"><i class="bi bi-calendar-check"></i> 9 Expeditions</span>
-                    <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
-                    <span class="price">from $980</span>
+                    <span class="tour-count"><i class="bi bi-moon-stars text-primary"></i> {% trans "9 Đánh Giá" %}</span>
+                    <span class="rating"><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                    <span class="price">{% trans "Từ 150.000đ" %}</span>
                   </div>
-                  <a href="{% url 'destination_details' %}" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                  <a href="{% url 'tent' %}" class="quick-link">{% trans "Đặt Ngay" %} <i class="bi bi-chevron-right"></i></a>
                 </div>
               </div>
             </div>
 
+            <!-- NGÂM CHÂN & LỬA TRẠI -->
             <div class="col-12" data-aos="fade-left" data-aos-delay="500">
               <div class="compact-destination">
                 <div class="destination-image">
-                  <img src="{% static 'assets/img/travel/destination-16.webp' %}" alt="Safari Experience" class="img-fluid">
-                  <div class="badge-offer limited">Limited Spots</div>
+                  <img src="{% static 'assets/img/travel/destination-16.webp' %}" alt="{% trans 'Ngâm Chân & Lửa Trại' %}" class="img-fluid">
+                  <div class="badge-offer bg-relax text-white">{% trans "Thư Giãn" %}</div>
                 </div>
                 <div class="destination-details">
-                  <h4>Safari Experience</h4>
-                  <p class="location"><i class="bi bi-geo-alt"></i> Kenya</p>
-                  <p class="brief">Witness the Big Five and experience the great migration in Africa's most spectacular wildlife reserves.</p>
+                  <h4>{% trans "Ngâm Chân & Lửa Trại" %}</h4>
+                  <p class="location"><i class="bi bi-droplet text-success"></i> Wecamp Cafe Retreat</p>
+                  <p class="brief">{% trans "Thảo mộc thư giãn + lửa trại + nướng kẹo dẻo." %}</p>
                   <div class="stats-row">
-                    <span class="tour-count"><i class="bi bi-calendar-check"></i> 11 Safaris</span>
-                    <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                    <span class="price">from $2,750</span>
+                    <span class="tour-count"><i class="bi bi-fire text-danger"></i> {% trans "11 Đánh Giá" %}</span>
+                    <span class="rating"><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                    <span class="price">{% trans "Từ 150.000đ" %}</span>
                   </div>
-                  <a href="{% url 'destination_details' %}" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                  <a href="{% url 'herbal_foot_soak' %}" class="quick-link">{% trans "Đặt Ngay" %} <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- VẼ TRANH & TÔ TƯỢNG -->
+            <div class="col-12" data-aos="fade-left" data-aos-delay="600">
+              <div class="compact-destination">
+                <div class="destination-image">
+                  <img src="{% static 'assets/img/travel/destination-16.webp' %}" alt="{% trans 'Vẽ Tranh & Tô Tượng' %}" class="img-fluid">
+                  <div class="badge-offer bg-warning text-white">{% trans "Sáng Tạo" %}</div>
+                </div>
+                <div class="destination-details">
+                  <h4>{% trans "Vẽ Tranh & Tô Tượng" %}</h4>
+                  <p class="location"><i class="bi bi-palette-fill"></i> Wecamp Cafe Retreat</p>
+                  <p class="brief">{% trans "Hoạt động nghệ thuật cho trẻ em & gia đình." %}</p>
+                  <div class="stats-row">
+                    <span class="tour-count"><i class="bi bi-brush text-success"></i> {% trans "14 Đánh Giá" %}</span>
+                    <span class="rating"><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                    <span class="price">{% trans "Từ 80.000đ" %}</span>
+                  </div>
+                  <a href="{% url 'art_activity' %}" class="quick-link">{% trans "Đặt Ngay" %} <i class="bi bi-chevron-right"></i></a>
                 </div>
               </div>
             </div>
@@ -322,329 +361,135 @@
         </div>
 
       </div>
+    </div>
+  </section>
 
-    </section><!-- /Featured Destinations Section -->
-
-    <!-- Featured Tours Section -->
-    <section id="featured-tours" class="featured-tours section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Bài Viết</h2>
-        <div><span>Cập nhật thông tin mới nhất tại </span> <span class="description-title">Wecamp Cafe Retreat</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="{% static 'assets/img/travel/tour-1.webp' %}" alt="Serene Beach Retreat" class="img-fluid" loading="lazy">
-                <div class="tour-badge">Top Rated</div>
-                <div class="tour-price">$2,150</div>
-              </div>
-              <div class="tour-content">
-                <h4>Serene Beach Retreat</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 8 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 6</span>
-                </div>
-                <p>Mauris ipsum neque, cursus ac ipsum at, iaculis facilisis ligula. Suspendisse non sapien vel enim cursus semper.</p>
-                <div class="tour-highlights">
-                  <span>Maldives</span>
-                  <span>Seychelles</span>
-                  <span>Bora Bora</span>
-                </div>
-                <div class="tour-action">
-                  <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <span>4.8 (95)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Tour Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="{% static 'assets/img/travel/tour-2.webp' %}" alt="Arctic Expedition" class="img-fluid" loading="lazy">
-                <div class="tour-badge limited">Only 3 Spots!</div>
-                <div class="tour-price">$5,700</div>
-              </div>
-              <div class="tour-content">
-                <h4>Arctic Wilderness Expedition</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 10 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 8</span>
-                </div>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec dictum non massa nec fermentum.</p>
-                <div class="tour-highlights">
-                  <span>Greenland</span>
-                  <span>Iceland</span>
-                  <span>Norway</span>
-                </div>
-                <div class="tour-action">
-                  <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <span>4.6 (55)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Tour Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="{% static 'assets/img/travel/tour-4.webp' %}" alt="Desert Safari" class="img-fluid" loading="lazy">
-                <div class="tour-badge new">Newly Added</div>
-                <div class="tour-price">$1,400</div>
-              </div>
-              <div class="tour-content">
-                <h4>Sahara Desert Discovery</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 5 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Pellentesque euismod tincidunt turpis ac tristique. Phasellus vitae lacus in enim mollis facilisis vel quis ex. In hac habitasse platea dictumst.</p>
-                <div class="tour-highlights">
-                  <span>Morocco</span>
-                  <span>Egypt</span>
-                  <span>Dubai</span>
-                </div>
-                <div class="tour-action">
-                  <a href="{% url 'booking' %}" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <span>4.9 (72)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Tour Item -->
+  <!-- Blog Posts -->
+  <section id="blog-posts" class="blog-posts section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>{% trans "Bài Viết" %}</h2>
+      <div><span>{% trans "Cập nhật thông tin mới nhất tại " %}</span> <span class="description-title">Wecamp Cafe Retreat</span></div>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        {% for post in latest_posts %}
+        <div class="col-lg-4">
+          {% include 'blogs/_post_card.html' %}
         </div>
-
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
-          <a href="{% url 'tours' %}" class="btn-view-all">View All Tours</a>
+        {% empty %}
+        <div class="col-12 text-center">
+          <p class="text-muted">{% trans "Chưa có bài viết nào." %}</p>
         </div>
-
+        {% endfor %}
       </div>
 
-    </section><!-- /Featured Tours Section -->
-
-    <!-- Testimonials Home Section -->
-    <section id="testimonials-home" class="testimonials-home section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <div><span>What Our Customers</span> <span class="description-title">Are Saying</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/person/person-m-9.webp' %}" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/person/person-f-5.webp' %}" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/person/person-f-12.webp' %}" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/person/person-m-12.webp' %}" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="{% static 'assets/img/person/person-m-13.webp' %}" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+        <a href="{% url 'blog' %}" class="btn btn-explore">{% trans "Xem Tất Cả Bài Viết" %}</a>
       </div>
+    </div>
+  </section>
 
-    </section><!-- /Testimonials Home Section -->
+  <!-- Testimonials -->
+  <section id="testimonials-home" class="testimonials-home section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>{% trans "Đánh Giá Của Khách Hàng" %}</h2>
+      <div><span>{% trans "Khách Hàng Nói Gì Về" %}</span> <span class="description-title">Wecamp Cafe Retreat</span></div>
+    </div>
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
-          <div class="content-wrapper">
-            <div class="badge-wrapper">
-              <span class="promo-badge">Limited Time Offer</span>
-            </div>
-            <h2>Discover Your Next Adventure</h2>
-            <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
-
-            <div class="action-section">
-              <div class="main-actions">
-                <a href="{% url 'destinations' %}" class="btn btn-explore">
-                  <i class="bi bi-compass"></i>
-                  Explore Now
-                </a>
-                <a href="#" class="btn btn-deals">
-                  <i class="bi bi-percent"></i>
-                  View Deals
-                </a>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          { "loop": true, "speed": 600, "autoplay": { "delay": 5000 }, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }, "breakpoints": { "320": { "slidesPerView": 1, "spaceBetween": 40 }, "1200": { "slidesPerView": 3, "spaceBetween": 20 } } }
+        </script>
+        <div class="swiper-wrapper">
+          {% for review in featured_reviews %}
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="review-header d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-light text-dark px-3 py-1">{{ review.get_service_display }}</span>
+                <div class="stars text-warning fs-5">
+                  {% for i in "12345" %}
+                    {% if forloop.counter <= review.rating %}
+                      <i class="bi bi-star-fill"></i>
+                    {% else %}
+                      <i class="bi bi-star"></i>
+                    {% endif %}
+                  {% endfor %}
+                </div>
               </div>
-
-              <div class="quick-contact">
-                <span class="contact-label">Need help choosing?</span>
-                <a href="tel:+1555123456" class="contact-link">
-                  <i class="bi bi-telephone"></i>
-                  Call +1 (555) 123-456
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="visual-element">
-            <img src="{% static 'assets/img/travel/showcase-3.webp' %}" alt="Travel Adventure" class="hero-image" loading="lazy">
-            <div class="image-overlay">
-              <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Destinations</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">10K+</span>
-                <span class="stat-label">Happy Travelers</span>
+              <p class="mb-4">
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>{{ review.content|truncatewords:30 }}</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+              <div class="mt-auto text-center">
+                <div class="d-flex flex-column align-items-center">
+                  {% if review.photo %}
+                    <img src="{{ review.photo.url }}" class="testimonial-img rounded-circle mb-3" alt="{{ review.name }}" style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                  {% else %}
+                    <img src="{% static 'assets/img/person/default-avatar.webp' %}" class="testimonial-img rounded-circle mb-3" alt="{% trans 'Khách hàng' %}" style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                  {% endif %}
+                  <h3 class="h5 mb-1 fw-bold">{{ review.name }}</h3>
+                  <small class="text-muted">{% trans "Khách hàng tại Wecamp" %}</small>
+                </div>
               </div>
             </div>
           </div>
+          {% empty %}
+          <div class="swiper-slide">
+            <div class="text-center p-5">
+              <p class="text-muted">{% trans "Chưa có đánh giá nào được hiển thị." %}</p>
+            </div>
+          </div>
+          {% endfor %}
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="newsletter-section" data-aos="fade-up" data-aos-delay="300">
-          <div class="newsletter-card">
-            <div class="newsletter-content">
-              <div class="newsletter-icon">
-                <i class="bi bi-envelope-heart"></i>
-              </div>
-              <div class="newsletter-text">
-                <h3>Stay in the Loop</h3>
-                <p>Get exclusive travel deals and destination guides delivered to your inbox</p>
-              </div>
-            </div>
+  <!-- Booking Form -->
+  <section id="booking" class="service-booking section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="booking-card p-5 rounded-4 shadow-lg" data-aos="zoom-in">
+            <h3 class="text-center mb-4">{% trans "Gửi Thông Tin Đặt Combo" %}</h3>
+            
+            {% if messages %}
+              {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} text-center">{{ message }}</div>
+              {% endfor %}
+            {% endif %}
 
-            <form action="{% url 'newsletter_submit' %}" method="post" class="newsletter-form">
+            <form method="post">
               {% csrf_token %}
-              <div class="form-wrapper">
-                <input type="email" name="email" class="email-input" placeholder="Your email address" required="">
-                <button type="submit" class="subscribe-btn">
-                  <i class="bi bi-arrow-right"></i>
-                </button>
-              </div>
-
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Welcome aboard! Check your email for exclusive offers.</div>
-
-              <div class="trust-indicators">
-                <i class="bi bi-lock"></i>
-                <span>We protect your privacy. Unsubscribe anytime.</span>
+              <input type="hidden" name="service" value="combo">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="{% trans 'Họ & Tên' %}" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" name="phone" class="form-control" placeholder="{% trans 'Số điện thoại' %}" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="date" name="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="time" name="time" class="form-control" required>
+                </div>
+                <div class="col-12">
+                  <textarea name="note" class="form-control" rows="3" placeholder="{% trans 'Ghi chú (số người, combo...)' %}"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-explore btn-lg px-5">{% trans "Gửi Yêu Cầu" %}</button>
+                </div>
               </div>
             </form>
           </div>
         </div>
-
       </div>
-
-    </section><!-- /Call To Action Section -->
+    </div>
+  </section>
 
 {% endblock %}

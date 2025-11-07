@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static i18n %}
+{% load price_filters %}
+
+{% block title %}{% trans "Hoạt Động Nghệ Thuật - Wecamp Cafe Retreat" %}{% endblock %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title dark-background" data-aos="fade">
+  <style>
+    .page-title { background-image: url('{% static "assets/img/service/meal-hero.jpg" %}'); }
+  </style>
+  <div class="container position-relative">
+    <h1>{% trans "Hoạt Động Nghệ Thuật" %}</h1>
+    <p>{% trans "Vẽ tranh & tô tượng – thư giãn sáng tạo giữa thiên nhiên Tả Van" %}</p>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+        <li class="current">{% trans "Hoạt Động Nghệ Thuật" %}</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Service Introduction -->
+<section class="service-content section">
+  <div class="container">
+
+    <!-- DỊCH VỤ 1: VẼ TRANH -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+        <img src="{% static 'assets/img/service/theme.jpg' %}" 
+             style="min-height: 400px; max-height: 400px; object-fit: cover;" 
+             alt="{% trans 'Vẽ tranh tại Wecamp' %}" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+        <h2 class="text-success">{% trans "Vẽ Tranh Cảnh Quan" %}</h2>
+        <p class="lead">{% trans "Thả hồn theo nét cọ, ghi lại vẻ đẹp núi rừng, suối reo, ruộng bậc thang." %}</p>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-palette text-success me-2"></i> <strong>{% trans "Dụng cụ:" %}</strong> {% trans "Màu nước, bút chì, giấy A4 cao cấp" %}</li>
+          <li class="mb-3"><i class="bi bi-clock text-primary me-2"></i> <strong>{% trans "Thời gian:" %}</strong> {% trans "60 phút / buổi" %}</li>
+          <li class="mb-3"><i class="bi bi-currency-exchange text-warning me-2"></i> <strong>{% trans "Giá:" %}</strong> <strong class="text-primary">120.000đ</strong> / {% trans "người" %}</li>
+          <li class="mb-3"><i class="bi bi-people text-info me-2"></i> <strong>{% trans "Phù hợp:" %}</strong> {% trans "Trẻ em & người lớn" %}</li>
+        </ul>
+        <a href="#booking" class="btn btn-explore mt-3">
+          <i class="bi bi-brush"></i>
+          <span>{% trans "Đặt Lịch Vẽ Tranh" %}</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- DỊCH VỤ 2: TÔ TƯỢNG -->
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="{% static 'assets/img/service/theme.jpg' %}" 
+             style="min-height: 400px; max-height: 400px; object-fit: cover;" 
+             alt="{% trans 'Tô tượng tại Wecamp' %}" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2 class="text-warning">{% trans "Tô Tượng Thạch Cao" %}</h2>
+        <p class="lead">{% trans "Tự tay tô màu cho các bức tượng dễ thương – quà lưu niệm độc nhất!" %}</p>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="bi bi-gem text-warning me-2"></i> <strong>{% trans "Mẫu tượng:" %}</strong> {% trans "Thỏ, mèo, voi, nhà nhỏ, cốc..." %}</li>
+          <li class="mb-3"><i class="bi bi-clock text-primary me-2"></i> <strong>{% trans "Thời gian:" %}</strong> {% trans "45 phút / tượng" %}</li>
+          <li class="mb-3"><i class="bi bi-currency-exchange text-success me-2"></i> <strong>{% trans "Giá:" %}</strong> <strong class="text-primary">80.000đ</strong> / {% trans "tượng" %}</li>
+          <li class="mb-3"><i class="bi bi-gift text-danger me-2"></i> <strong>{% trans "Mang về:" %}</strong> {% trans "Tượng đã tô xong" %}</li>
+        </ul>
+        <a href="#booking" class="btn btn-explore mt-3">
+          <i class="bi bi-palette2"></i>
+          <span>{% trans "Đặt Lịch Tô Tượng" %}</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- COMBO SLIDER -->
+    {% if combos %}
+    <div class="combo-slider-wrapper" data-aos="fade-up">
+      <div class="swiper comboSwiper">
+        <div class="swiper-wrapper">
+          {% for combo in combos %}
+          <div class="swiper-slide">
+            <div class="combo-promo bg-light rounded-4 p-4 p-md-5 shadow-sm">
+              <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                  {% if combo.image %}
+                    <img src="{{ combo.image.url }}" alt="{{ combo.title }}" class="img-fluid rounded-3 shadow-sm" style="height: 250px; object-fit: cover;">
+                  {% else %}
+                    <img src="{% static 'assets/img/service/combo-default.webp' %}" class="img-fluid rounded-3 shadow-sm" style="height: 250px; object-fit: cover;">
+                  {% endif %}
+                </div>
+                <div class="col-md-5">
+                  <span class="badge bg-success mb-2">{{ combo.get_meal_type_display }}</span>
+                  <h3 class="text-primary mb-2">{{ combo.title }}</h3>
+                  <p class="mb-2"><strong>{{ combo.description }}</strong></p>
+                  {% if combo.details %}
+                    <ul class="list-unstyled small text-muted">{{ combo.details|linebreaks }}</ul>
+                  {% endif %}
+                </div>
+                <div class="col-md-3 text-md-end text-center">
+                  <p class="text-decoration-line-through text-muted mb-0">{{ combo.original_price|format_price }}</p>
+                  <h4 class="text-primary fw-bold">{{ combo.discount_price|format_price }}</h4>
+                  <a href="#booking" class="btn btn-explore mt-3">
+                    <span>{% trans "Đặt Ngay" %}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-controls d-flex justify-content-center align-items-center mt-4">
+          <div class="swiper-pagination combo-pagination"></div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Lợi ích -->
+    <div class="row mt-5" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="text-center p-4 bg-light rounded-4 shadow-sm h-100">
+          <i class="bi bi-lightbulb text-warning fs-1 mb-3"></i>
+          <h5>{% trans "Kích Thích Sáng Tạo" %}</h5>
+          <p class="small text-muted">{% trans "Phát triển tư duy, tưởng tượng" %}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="text-center p-4 bg-light rounded-4 shadow-sm h-100">
+          <i class="bi bi-emoji-smile text-success fs-1 mb-3"></i>
+          <h5>{% trans "Giảm Stress" %}</h5>
+          <p class="small text-muted">{% trans "Thư giãn tinh thần, vui vẻ" %}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="text-center p-4 bg-light rounded-4 shadow-sm h-100">
+          <i class="bi bi-camera text-primary fs-1 mb-3"></i>
+          <h5>{% trans "Quà Lưu Niệm" %}</h5>
+          <p class="small text-muted">{% trans "Mang về tác phẩm tự tay làm" %}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="booking" class="service-booking section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="booking-card p-5 rounded-4 shadow-lg" data-aos="zoom-in">
+          <h3 class="text-center mb-4">{% trans "Đặt Bàn Nhà Hàng" %}</h3>
+          
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} text-center">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+
+          <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="service" value="art_activity">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="{% trans 'Họ & Tên' %}" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" name="phone" class="form-control" placeholder="{% trans 'Số điện thoại' %}" required>
+              </div>
+              <div class="col-md-6">
+                <input type="date" name="date" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <input type="time" name="time" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <textarea name="note" class="form-control" rows="3" placeholder="{% trans 'Ghi chú (số người, món đặc biệt...)' %}"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success btn-lg px-5">{% trans "Gửi Yêu Cầu" %}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

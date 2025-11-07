@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load price_filters %}
+{% load i18n %}
+
+{% block title %}{% trans "Nhà Hàng - Wecamp Cafe Retreat" %}{% endblock %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title dark-background" data-aos="fade">
+  <style>
+    .page-title { background-image: url('{% static "assets/img/service/meal-hero.jpg" %}'); }
+  </style>
+  <div class="container position-relative">
+    <h1>{% trans "Nhà Hàng Tại Wecamp" %}</h1>
+    <p>{% trans "Thưởng thức ẩm thực Tây Bắc giữa thiên nhiên suối reo" %}</p>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+        <li class="current">{% trans "Nhà Hàng" %}</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Service Content -->
+<section class="service-content section">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="{% static 'assets/img/service/theme.jpg' %}" style="min-height: 450px;max-height: 450px; object-fit: cover;" alt="{% trans 'Nhà Hàng tại Wecamp' %}" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2>{% trans "Trải Nghiệm Ẩm Thực Đậm Chất Núi Rừng" %}</h2>
+        <p class="lead">{% trans "Từ món nướng truyền thống đến cơm lam, thịt hun khói – tất cả được chế biến từ nguyên liệu tươi sạch ngay tại Tả Van." %}</p>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong>{% trans "Thực đơn đa dạng:" %}</strong> {% trans "Món Việt, món Tây, món chay" %}
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong>{% trans "Không gian mở:" %}</strong> {% trans "Ngồi bên suối, nghe chim hót" %}
+          </li>
+          <li class="mb-3">
+            <i class="bi bi-check-circle-fill text-success me-2"></i>
+            <strong>{% trans "Phục vụ từ 7:30 - 19:30" %}</strong> {% trans "hàng ngày" %}
+          </li>
+        </ul>
+        <a href="#booking" class="btn btn-explore mt-3">
+          <i class="bi bi-calendar-check"></i>
+          <span>{% trans "Đặt Bàn Ngay" %}</span>
+        </a>
+      </div>
+    </div>
+
+    {% include 'components/_combo_slider.html' %}
+  </div>
+</section>
+
+<!-- MENU ĐỒ ĂN -->
+<section class="service-menu section bg-white">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2>{% trans "Menu Tại Wecamp" %}</h2>
+      <p class="text-muted">{% trans "Chọn món ăn yêu thích theo loại" %}</p>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <ul class="gallery-filters isotope-filters text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">{% trans "Tất cả" %}</li>
+        {% for type_code, type_name in MEAL_TYPE %}
+          {% if type_code != 'combo' %}
+            <li data-filter=".filter-{{ type_code }}">{{ type_name }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <!-- GRID MÓN ĂN -->
+      <div class="row gallery-grid isotope-container" data-aos="fade-up" data-aos-delay="200">
+        {% for item in menu_items %}
+        <div class="col-lg-4 col-md-6 gallery-item isotope-item filter-{{ item.meal_type }}">
+          <div class="menu-item-card h-100 border rounded-4 overflow-hidden shadow-sm">
+            {% if item.image %}
+              <img src="{{ item.image.url }}" class="w-100" style="height: 450px; object-fit: cover;" alt="{{ item.name }}">
+            {% else %}
+              <img src="{% static 'assets/img/service/menu-default.webp' %}" class="w-100" style="height: 450px; object-fit: cover;" alt="{% trans 'Món ăn' %}">
+            {% endif %}
+            <div class="p-4">
+              <h5 class="fw-bold">{{ item.name }}</h5>
+              <p class="text-muted small">{{ item.description|truncatewords:12 }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="h5 text-primary mb-0">{{ item.price|format_price }}</span>
+                <a href="#booking" class="btn btn-explore btn-sm">
+                  <i class="bi bi-cart"></i> {% trans "Đặt" %}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center">
+          <p class="text-muted">{% trans "Chưa có món ăn nào." %}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="booking" class="service-booking section bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="booking-card p-5 rounded-4 shadow-lg" data-aos="zoom-in">
+          <h3 class="text-center mb-4">{% trans "Đặt Bàn Nhà Hàng" %}</h3>
+          
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} text-center">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+
+          <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="service" value="meal">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="{% trans 'Họ & Tên' %}" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" name="phone" class="form-control" placeholder="{% trans 'Số điện thoại' %}" required>
+              </div>
+              <div class="col-md-6">
+                <input type="date" name="date" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <input type="time" name="time" class="form-control" required>
+              </div>
+              <div class="col-12">
+                <textarea name="note" class="form-control" rows="3" placeholder="{% trans 'Ghi chú (số người, món đặc biệt...)' %}"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success btn-lg px-5">{% trans "Gửi Yêu Cầu" %}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

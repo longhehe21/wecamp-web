@@ -1,17 +1,24 @@
 {% extends 'emails/base_email.html' %}
-{% block title %}Đặt bàn thành công!{% endblock %}
-{% block header %}Đặt bàn thành công!{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Đặt bàn thành công!" %}{% endblock %}
+{% block header %}{% trans "Đặt bàn thành công!" %}{% endblock %}
+
 {% block content %}
-<p>Xin chào <strong>{{ name }}</strong>,</p>
-<p>Cảm ơn bạn đã chọn <strong>Wecamp</strong> cho bữa ăn!</p>
-<div class="service-icon">Meal</div>
+<p>{% blocktrans with name=name %}Xin chào <strong>{{ name }}</strong>,{% endblocktrans %}</p>
+
+<p>{% blocktrans %}Cảm ơn bạn đã chọn <strong>Wecamp</strong> cho bữa ăn của mình!{% endblocktrans %}</p>
+
+<div class="service-icon">🍽️</div>
+
 <div class="highlight">
-  <p>Thông tin đặt bàn:</p>
+  <p><strong>{% trans "Thông tin đặt bàn:" %}</strong></p>
   <ul>
-    <li>Ngày: <strong>{{ date|date:"d/m/Y" }}</strong></li>
-    <li>Số người: <strong>{{ people }}</strong></li>
+    <li>{% trans "Ngày" %}: <strong>{{ date|date:"d/m/Y" }}</strong></li>
+    <li>{% trans "Số người" %}: <strong>{{ people }}</strong></li>
   </ul>
 </div>
-<p>Chúng tôi sẽ gọi xác nhận trong <strong>2 giờ</strong>.</p>
-<a href="https://wecamp.com/menu" class="btn">Xem thực đơn</a>
+
+<p>{% blocktrans %}Chúng tôi sẽ gọi để xác nhận trong vòng <strong>2 giờ</strong>.{% endblocktrans %}</p>
+
+<a href="https://wecamp.com/menu" class="btn">{% trans "Xem thực đơn" %}</a>
 {% endblock %}

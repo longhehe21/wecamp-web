@@ -1,17 +1,24 @@
 {% extends 'emails/base_email.html' %}
-{% block title %}Đặt hoạt động sáng tạo!{% endblock %}
-{% block header %}Đặt hoạt động sáng tạo!{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Đặt hoạt động sáng tạo!" %}{% endblock %}
+{% block header %}{% trans "Đặt hoạt động sáng tạo!" %}{% endblock %}
+
 {% block content %}
-<p>Xin chào <strong>{{ name }}</strong>,</p>
-<p>Sáng tạo cùng màu sắc tại Wecamp!</p>
-<div class="service-icon">Art</div>
+<p>{% blocktrans with name=name %}Xin chào <strong>{{ name }}</strong>,{% endblocktrans %}</p>
+
+<p>{% trans "Sáng tạo cùng màu sắc tại Wecamp!" %}</p>
+
+<div class="service-icon">🎨</div>
+
 <div class="highlight">
-  <p>Thông tin:</p>
+  <p><strong>{% trans "Thông tin đặt chỗ:" %}</strong></p>
   <ul>
-    <li>Ngày: <strong>{{ date|date:"d/m/Y" }}</strong></li>
-    <li>Số người: <strong>{{ people }}</strong></li>
+    <li>{% trans "Ngày" %}: <strong>{{ date|date:"d/m/Y" }}</strong></li>
+    <li>{% trans "Số người" %}: <strong>{{ people }}</strong></li>
   </ul>
 </div>
-<p>Giá: <strong>100.000 VNĐ/người</strong></p>
-<a href="https://wecamp.com/art" class="btn">Xem mẫu tượng</a>
+
+<p>{% trans "Giá" %}: <strong>100.000 VNĐ / {% trans "người" %}</strong></p>
+
+<a href="https://wecamp.com/art" class="btn">{% trans "Xem mẫu tượng" %}</a>
 {% endblock %}

@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}{{ post.title }} - Wecamp Blog{% endblock %}
+{% block title %}{{ post.title }} - {% trans "Wecamp Blog" %}{% endblock %}
 
 {% block content %}
 <style>
@@ -17,13 +18,13 @@
         }
     </style>
     <div class="container position-relative">
-      <h1>Chi Tiết Bài Viết</h1>
-      <p>Khám phá những câu chuyện và trải nghiệm tại Wecamp.</p>
+      <h1>{% trans "Chi Tiết Bài Viết" %}</h1>
+      <p>{% trans "Khám phá những câu chuyện và trải nghiệm tại Wecamp." %}</p>
       <nav class="breadcrumbs">
         <ol>
-          <li><a href="{% url 'index' %}">Trang Chủ</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
-          <li class="current">Chi Tiết</li>
+          <li><a href="{% url 'index' %}">{% trans "Trang Chủ" %}</a></li>
+          <li><a href="{% url 'blog' %}">{% trans "Blog" %}</a></li>
+          <li class="current">{% trans "Chi Tiết" %}</li>
         </ol>
       </nav>
     </div>
@@ -48,21 +49,22 @@
               {% if post.author_image %}
               <img src="{{ post.author_image.url }}" alt="{{ post.author_name }}" class="author-img">
               {% else %}
-              <img src="{% static 'assets/img/person/default-avatar.webp' %}" alt="Avatar" class="author-img">
+              <img src="{% static 'assets/img/person/default-avatar.webp' %}" alt="{% trans 'Avatar' %}" class="author-img">
               {% endif %}
               <div class="author-info">
                 <h4>{{ post.author_name }}</h4>
-                <span>Người đăng bài</span>
+                <span>{% trans "Người đăng bài" %}</span>
               </div>
             </div>
             <div class="post-info">
               <span><i class="bi bi-calendar4-week"></i> {{ post.published_at|date:"d/m/Y" }}</span>
               <span><i class="bi bi-clock"></i> 
                 {% with words=post.content|striptags|wordcount %}
-                  {% if words < 400 %}1-2{% elif words < 800 %}3-4{% elif words < 1200 %}5-6{% elif words < 1600 %}7-8{% else %}9+{% endif %} phút đọc
+                  {% if words < 400 %}1-2{% elif words < 800 %}3-4{% elif words < 1200 %}5-6{% elif words < 1600 %}7-8{% else %}9+{% endif %}
+                  {% trans "phút đọc" %}
                 {% endwith %}
               </span>
-              <span><i class="bi bi-chat-square-text"></i> 0 Bình luận</span>
+              <span><i class="bi bi-chat-square-text"></i> 0 {% trans "Bình luận" %}</span>
             </div>
           </div>
         </div>
@@ -74,7 +76,7 @@
         <div class="article-wrapper">
           <!-- Table of Contents -->
           <aside class="table-of-contents" data-aos="fade-left">
-            <h3>Mục Lục</h3>
+            <h3>{% trans "Mục Lục" %}</h3>
             {% if post.get_table_of_contents %}
             <nav>
               <ul>
@@ -86,7 +88,7 @@
               </ul>
             </nav>
             {% else %}
-            <p class="text-muted small">Không có mục lục.</p>
+            <p class="text-muted small">{% trans "Không có mục lục." %}</p>
             {% endif %}
           </aside>
 
@@ -98,7 +100,7 @@
           <!-- Footer: Share + Tags -->
           <div class="article-footer" data-aos="fade-up">
             <div class="share-article">
-              <h4>Chia sẻ bài viết</h4>
+              <h4>{% trans "Chia sẻ bài viết" %}</h4>
               <div class="share-buttons">
                 <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ post.title }}" target="_blank" class="share-button twitter">
                   <i class="bi bi-twitter-x"></i>
@@ -116,11 +118,11 @@
             </div>
 
             <div class="article-tags">
-              <h4>Chủ đề liên quan</h4>
+              <h4>{% trans "Chủ đề liên quan" %}</h4>
               <div class="tags">
                 <a href="#" class="tag">{{ post.get_category_display }}</a>
                 <a href="#" class="tag">Wecamp</a>
-                <a href="#" class="tag">Du lịch</a>
+                <a href="#" class="tag">{% trans "Du lịch" %}</a>
               </div>
             </div>
           </div>
