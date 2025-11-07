@@ -539,9 +539,23 @@ input[type="number"]::-webkit-inner-spin-button {
 .sitename {
   font-size: 12px; /* mobile */
 }
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    header .logo .sitename,
+    header .sitename {
+        font-size: 1.1rem !important; /* ~17.6px */
+    }
+}
 
-@media (min-width: 768px) {
-  .sitename {
-    font-size: 24px !important;
-  }
+@media (max-width: 576px) {
+    header .logo .sitename,
+    header .sitename {
+        font-size: 1rem !important; /* ~16px */
+    }
+}
+
+/* Footer nhỏ hơn một chút (nếu cần) */
+footer .sitename {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
