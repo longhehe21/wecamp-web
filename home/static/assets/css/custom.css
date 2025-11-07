@@ -534,3 +534,14 @@ input[type="number"]::-webkit-inner-spin-button {
     color: white !important;
     border-radius: 8px !important;
 }
+
+
+.sitename {
+  font-size: 12px; /* mobile */
+}
+
+@media (min-width: 768px) {
+  .sitename {
+    font-size: 24px !important;
+  }
+}
