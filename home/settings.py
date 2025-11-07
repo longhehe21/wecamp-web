@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',  # ĐÚNG: trỏ vào E:\Web_wecamp\static
+    BASE_DIR / 'home' / 'static',  # ĐÚNG: trỏ vào E:\Web_wecamp\static
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # ĐÚNG
 
