@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware', 
     'django.middleware.common.CommonMiddleware',
@@ -106,9 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'home', 'static'),  # Trỏ đến E:\Web wecamp\home\home\static/
+    BASE_DIR / 'static',  # ĐÚNG: trỏ vào E:\Web_wecamp\static
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Tùy chọn cho collectstatic
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # ĐÚNG
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
