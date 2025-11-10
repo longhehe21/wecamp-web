@@ -1,2 +1,2 @@
-release: python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('hathanhlong', 'htl20122003@gmail.com', '@Hathanhlong20122003') if not User.objects.filter(username='$ADMIN_USER').exists() else None"
-web: gunicorn home.wsgi:application --bind 0.0.0.0:$PORT --timeout 120 --log-level debug
+release: python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'htl20122003@gmail.com', 'Admin123!@#') if not User.objects.filter(username='admin').exists() else None"
+web: gunicorn home.wsgi:application --bind 0.0.0.0:$PORT --timeout 120 --log-level info
