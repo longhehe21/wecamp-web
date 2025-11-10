@@ -1,2 +1,2 @@
-release: python manage.py migrate --noinput && python manage.py collectstatic --noinput
+release: python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@wecamp.com', 'hathanhlong20122003') if not User.objects.filter(username='admin').exists() else None"
 web: gunicorn home.wsgi:application --bind 0.0.0.0:$PORT --log-file -
