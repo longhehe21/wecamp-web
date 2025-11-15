@@ -163,20 +163,20 @@
   </footer>
 
   <!-- Floating Action Buttons -->
-  <div class="floating-action-buttons">
-    <a href="{% url 'index' %}#booking-form-wrapper" class="fab-btn fab-consult auto-tooltip" data-tooltip="{% trans 'Đặt bàn ngay' %}">
-      <i class="bi bi-calendar-check"></i>
-    </a>
-    <a href="https://m.me/wecampvietnam.tv" target="_blank" class="fab-btn fab-messenger" data-tooltip="{% trans 'Chat Messenger' %}">
-      <i class="bi bi-messenger"></i>
-    </a>
-    <a href="https://zalo.me/0966078081" target="_blank" class="fab-btn fab-zalo" data-tooltip="{% trans 'Chat Zalo' %}">
-      <img src="{% static 'assets/img/icons/zalo.svg' %}" alt="Zalo" style="width: 28px; height: 28px;">
-    </a>
-    <a href="tel:0966078081" class="fab-btn fab-phone" data-tooltip="{% trans 'Gọi ngay' %}">
-      <i class="bi bi-telephone-fill"></i>
-    </a>
-  </div>
+<div class="floating-action-buttons">
+  <a href="{% url 'index' %}#booking-form-wrapper" class="fab-btn fab-consult auto-tooltip" data-tooltip="{% trans 'Đặt bàn ngay' %}">
+    <i class="bi bi-calendar-check"></i>
+  </a>
+  <a href="https://m.me/wecampvietnam.tv" target="_blank" class="fab-btn fab-messenger auto-tooltip" data-tooltip="{% trans 'Chat Messenger' %}">
+    <i class="bi bi-messenger"></i>
+  </a>
+  <a href="https://zalo.me/0966078081" target="_blank" class="fab-btn fab-zalo auto-tooltip" data-tooltip="{% trans 'Chat Zalo' %}">
+    <img src="{% static 'assets/img/icons/zalo.svg' %}" alt="Zalo" style="width: 28px; height: 28px;">
+  </a>
+  <a href="tel:0966078081" class="fab-btn fab-phone auto-tooltip" data-tooltip="{% trans 'Gọi ngay' %}">
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+</div>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">

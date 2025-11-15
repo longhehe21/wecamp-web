@@ -116,34 +116,60 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const consultBtn = document.querySelector(".auto-tooltip");
+  const fabButtons = document.querySelectorAll(
+    ".floating-action-buttons .fab-btn.auto-tooltip"
+  );
+  let currentIndex = 0;
   let intervalId = null;
-  let isHovered = false;
 
-  // Hàm kích hoạt tooltip
-  function triggerTooltip() {
-    if (!isHovered) {
-      consultBtn.classList.add("force-show");
-      setTimeout(() => {
-        consultBtn.classList.remove("force-show");
-      }, 4000); // Hiện 2s
+  // Hàm hiển thị tooltip
+  function showTooltip(index) {
+    if (index >= fabButtons.length) {
+      currentIndex = 0; // Quay lại đầu
+    } else {
+      currentIndex = index;
     }
+
+    const btn = fabButtons[currentIndex];
+    btn.classList.add("force-show");
+
+    // Ẩn sau 3s
+    setTimeout(() => {
+      btn.classList.remove("force-show");
+      // Chuyển sang nút tiếp theo
+      setTimeout(() => showTooltip(currentIndex + 1), 500); // Delay 0.5s giữa các nút
+    }, 3000);
   }
 
-  // Bắt đầu lặp mỗi 3s
-  intervalId = setInterval(triggerTooltip, 10000);
+  // Bắt đầu chu kỳ
+  function startAutoTooltipCycle() {
+    showTooltip(0);
+  }
 
-  // Dừng khi hover
-  consultBtn.addEventListener("mouseenter", () => {
-    isHovered = true;
+  // Dừng khi hover vào bất kỳ nút nào
+  fabButtons.forEach((btn) => {
+    btn.addEventListener("mouseenter", () => {
+      clearTimeout(); // Dừng tất cả timeout
+      if (intervalId) clearInterval(intervalId);
+      btn.classList.add("force-show"); // Hiện tooltip khi hover
+    });
+
+    btn.addEventListener("mouseleave", () => {
+      btn.classList.remove("force-show");
+      // Không tự động chạy lại khi rời chuột
+    });
+
+    btn.addEventListener("click", () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    });
   });
 
-  consultBtn.addEventListener("mouseleave", () => {
-    isHovered = false;
-  });
+  // Bắt đầu sau 2s khi load trang
+  setTimeout(startAutoTooltipCycle, 2000);
 
-  // Dừng hoàn toàn khi click
-  consultBtn.addEventListener("click", () => {
-    clearInterval(intervalId);
-  });
+  // Tự động lặp lại chu kỳ mỗi 15s (nếu muốn liên tục)
+  // intervalId = setInterval(startAutoTooltipCycle, 15000);
 });
